@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Component} from 'react'
 import {post} from 'axios';
 import { withSiteData } from 'react-static'
 import styled from 'styled-components';
@@ -59,28 +59,42 @@ Button.defaultProps = {
   fontSize: 4
 }
 
-export default withSiteData(() => {
-  let email;
-  const changeEmail = (event) => {
-    email = event.target.value;
+export default class Home extends Component {
+  constructor () {
+    super();
+    this.state = {
+      email: ''
+    };
   }
 
-  const save = () => {
+  onChange = (event) => {
+    this.setState({email: event.target.value});
+  }
+
+  save = () => {
+    const {email} = this.state;
+
     post('https://sqc5wucuwc.execute-api.us-east-2.amazonaws.com/prod/save', {
       email
+    }).then(() => {
+      this.setState({email: ''});
+    }).catch(() => {
+      this.setState({email: ''});
     });
   }
 
-  return <div>
+  render (){
+    return <div>
     <Center>
       <h1>Connectaha</h1>
       <Row>A new conference is coming to Omaha. A conference that believes that everyone in the software world can learn from each other. A conference that believes quality software only happens when everyone on the team is communicating. A conference that believes those with less experience provide just as much value as the most senior team member.</Row>
       <Row>A conference that believes there’s power when people talk.</Row>
       <Row>If you’d like to be kept in the know about this conference, sign up below.</Row>
       <Row width={0.5}>
-        <Input type='text' onBlur={changeEmail} />
-        <Button type='button' ml={2} p={2} onClick={save}>Notify Me</Button>
+        <Input type='text' value={this.state.email} onChange={this.onChange} />
+        <Button type='button' ml={2} p={2} onClick={this.save}>Notify Me</Button>
       </Row>
     </Center>
   </div>
-})
+  }
+};
