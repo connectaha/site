@@ -1,15 +1,16 @@
 import React from 'react'
 import { Router, Link } from 'react-static'
-import styled, { injectGlobal } from 'styled-components'
+import styled, { injectGlobal, ThemeProvider } from 'styled-components'
 import { hot } from 'react-hot-loader'
+import theme from './theme';
+
 //
 import Routes from 'react-static-routes'
 
 injectGlobal`
   body {
-    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial,
-      'Lucida Grande', sans-serif;
-    font-weight: 300;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
     font-size: 16px;
     margin: 0;
     padding: 0;
@@ -44,18 +45,15 @@ const AppStyles = styled.div`
 `
 
 const App = () => (
-  <Router>
-    <AppStyles>
-      <nav>
-        <Link exact to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/blog">Blog</Link>
-      </nav>
-      <div className="content">
-        <Routes />
-      </div>
-    </AppStyles>
-  </Router>
+  <ThemeProvider theme={theme}>
+    <Router>
+      <AppStyles>
+        <div className="content">
+          <Routes />
+        </div>
+      </AppStyles>
+    </Router>
+  </ThemeProvider>
 )
 
 export default hot(module)(App)

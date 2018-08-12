@@ -14,24 +14,6 @@ export default {
         component: 'src/containers/Home',
       },
       {
-        path: '/about',
-        component: 'src/containers/About',
-      },
-      {
-        path: '/blog',
-        component: 'src/containers/Blog',
-        getData: () => ({
-          posts,
-        }),
-        children: posts.map(post => ({
-          path: `/post/${post.id}`,
-          component: 'src/containers/Post',
-          getData: () => ({
-            post,
-          }),
-        })),
-      },
-      {
         is404: true,
         component: 'src/containers/404',
       },
@@ -54,6 +36,7 @@ export default {
           <Head>
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet" />
             {renderMeta.styleTags}
           </Head>
           <Body>{children}</Body>
