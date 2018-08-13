@@ -18,6 +18,7 @@ const Row = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: ${props => props.justifyContent};
+  text-align: 'center';
   ${fontSize};
   ${space};
   ${width};
