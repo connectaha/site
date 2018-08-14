@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { post } from 'axios'
 import { withSiteData } from 'react-static'
 import styled from 'styled-components'
-import { fontSize, space, width } from 'styled-system'
+import { color, fontSize, space, width } from 'styled-system'
 
 const Center = styled.div`
   display: flex;
@@ -11,14 +11,13 @@ const Center = styled.div`
   flex-grow: 1;
   overflow: hidden;
   margin: 15%;
-  color: #58595b;
+  color: ${props => props.theme.colors.dark}
 `
 
 const Row = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: ${props => props.justifyContent};
-  text-align: center;
   ${fontSize};
   ${space};
   ${width};
@@ -29,6 +28,10 @@ Row.defaultProps = {
   justifyContent: 'space-around',
   py: 3,
 }
+
+const Text = styled.div`
+  text-align: center;
+`;
 
 const Input = styled.input`
   border: solid .0625rem black;
@@ -57,6 +60,7 @@ const Button = styled.button`
   padding: 0;
   ${space};
   ${fontSize};
+  ${color};
 `
 Button.defaultProps = {
   fontSize: 4,
@@ -90,17 +94,17 @@ export default class Home extends Component {
     return (<div>
       <Center>
         <h1>Connectaha</h1>
-        <Row>A new conference is coming to Omaha. A conference that believes
+        <Row><Text>A new conference is coming to Omaha. A conference that believes
            that everyone in the software world can learn from each other. A conference
            that believes quality software only happens when everyone on the team is
            communicating. A conference that believes those with less experience provide
-          just as much value as the most senior team member.
+          just as much value as the most senior team member.</Text>
         </Row>
-        <Row>A conference that believes there’s power when people talk.</Row>
-        <Row>If you’d like to be kept in the know about this conference, sign up below.</Row>
+        <Row><Text>A conference that believes there’s power when people talk.</Text></Row>
+        <Row><Text>If you’d like to be kept in the know about this conference, sign up below.</Text></Row>
         <Row width={0.5}>
           <Input type="text" value={this.state.email} onChange={this.onChange} />
-          <Button type="button" ml={2} p={2} onClick={this.save}>Notify Me</Button>
+          <Button bg='primary' color='white' type="button" ml={2} p={2} onClick={this.save}>Notify Me</Button>
         </Row>
       </Center>
     </div>)
