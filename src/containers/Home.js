@@ -3,6 +3,7 @@ import { post } from 'axios'
 import { withSiteData } from 'react-static'
 import styled from 'styled-components'
 import { color, fontSize, space, width } from 'styled-system'
+import logo from '../logo_tag_425.png';
 
 const Center = styled.div`
   display: flex;
@@ -11,7 +12,7 @@ const Center = styled.div`
   flex-grow: 1;
   overflow: hidden;
   margin: 15%;
-  color: ${props => props.theme.colors.dark}
+  color: ${props => props.theme.colors.dark};
 `
 
 const Row = styled.div`
@@ -93,7 +94,7 @@ export default class Home extends Component {
   render () {
     return (<div>
       <Center>
-        <h1>Connectaha</h1>
+        <img src={logo} alt='Connectaha Logo' />
         <Row><Text>A new conference is coming to Omaha. A conference that believes
            that everyone in the software world can learn from each other. A conference
            that believes quality software only happens when everyone on the team is
