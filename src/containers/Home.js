@@ -3,7 +3,7 @@ import { post } from 'axios'
 import { withSiteData } from 'react-static'
 import styled from 'styled-components'
 import { color, fontSize, space, width } from 'styled-system'
-import logo from '../logo_tag_425.svg'
+import logo from '../logo_tag_425.png'
 
 const Center = styled.div`
   display: flex;
@@ -96,7 +96,7 @@ export default class Home extends Component {
   render () {
     return (<div>
       <Center>
-        <img src={logo} alt="Connectaha Logo" height="127" width="425" />
+        <img src={logo} alt="Connectaha Logo" width="425" height="131" />
         <Row><Text>A new conference is coming to Omaha. A conference that believes
            that everyone in the software world can learn from each other. A conference
            that believes quality software only happens when everyone on the team is
