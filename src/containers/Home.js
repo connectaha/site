@@ -3,7 +3,7 @@ import { post } from 'axios'
 import { withSiteData } from 'react-static'
 import styled from 'styled-components'
 import { color, fontSize, space, width } from 'styled-system'
-import logo from '../logo_tag_425.png';
+import logo from '../logo_tag_425.svg'
 
 const Center = styled.div`
   display: flex;
@@ -11,7 +11,9 @@ const Center = styled.div`
   align-items: center;
   flex-grow: 1;
   overflow: hidden;
-  margin: 15%;
+  margin-top: 32px;
+  margin-left: 10%;
+  margin-right: 10%;
   color: ${props => props.theme.colors.dark};
 `
 
@@ -32,7 +34,7 @@ Row.defaultProps = {
 
 const Text = styled.div`
   text-align: center;
-`;
+`
 
 const Input = styled.input`
   border: solid .0625rem black;
@@ -94,18 +96,19 @@ export default class Home extends Component {
   render () {
     return (<div>
       <Center>
-        <img src={logo} alt='Connectaha Logo' />
+        <img src={logo} alt="Connectaha Logo" height="127" width="425" />
         <Row><Text>A new conference is coming to Omaha. A conference that believes
            that everyone in the software world can learn from each other. A conference
            that believes quality software only happens when everyone on the team is
            communicating. A conference that believes those with less experience provide
-          just as much value as the most senior team member.</Text>
+          just as much value as the most senior team member.
+        </Text>
         </Row>
         <Row><Text>A conference that believes there’s power when people talk.</Text></Row>
         <Row><Text>If you’d like to be kept in the know about this conference, sign up below.</Text></Row>
         <Row width={0.5}>
           <Input type="text" value={this.state.email} onChange={this.onChange} />
-          <Button bg='primary' color='white' type="button" ml={2} p={2} onClick={this.save}>Notify Me</Button>
+          <Button bg="primary" color="white" type="button" ml={2} p={2} onClick={this.save}>Notify Me</Button>
         </Row>
       </Center>
     </div>)
