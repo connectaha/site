@@ -11,8 +11,8 @@ const Center = styled.div`
   align-items: center;
   flex-grow: 1;
   overflow: hidden;
-  margin: 15%;
   color: ${props => props.theme.colors.dark};
+  ${space};
 `
 
 const Row = styled.div`
@@ -33,7 +33,7 @@ Row.defaultProps = {
 
 const Text = styled.div`
   text-align: center;
-`;
+`
 
 const Input = styled.input`
   border: solid .0625rem black;
@@ -94,19 +94,20 @@ export default class Home extends Component {
 
   render () {
     return (<div>
-      <Center>
-        <img src={logo} alt='Connectaha Logo' />
+      <Center mt={4} mx={[3, 4, 5, 6]}>
+        <img src={logo} alt="Connectaha Logo" width="425" height="131" />
         <Row><Text>A new conference is coming to Omaha. A conference that believes
            that everyone in the software world can learn from each other. A conference
            that believes quality software only happens when everyone on the team is
            communicating. A conference that believes those with less experience provide
-          just as much value as the most senior team member.</Text>
+          just as much value as the most senior team member.
+        </Text>
         </Row>
         <Row><Text>A conference that believes there’s power when people talk.</Text></Row>
         <Row><Text>If you’d like to be kept in the know about this conference, sign up below.</Text></Row>
-        <Row flexWrap='wrap'>
+        <Row>
           <Input type="text" value={this.state.email} onChange={this.onChange} />
-          <Button bg='primary' color='white' type="button" ml={[0, 2]} p={[0, 2]} onClick={this.save}>Notify Me</Button>
+          <Button bg='primary' color='white' type="button" ml={[0, 2]} p={2} onClick={this.save}>Notify Me</Button>
         </Row>
       </Center>
     </div>)
