@@ -68,6 +68,10 @@ Button.defaultProps = {
   fontSize: 4,
 }
 
+const Image = styled.img`
+  ${width};
+`;
+
 export default class Home extends Component {
   constructor () {
     super()
@@ -94,8 +98,8 @@ export default class Home extends Component {
 
   render () {
     return (<div>
-      <Center mt={4} mx={[3, 4, 5, 6]} width={1}>
-        <img src={logo} alt="Connectaha Logo" width="425" height="131" />
+      <Center mt={4} mx={[3, 4, 5, 6]}>
+        <Image src={logo} alt="Connectaha Logo" width={[1, 0.75, 0.5]} height="131" />
         <Row><Text>A new conference is coming to Omaha. A conference that believes
            that everyone in the software world can learn from each other. A conference
            that believes quality software only happens when everyone on the team is
