@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import { post } from 'axios'
 import { withSiteData } from 'react-static'
 import styled from 'styled-components'
-import { color, flexbox, fontSize, space, width } from 'styled-system'
+import { color, fontSize, space, width } from 'styled-system'
+import {Flex} from 'rebass';
 import logo from '../logo_tag_425.png';
 
 const Center = styled.div`
@@ -19,7 +20,6 @@ const Row = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: ${props => props.justifyContent};
-  ${flexbox};
   ${fontSize};
   ${space};
   ${width};
@@ -94,7 +94,7 @@ export default class Home extends Component {
 
   render () {
     return (<div>
-      <Center mt={4} mx={[3, 4, 5, 6]}>
+      <Center mt={4} mx={[3, 4, 5, 6]} width={1}>
         <img src={logo} alt="Connectaha Logo" width="425" height="131" />
         <Row><Text>A new conference is coming to Omaha. A conference that believes
            that everyone in the software world can learn from each other. A conference
@@ -105,10 +105,10 @@ export default class Home extends Component {
         </Row>
         <Row><Text>A conference that believes there’s power when people talk.</Text></Row>
         <Row><Text>If you’d like to be kept in the know about this conference, sign up below.</Text></Row>
-        <Row>
+        <Flex flexDirection='row' flexWrap='wrap' justifyContent='space-around'>
           <Input type="text" value={this.state.email} onChange={this.onChange} />
           <Button bg='primary' color='white' type="button" ml={[0, 2]} p={2} onClick={this.save}>Notify Me</Button>
-        </Row>
+        </Flex>
       </Center>
     </div>)
   }

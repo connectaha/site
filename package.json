@@ -15,6 +15,7 @@
     "react-dom": "^16.0.0",
     "react-router": "^4.2.0",
     "react-static": "^5.9.7",
+    "rebass": "^2.1.0",
     "styled-components": "^3",
     "styled-system": "^3.0.2"
   },
