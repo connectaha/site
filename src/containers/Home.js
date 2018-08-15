@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { post } from 'axios'
 import { withSiteData } from 'react-static'
 import styled from 'styled-components'
-import { color, fontSize, space, width } from 'styled-system'
+import { color, flexbox, fontSize, space, width } from 'styled-system'
 import logo from '../logo_tag_425.png';
 
 const Center = styled.div`
@@ -19,6 +19,7 @@ const Row = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: ${props => props.justifyContent};
+  ${flexbox};
   ${fontSize};
   ${space};
   ${width};
@@ -103,9 +104,9 @@ export default class Home extends Component {
         </Row>
         <Row><Text>A conference that believes there’s power when people talk.</Text></Row>
         <Row><Text>If you’d like to be kept in the know about this conference, sign up below.</Text></Row>
-        <Row width={0.5}>
+        <Row flexWrap='wrap'>
           <Input type="text" value={this.state.email} onChange={this.onChange} />
-          <Button bg='primary' color='white' type="button" ml={2} p={2} onClick={this.save}>Notify Me</Button>
+          <Button bg='primary' color='white' type="button" ml={[0, 2]} p={[0, 2]} onClick={this.save}>Notify Me</Button>
         </Row>
       </Center>
     </div>)
