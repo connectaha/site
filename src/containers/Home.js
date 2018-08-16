@@ -3,8 +3,9 @@ import { post } from 'axios'
 import { withSiteData } from 'react-static'
 import styled from 'styled-components'
 import { color, fontSize, space, width } from 'styled-system'
-import { Flex } from 'rebass'
-import logo from '../logo_tag_425.svg'
+import {Flex} from 'rebass';
+import logo from '../logo_tag_425.png';
+import ButterToast, { CinnamonSugar }  from 'butter-toast';
 
 const Center = styled.div`
   display: flex;
@@ -84,14 +85,25 @@ export default class Home extends Component {
     this.setState({ email: event.target.value })
   }
 
+  showToast = () => {
+    const toast = CinnamonSugar.crunch({
+      theme: 'green',
+      message: 'Thanks! There will be more info in the coming days.',
+      toastTimeout: 10000
+    });
+    ButterToast.raise(toast);
+  }
+
   save = () => {
     const { email } = this.state
 
     post('https://sqc5wucuwc.execute-api.us-east-2.amazonaws.com/prod/save', {
       email,
     }).then(() => {
+      this.showToast();
       this.setState({ email: '' })
     }).catch(() => {
+      this.showToast();
       this.setState({ email: '' })
     })
   }
@@ -114,6 +126,7 @@ export default class Home extends Component {
           <Button bg="primary" color="white" type="button" ml={[0, 2]} p={2} onClick={this.save}>Notify Me</Button>
         </Flex>
       </Center>
-            </div>)
+      <ButterToast/>
+    </div>)
   }
 }
