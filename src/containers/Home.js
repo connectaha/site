@@ -71,7 +71,7 @@ Button.defaultProps = {
 
 const Image = styled.img`
   ${width};
-`;
+`
 
 export default class Home extends Component {
   constructor () {
@@ -117,13 +117,13 @@ export default class Home extends Component {
            that believes quality software only happens when everyone on the team is
            communicating. A conference that believes those with less experience provide
           just as much value as the most senior team member.
-        </Text>
+             </Text>
         </Row>
         <Row><Text>A conference that believes there’s power when people talk.</Text></Row>
         <Row><Text>If you’d like to be kept in the know about this conference, sign up below.</Text></Row>
-        <Flex flexDirection='row' flexWrap='wrap' justifyContent='space-around'>
+        <Flex flexDirection="row" flexWrap="wrap" justifyContent="space-around">
           <Input type="text" value={this.state.email} onChange={this.onChange} />
-          <Button bg='primary' color='white' type="button" ml={[0, 2]} p={2} onClick={this.save}>Notify Me</Button>
+          <Button bg="primary" color="white" type="button" ml={[0, 2]} p={2} onClick={this.save}>Notify Me</Button>
         </Flex>
       </Center>
       <ButterToast/>
