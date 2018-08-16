@@ -123,7 +123,7 @@ export default class Home extends Component {
         <Row><Text>If you’d like to be kept in the know about this conference, sign up below.</Text></Row>
         <Flex flexDirection="row" flexWrap="wrap" justifyContent="space-around">
           <Input type="text" value={this.state.email} onChange={this.onChange} />
-          <Button bg="primary" color="white" type="button" ml={[0, 2]} p={2} onClick={this.save}>Notify Me</Button>
+          <Button bg="primary" color="white" type="button" ml={[0, 2]} p={3} onClick={this.save}>Notify Me</Button>
         </Flex>
       </Center>
       <ButterToast />
