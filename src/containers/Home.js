@@ -3,9 +3,9 @@ import { post } from 'axios'
 import { withSiteData } from 'react-static'
 import styled from 'styled-components'
 import { color, fontSize, space, width } from 'styled-system'
-import {Flex} from 'rebass';
-import logo from '../logo_tag_425.png';
-import ButterToast, { CinnamonSugar }  from 'butter-toast';
+import { Flex } from 'rebass'
+import logo from '../logo_tag_425.svg'
+import ButterToast, { CinnamonSugar } from 'butter-toast'
 
 const Center = styled.div`
   display: flex;
@@ -89,9 +89,9 @@ export default class Home extends Component {
     const toast = CinnamonSugar.crunch({
       theme: 'green',
       message: 'Thanks! There will be more info in the coming days.',
-      toastTimeout: 10000
-    });
-    ButterToast.raise(toast);
+      toastTimeout: 10000,
+    })
+    ButterToast.raise(toast)
   }
 
   save = () => {
@@ -100,10 +100,10 @@ export default class Home extends Component {
     post('https://sqc5wucuwc.execute-api.us-east-2.amazonaws.com/prod/save', {
       email,
     }).then(() => {
-      this.showToast();
+      this.showToast()
       this.setState({ email: '' })
     }).catch(() => {
-      this.showToast();
+      this.showToast()
       this.setState({ email: '' })
     })
   }
@@ -117,7 +117,7 @@ export default class Home extends Component {
            that believes quality software only happens when everyone on the team is
            communicating. A conference that believes those with less experience provide
           just as much value as the most senior team member.
-             </Text>
+        </Text>
         </Row>
         <Row><Text>A conference that believes there’s power when people talk.</Text></Row>
         <Row><Text>If you’d like to be kept in the know about this conference, sign up below.</Text></Row>
@@ -126,7 +126,7 @@ export default class Home extends Component {
           <Button bg="primary" color="white" type="button" ml={[0, 2]} p={2} onClick={this.save}>Notify Me</Button>
         </Flex>
       </Center>
-      <ButterToast/>
-    </div>)
+      <ButterToast />
+            </div>)
   }
 }
