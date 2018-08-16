@@ -36,6 +36,7 @@ export default {
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet" />
+            <title>Connectaha</title>
             {renderMeta.styleTags}
           </Head>
           <Body>{children}</Body>
