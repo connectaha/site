@@ -41,8 +41,8 @@ const Input = styled.input`
   border-radius: 4px;
   color: black;
   vertical-align: middle;
-  flex-grow: 1;
   outline: none;
+  flex-grow: 1;
   ${fontSize};
   ${space};
   ${width};
@@ -121,12 +121,12 @@ export default class Home extends Component {
         </Row>
         <Row><Text>A conference that believes there’s power when people talk.</Text></Row>
         <Row><Text>If you’d like to be kept in the know about this conference, sign up below.</Text></Row>
-        <Flex flexDirection="row" flexWrap="wrap" justifyContent="space-around">
+        <Flex flexDirection="row" flexWrap="wrap" justifyContent="space-around" width={0.8}>
           <Input type="text" value={this.state.email} onChange={this.onChange} />
           <Button bg="primary" color="white" type="button" ml={[0, 2]} p={2} onClick={this.save}>Notify Me</Button>
         </Flex>
       </Center>
       <ButterToast />
-            </div>)
+    </div>)
   }
 }
