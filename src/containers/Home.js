@@ -4,7 +4,7 @@ import { withSiteData } from 'react-static'
 import styled from 'styled-components'
 import { color, fontSize, space, width } from 'styled-system'
 import { Flex } from 'rebass'
-import logo from '../logo_tag_425.svg'
+import logo from '../logo_tag_400.svg'
 import ButterToast, { CinnamonSugar } from 'butter-toast'
 
 const Center = styled.div`
