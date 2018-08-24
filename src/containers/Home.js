@@ -131,8 +131,10 @@ export default class Home extends Component {
           <Input mb={2} type="text" value={this.state.email} onChange={this.onChange} />
           <Button mb={2} bg="primary" color="white" type="button" ml={[0, 2]} p={3} onClick={this.save}>Notify Me</Button>
         </Flex>
+
+        <Row><Text>Interested in speaking? The CFP will open September 3, 2018</Text></Row>
       </Center>
       <ButterToast />
-            </div>)
+    </div>)
   }
 }
