@@ -33,7 +33,6 @@ Row.defaultProps = {
 }
 
 const Text = styled.div`
-  text-align: center;
 `
 
 const Input = styled.input`
@@ -112,21 +111,28 @@ export default class Home extends Component {
     return (<div>
       <Center mt={4} mx={[3, 4, 5, 6]}>
         <Image src={logo} alt="Connectaha Logo" width={[1, 0.75, 0.5]} height="131" />
-        <Row><Text>A new conference is coming to Omaha. A conference that believes
+        <Row width={[1, 0.75, 0.5]}>
+          <Text>A new conference is coming to Omaha. A conference that believes
            that everyone in the software world can learn from each other. A conference
            that believes quality software only happens when everyone on the team is
            communicating. A conference that believes those with less experience provide
           just as much value as the most senior team member.
-        </Text>
+          </Text>
         </Row>
-        <Row><Text>A conference that believes there’s power when people talk.</Text></Row>
-        <Row><Text>If you’d like to be kept in the know about this conference, sign up below.</Text></Row>
-        <Flex flexDirection="row" flexWrap="wrap" justifyContent="space-around" width={0.8}>
-          <Input type="text" value={this.state.email} onChange={this.onChange} />
-          <Button bg="primary" color="white" type="button" ml={[0, 2]} p={3} onClick={this.save}>Notify Me</Button>
+        <Row width={[1, 0.75, 0.5]}>
+          <Text>
+            A conference that believes there’s power when people talk.
+          </Text>
+        </Row>
+        <Row width={[1, 0.75, 0.5]}>
+          <Text>If you’d like to be kept in the know about this conference, sign up below.</Text>
+        </Row>
+        <Flex flexDirection="row" flexWrap="wrap" justifyContent="space-around" width={[1, 0.75, 0.5]}>
+          <Input mb={2} type="text" value={this.state.email} onChange={this.onChange} />
+          <Button mb={2} bg="primary" color="white" type="button" ml={[0, 2]} p={3} onClick={this.save}>Notify Me</Button>
         </Flex>
       </Center>
       <ButterToast />
-    </div>)
+            </div>)
   }
 }
