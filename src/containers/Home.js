@@ -132,7 +132,9 @@ export default class Home extends Component {
           <Button mb={2} bg="primary" color="white" type="button" ml={[0, 2]} p={3} onClick={this.save}>Notify Me</Button>
         </Flex>
 
-        <Row><Text>Interested in speaking? The CFP will open September 3, 2018</Text></Row>
+        <Row width={[1, 0.75, 0.5]}>
+          <Text>Interested in speaking? The CFP will open September 3, 2018</Text>
+        </Row>
       </Center>
       <ButterToast />
     </div>)
