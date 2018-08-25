@@ -13,6 +13,10 @@ export default {
         component: 'src/containers/Home',
       },
       {
+        path: '/details',
+        component: 'src/containers/Details'
+      },
+      {
         is404: true,
         component: 'src/containers/404',
       },
