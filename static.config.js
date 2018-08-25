@@ -17,6 +17,10 @@ export default {
         component: 'src/containers/Details'
       },
       {
+        path: '/sponsorship',
+        component: 'src/containers/Sponsorship'
+      },
+      {
         is404: true,
         component: 'src/containers/404',
       },

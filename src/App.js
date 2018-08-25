@@ -1,9 +1,10 @@
 import React from 'react'
 import { Router, Link } from 'react-static'
-import styled, { injectGlobal, ThemeProvider } from 'styled-components'
+import styled, { injectGlobal } from 'styled-components'
 import { hot } from 'react-hot-loader'
 import { NavLink, Toolbar } from 'rebass'
 import theme from './theme';
+import { Provider as ThemeProvider } from 'rebass';
 
 //
 import Routes from 'react-static-routes'

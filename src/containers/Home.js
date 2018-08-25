@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { post } from 'axios'
-import { withSiteData } from 'react-static'
 import styled from 'styled-components'
 import { color, fontSize, space, width } from 'styled-system'
 import { Flex } from 'rebass'
 import logo from '../logo_tag_400.svg'
 import ButterToast, { CinnamonSugar } from 'butter-toast'
+import Input from '../components/input';
 
 const Center = styled.div`
   display: flex;
@@ -29,28 +29,11 @@ const Row = styled.div`
 Row.defaultProps = {
   fontSize: 4,
   justifyContent: 'space-around',
-  py: 3,
+  py: 4,
 }
 
 const Text = styled.div`
 `
-
-const Input = styled.input`
-  border: solid .0625rem black;
-  border-radius: 4px;
-  color: black;
-  vertical-align: middle;
-  outline: none;
-  flex-grow: 1;
-  ${fontSize};
-  ${space};
-  ${width};
-`
-
-Input.defaultProps = {
-  fontSize: 4,
-  linHeight: 4,
-}
 
 const Button = styled.button`
   outline: none;
@@ -109,7 +92,7 @@ export default class Home extends Component {
 
   render () {
     return (<div>
-      <Center mt={4} mx={[3, 4, 5, 6]}>
+      <Center mt={5} mx={[4, 5, 6, 7]}>
         <Image src={logo} alt="Connectaha Logo" width={[1, 0.75, 0.5]} height="131" />
         <Row width={[1, 0.75, 0.5]}>
           <Text>A new conference is coming to Omaha. A conference that believes
@@ -128,8 +111,8 @@ export default class Home extends Component {
           <Text>If you’d like to be kept in the know about this conference, sign up below.</Text>
         </Row>
         <Flex flexDirection="row" flexWrap="wrap" justifyContent="space-around" width={[1, 0.75, 0.5]}>
-          <Input mb={2} type="text" value={this.state.email} onChange={this.onChange} />
-          <Button mb={2} bg="primary" color="white" type="button" ml={[0, 2]} p={3} onClick={this.save}>Notify Me</Button>
+          <Input mb={3} type="text" value={this.state.email} onChange={this.onChange} />
+          <Button mb={3} bg="primary" color="white" type="button" ml={[1, 3]} p={4} onClick={this.save}>Notify Me</Button>
         </Flex>
 
         <Row width={[1, 0.75, 0.5]}>
