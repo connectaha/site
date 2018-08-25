@@ -11,6 +11,7 @@ export default class Default extends Component {
                     <Input border={0} boxShadow={0} name='name'></Input>
                     <Label>Message</Label>
                     <Textarea rows={4} border={0} borderColor='black' borderRadius='4px' name='message'/>
+                    <div data-netlify-recaptcha></div>
                     <Flex justifyContent='flex-end' pt={4}>
                         <Button type='submit' children='Save' bg='primary' />
                     </Flex>
