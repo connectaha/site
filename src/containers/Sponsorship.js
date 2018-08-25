@@ -5,8 +5,9 @@ import Input from '../components/input';
 export default class Default extends Component {
     render() {
         return (
-            <form name='sponsorship' method='POST' netlify="true">
+            <form name='sponsorship' method='POST' netlify>
                 <Flex flexDirection='column' p={5}>
+                    <input type="hidden" name="form-name" value="sponsorship" />
                     <Label>Name</Label>
                     <Input border={0} boxShadow={0} name='name'></Input>
                     <Label>Message</Label>
