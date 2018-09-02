@@ -133,7 +133,7 @@ export default class Home extends Component {
         </Flex>
 
         <Row width={[1, 0.75, 0.5]}>
-          <Text>Interested in speaking? The CFP will open September 3, 2018</Text>
+          <Text>Interested in speaking? The <a href='https://www.papercall.io/connectaha'>CFP is open</a> and we'd love to see your submissions.</Text>
         </Row>
       </Center>
       <ButterToast />
