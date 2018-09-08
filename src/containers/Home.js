@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { post } from 'axios'
 import styled from 'styled-components'
 import { color, fontSize, space, width } from 'styled-system'
-import { Link } from 'rebass'
+import { Button } from 'rebass'
 import logo from '../logo_tag_400.svg'
 import ButterToast, { CinnamonSugar } from 'butter-toast'
 
@@ -33,26 +33,20 @@ Row.defaultProps = {
 
 const Text = styled.div`
 `
-
-const Button = styled.button`
-  outline: none;
-  background-clip: border-box;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  padding: 0;
-  ${space};
-  ${fontSize};
-  ${color};
-`
-Button.defaultProps = {
-  fontSize: 4,
-}
-
 const Image = styled.img`
   ${width};
 `
+
+const BigButton = styled(Button)`
+`;
+
+BigButton.defaultProps = {
+  fontSize: 4,
+  px: 5,
+  py: 5,
+  bg: 'primary',
+  color: 'white'
+}
 
 export default class Home extends Component {
   constructor () {
@@ -89,6 +83,14 @@ export default class Home extends Component {
     })
   }
 
+  goToTickets = () => {
+    window.location = 'https://eventbrite.com';
+  };
+
+  goToCfp = () => {
+    window.location = 'https://papercall.io/connectaha';
+  };
+
   render () {
     return (<div>
       <Center mt={5} mx={[4, 5, 6, 7]}>
@@ -108,11 +110,8 @@ export default class Home extends Component {
         </Row>
 
         <Row width={[1, 0.75, 0.5]}>
-          <Text>Early bird tickets are now <Link href='https://www.papercall.io/connectaha' children='on sale' color='primary'/> for $150</Text>
-        </Row>
-
-        <Row width={[1, 0.75, 0.5]}>
-          <Text>Interested in speaking? The <Link href='https://www.papercall.io/connectaha' children='CFP is open' color='primary'/> and we'd love to see your submissions.</Text>
+          <BigButton children='Get an Early Bird Ticket' onClick={this.goToTickets}/>
+          <BigButton children='Submit a Talk' onClick={this.goToCfp}/>
         </Row>
       </Center>
       <ButterToast />
