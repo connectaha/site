@@ -32,7 +32,8 @@ const App = () => (
         <div className="content">
           <Toolbar color='white' bg='gray'>
             <NavLink to='/' is={Link} children='Connectaha' />
-            <NavLink to='/details' ml='auto' is={Link} children='Event Details' />
+            <NavLink to='https://papercall.io/connectaha' ml='auto' is={Link} children='Submit a Talk' />
+            <NavLink to='/details' is={Link} children='Details' />
             {/* <NavLink to='/sponsorship' is={Link} children='Sponsorship' /> */}
           </Toolbar>
           <Routes />

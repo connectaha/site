@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { post } from 'axios'
 import styled from 'styled-components'
 import { color, fontSize, space, width } from 'styled-system'
-import { Button } from 'rebass'
+import { Button, Flex } from 'rebass'
 import logo from '../logo_tag_400.svg'
 import ButterToast, { CinnamonSugar } from 'butter-toast'
 
@@ -38,6 +38,7 @@ const Image = styled.img`
 `
 
 const BigButton = styled(Button)`
+  flex-grow: 1;
 `;
 
 BigButton.defaultProps = {
@@ -49,7 +50,7 @@ BigButton.defaultProps = {
 }
 
 export default class Home extends Component {
-  constructor () {
+  constructor() {
     super()
     this.state = {
       email: '',
@@ -91,7 +92,7 @@ export default class Home extends Component {
     window.location = 'https://papercall.io/connectaha';
   };
 
-  render () {
+  render() {
     return (<div>
       <Center mt={5} mx={[4, 5, 6, 7]}>
         <Image src={logo} alt="Connectaha Logo" width={[1, 0.75, 0.5]} height="131" />
@@ -110,8 +111,9 @@ export default class Home extends Component {
         </Row>
 
         <Row width={[1, 0.75, 0.5]}>
-          <BigButton children='Get an Early Bird Ticket' onClick={this.goToTickets}/>
-          <BigButton children='Submit a Talk' onClick={this.goToCfp}/>
+          <Flex wrap='wrap'>
+            <BigButton children='Get a Ticket' onClick={this.goToTickets} />
+          </Flex>
         </Row>
       </Center>
       <ButterToast />
