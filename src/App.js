@@ -30,10 +30,10 @@ const App = () => (
     <Router>
       <AppStyles>
         <div className="content">
-          <Toolbar color='white' bg='primary'>
+          <Toolbar color='white' bg='gray'>
             <NavLink to='/' is={Link} children='Connectaha' />
             <NavLink to='/details' ml='auto' is={Link} children='Event Details' />
-            <NavLink to='/sponsorship' is={Link} children='Sponsorship' />
+            {/* <NavLink to='/sponsorship' is={Link} children='Sponsorship' /> */}
           </Toolbar>
           <Routes />
         </div>

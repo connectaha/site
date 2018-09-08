@@ -2,10 +2,9 @@ import React, { Component } from 'react'
 import { post } from 'axios'
 import styled from 'styled-components'
 import { color, fontSize, space, width } from 'styled-system'
-import { Flex } from 'rebass'
+import { Link } from 'rebass'
 import logo from '../logo_tag_400.svg'
 import ButterToast, { CinnamonSugar } from 'butter-toast'
-import Input from '../components/input';
 
 const Center = styled.div`
   display: flex;
@@ -107,16 +106,13 @@ export default class Home extends Component {
             A conference that believes there’s power when people talk.
           </Text>
         </Row>
-        <Row width={[1, 0.75, 0.5]}>
-          <Text>If you’d like to be kept in the know about this conference, sign up below.</Text>
-        </Row>
-        <Flex flexDirection="row" flexWrap="wrap" justifyContent="space-around" width={[1, 0.75, 0.5]}>
-          <Input mb={3} type="text" value={this.state.email} onChange={this.onChange} />
-          <Button mb={3} bg="primary" color="white" type="button" ml={[1, 3]} p={4} onClick={this.save}>Notify Me</Button>
-        </Flex>
 
         <Row width={[1, 0.75, 0.5]}>
-          <Text>Interested in speaking? The <a href='https://www.papercall.io/connectaha'>CFP is open</a> and we'd love to see your submissions.</Text>
+          <Text>Early bird tickets are now <Link href='https://www.papercall.io/connectaha' children='on sale' color='primary'/> for $150</Text>
+        </Row>
+
+        <Row width={[1, 0.75, 0.5]}>
+          <Text>Interested in speaking? The <Link href='https://www.papercall.io/connectaha' children='CFP is open' color='primary'/> and we'd love to see your submissions.</Text>
         </Row>
       </Center>
       <ButterToast />
