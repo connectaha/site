@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { post } from 'axios'
-import styled from 'styled-components'
+import styled from 'styled-components';
 import { color, fontSize, space, width } from 'styled-system'
 import { Button, Flex } from 'rebass'
 import logo from '../logo_tag_400.svg'
@@ -85,7 +85,7 @@ export default class Home extends Component {
   }
 
   goToTickets = () => {
-    window.location = 'https://eventbrite.com';
+    window.location = 'https://www.eventbrite.com/e/connectaha-conference-2019-tickets-49878979370';
   };
 
   goToCfp = () => {
