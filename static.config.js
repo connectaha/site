@@ -20,9 +20,16 @@ export default {
       {
         path: '/speakers',
         component: 'src/containers/Speakers',
-        getData: () => {
-          return {speakers}
-        }
+        getData: () => ({
+          speakers
+        }),
+        children: speakers.map(speaker => ({
+          path: `/speaker/${speaker.id}`,
+          component: 'src/containers/Speaker',
+          getData: () => ({
+            speaker,
+          }),
+        }))
       },
       {
         path: '/sponsorship',

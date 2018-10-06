@@ -1,5 +1,6 @@
 [
     {
+        "id": "john-henry-muller",
         "name": "John Henry Müller",
         "bio": "John Henry Müller is a Design Director at Hudl, a sports technology software used by teams around the world (including Premier League, NBA, NHL, NFL, NCAA, and 98% of high school football teams). At Hudl, he focuses on visual design spanning both product and brand design, with a team of over 30 designers. John Henry led the visual direction of Uniform, Hudl's design system.\r\n\r\nBefore Hudl, John Henry was the design cofounder of a startup called Pack. Before that, he founded a design/dev consultancy called What Cheer, with clients including Squidoo, Hayneedle, Union Pacific Railroad, US Department of Energy and Saddle Creek Records. John Henry lives in Benson, Omaha, Nebraska with his wife, daughter, dog and two cats. He sits on the board of Big Omaha and Maha Music Festival. He was gluten-free before (and after) it was cool.",
         "title": "From Color Palette to Color System",
@@ -7,6 +8,7 @@
         "photo": ""
     },
     {
+        "id": "beth-laing",
         "name": "Beth Laing",
         "bio": "Beth grew-up in online journalism, working with newspaper companies in Atlanta, GA, San Jose, CA and Saint Paul, MN with a detour to work for an internet start-up, Infonautics, in Philadelphia, PA along the way.  After leaving the world of newspapers, Beth worked as a project manager for several organizations focused on the intersection of news, society and technology. In 2015 she transitioned into software development with the help of a full immersion bootcamp. As one of the directors for Women Who Code's Atlanta chapter, Beth works to create great programming and build community for the amazing women in technology of Atlanta.  She is passionate about making technology a welcoming community for everyone and breaking down barriers. Beth works as a software developer at CNN/Turner on a variety of projects for internal customer. She spends a lot of time figuring out why things don't work and how to fix them!\r\n\r\n",
         "title": "You're Hired! Avoiding missteps and false starts in your new job",
@@ -14,6 +16,7 @@
         "photo": ""
     },
     {
+        "id": "courtney-heitman",
         "name": "Courtney Heitman",
         "bio": "Courtney's passion for the web all started with teaching her 11-year-old self how to write CSS on a dial-up internet connection on a farm in rural Iowa. Since then she has been in a myriad of positions including a Flash developer for several higher ed institutions, a Joomla developer, a brief stint as a server admin, a designer, a full stack developer, and a project manager. Currently, Courtney is a UX Developer, Scrum Master, and Accessibility Compliance Specialist for Gallup in Omaha, Nebraska. Her passion is making a web that is usable and accessible to all.",
         "title": "Mapping the User's Journey",
@@ -21,6 +24,7 @@
         "photo": ""
     },
     {
+        "id": "jon-mills",
         "name": "Jonathan Mills",
         "bio": "Jon is a Pluralsight author, Microsoft MVP, and international speaker focusing on JavaScript both in the browser and on the server.  Jonathan Mills is a JavaScript and Node.js expert working in the mean stack with individuals and companies to help build their technical skills to cope with the constantly changing landscape of software development. ",
         "title": "",
