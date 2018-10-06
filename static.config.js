@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { Component } from 'react'
 import { ServerStyleSheet } from 'styled-components'
+const speakers = require('./speakers.json');
 
 export default {
   getSiteData: () => ({
@@ -15,6 +16,13 @@ export default {
       {
         path: '/details',
         component: 'src/containers/Details'
+      },
+      {
+        path: '/speakers',
+        component: 'src/containers/Speakers',
+        getData: () => {
+          return {speakers}
+        }
       },
       {
         path: '/sponsorship',
