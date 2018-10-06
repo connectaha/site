@@ -4,6 +4,7 @@ import { ServerStyleSheet } from 'styled-components'
 const speakers = require('./speakers.json');
 
 export default {
+  siteRoot: '',
   getSiteData: () => ({
     title: 'Connectaha',
   }),
