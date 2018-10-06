@@ -5,7 +5,7 @@
         "bio": "John Henry Müller is a Design Director at Hudl, a sports technology software used by teams around the world (including Premier League, NBA, NHL, NFL, NCAA, and 98% of high school football teams). At Hudl, he focuses on visual design spanning both product and brand design, with a team of over 30 designers. John Henry led the visual direction of Uniform, Hudl's design system.\r\n\r\nBefore Hudl, John Henry was the design cofounder of a startup called Pack. Before that, he founded a design/dev consultancy called What Cheer, with clients including Squidoo, Hayneedle, Union Pacific Railroad, US Department of Energy and Saddle Creek Records. John Henry lives in Benson, Omaha, Nebraska with his wife, daughter, dog and two cats. He sits on the board of Big Omaha and Maha Music Festival. He was gluten-free before (and after) it was cool.",
         "title": "From Color Palette to Color System",
         "description": "Color touches literally every pixel of digital products. That's why it is so important to get color right in a design system.\r\n\r\nIn this talk, John Henry Müller (Design Director at Hudl) divulges mistakes made and practical lessons learned about color while creating Uniform, Hudl's design system.\r\n\r\nWhat you'll learn:\r\n\r\n* Tips and tricks creating a durable color scheme \r\n* Common pitfalls when defining a color palette\r\n* Understand color contrast for accessibility ",
-        "photo": ""
+        "photo": "../photos/johnHenry.jpg"
     },
     {
         "id": "beth-laing",
@@ -13,7 +13,7 @@
         "bio": "Beth grew-up in online journalism, working with newspaper companies in Atlanta, GA, San Jose, CA and Saint Paul, MN with a detour to work for an internet start-up, Infonautics, in Philadelphia, PA along the way.  After leaving the world of newspapers, Beth worked as a project manager for several organizations focused on the intersection of news, society and technology. In 2015 she transitioned into software development with the help of a full immersion bootcamp. As one of the directors for Women Who Code's Atlanta chapter, Beth works to create great programming and build community for the amazing women in technology of Atlanta.  She is passionate about making technology a welcoming community for everyone and breaking down barriers. Beth works as a software developer at CNN/Turner on a variety of projects for internal customer. She spends a lot of time figuring out why things don't work and how to fix them!\r\n\r\n",
         "title": "You're Hired! Avoiding missteps and false starts in your new job",
         "description": "Congratulations on your new job... now what! Starting a new job, especially if it’s your first one, is always exciting... and stressful. Here’s how to take control of the situation and make sure that you’re ready to start strong from day one. As superficial as it sounds, you want to look your best when you are meeting so many people for the first time. But you should dress appropriately for your environment - a suit would be out of place in most technical organizations. The what not to wear part is easy… but what should you wear? Getting the people part right is key.First, ask a lot of questions. Use the 70/30 rule -- ask questions 70% of the time and share your stories and ideas 30% of the time. This is your chance to learn about the company, your project and the people that you will be working with, so you want to spend most of your time listening. Be ready with a plan for getting up-to-speed, even if all the parts are not in place when you start. Chances are your accounts and access might not be fully functional from day one, so be ready with things to do in the meantime. You’ll leave with a checklist of things to do so you walk in the door on day one ready to go.",
-        "photo": ""
+        "photo": "../photos/bethLaing.jpg"
     },
     {
         "id": "courtney-heitman",
@@ -21,7 +21,7 @@
         "bio": "Courtney's passion for the web all started with teaching her 11-year-old self how to write CSS on a dial-up internet connection on a farm in rural Iowa. Since then she has been in a myriad of positions including a Flash developer for several higher ed institutions, a Joomla developer, a brief stint as a server admin, a designer, a full stack developer, and a project manager. Currently, Courtney is a UX Developer, Scrum Master, and Accessibility Compliance Specialist for Gallup in Omaha, Nebraska. Her passion is making a web that is usable and accessible to all.",
         "title": "Mapping the User's Journey",
         "description": "Do you feel like you don't actually know your users? Do they struggle through the flow of your website, and you don’t know why? \r\n\r\nThis session will introduce you to empathy mapping, and how it will help you to relate to your users better. Once we have some empathy (mapping), we'll go over user journey mapping, so we can better understand what questions and pain points our users are having as they move through our site.",
-        "photo": ""
+        "photo": "../photos/Courtney_Heitman.jpg"
     },
     {
         "id": "jon-mills",

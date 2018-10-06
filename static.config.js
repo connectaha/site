@@ -24,7 +24,7 @@ export default {
           speakers
         }),
         children: speakers.map(speaker => ({
-          path: `/speaker/${speaker.id}`,
+          path: `/${speaker.id}`,
           component: 'src/containers/Speaker',
           getData: () => ({
             speaker,
