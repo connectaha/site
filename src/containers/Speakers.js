@@ -1,5 +1,5 @@
 import React from 'react'
-import { withRouteData } from 'react-static'
+import { withRouteData, Link } from 'react-static'
 
 export default withRouteData(({speakers}) => {
     return <div>
@@ -7,6 +7,7 @@ export default withRouteData(({speakers}) => {
             return <div>
                 <div>{speaker.name}</div>
                 <div>{speaker.bio}</div>
+                <Link to={`/speakers/${speaker.id}/`}>More...</Link>
             </div>
         })}
     </div>
