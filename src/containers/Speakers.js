@@ -47,8 +47,9 @@ export default withRouteData(({ speakers }) => (
   <div>
     <center>
       <Image mt={5} mb={32} mx={[4, 5, 6, 7]} src={logo} alt="Connectaha Logo" width={[1, 0.75, 0.5]} height="131" />
-      <Flex flexWrap="wrap" flexFlow="rowwrap" p="32">
-        {speakers.map(speaker => (
+    </center>
+    <Flex flexWrap="wrap" flexFlow="rowwrap" p="32">
+      {speakers.map(speaker => (
           <div>
             <Box width={256} height={400}>
               <Card
@@ -73,6 +74,5 @@ export default withRouteData(({ speakers }) => (
               </Card>
             </Box>
           </div>))}
-      </Flex>
-    </center>
+    </Flex>
   </div>))
