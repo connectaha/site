@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { post } from 'axios'
-import styled from 'styled-components';
+import styled from 'styled-components'
 import { color, fontSize, space, width } from 'styled-system'
 import { Button, Flex } from 'rebass'
-import logo from '../logo_tag_400.svg'
+import logo from '../connectaha_r_400.svg'
 import ButterToast, { CinnamonSugar } from 'butter-toast'
 
 const Center = styled.div`
@@ -12,7 +12,7 @@ const Center = styled.div`
   align-items: center;
   flex-grow: 1;
   overflow: hidden;
-  color: ${props => props.theme.colors.dark};
+  color: ${props => props.theme.colors.white};
   ${space};
 `
 
@@ -39,18 +39,18 @@ const Image = styled.img`
 
 const BigButton = styled(Button)`
   flex-grow: 1;
-`;
+`
 
 BigButton.defaultProps = {
   fontSize: 4,
   px: 5,
   py: 5,
-  bg: 'primary',
-  color: 'white'
+  bg: 'light',
+  color: 'primary',
 }
 
 export default class Home extends Component {
-  constructor() {
+  constructor () {
     super()
     this.state = {
       email: '',
@@ -85,17 +85,17 @@ export default class Home extends Component {
   }
 
   goToTickets = () => {
-    window.location = 'https://www.eventbrite.com/e/connectaha-conference-2019-tickets-49878979370';
+    window.location = 'https://www.eventbrite.com/e/connectaha-conference-2019-tickets-49878979370'
   };
 
   goToCfp = () => {
-    window.location = 'https://papercall.io/connectaha';
+    window.location = 'https://papercall.io/connectaha'
   };
 
-  render() {
+  render () {
     return (<div>
-      <Center mt={5} mx={[4, 5, 6, 7]}>
-        <Image src={logo} alt="Connectaha Logo" width={[1, 0.75, 0.5]} height="131" />
+      <Center mt={5} mb={5} mx={[4, 5, 6, 7]}>
+        <Image pt={5} pb={5} src={logo} alt="Connectaha Logo" width={[1, 0.75, 0.5]} height="131" />
         <Row width={[1, 0.75, 0.5]}>
           <Text>A new conference is coming to Omaha. A conference that believes
            that everyone in the software world can learn from each other. A conference
@@ -111,12 +111,12 @@ export default class Home extends Component {
         </Row>
 
         <Row width={[1, 0.75, 0.5]}>
-          <Flex wrap='wrap'>
-            <BigButton children='Get a Ticket' onClick={this.goToTickets} />
+          <Flex wrap="wrap">
+            <BigButton children="Get a Ticket" onClick={this.goToTickets} />
           </Flex>
         </Row>
       </Center>
       <ButterToast />
-    </div>)
+            </div>)
   }
 }

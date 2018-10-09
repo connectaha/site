@@ -21,7 +21,7 @@
         "bio": "Courtney's passion for the web all started with teaching her 11-year-old self how to write CSS on a dial-up internet connection on a farm in rural Iowa. Since then she has been in a myriad of positions including a Flash developer for several higher ed institutions, a Joomla developer, a brief stint as a server admin, a designer, a full stack developer, and a project manager. Currently, Courtney is a UX Developer, Scrum Master, and Accessibility Compliance Specialist for Gallup in Omaha, Nebraska. Her passion is making a web that is usable and accessible to all.",
         "title": "Mapping the User's Journey",
         "description": "Do you feel like you don't actually know your users? Do they struggle through the flow of your website, and you don’t know why? \r\n\r\nThis session will introduce you to empathy mapping, and how it will help you to relate to your users better. Once we have some empathy (mapping), we'll go over user journey mapping, so we can better understand what questions and pain points our users are having as they move through our site.",
-        "photo": "/photos/Courtney_Heitman.jpg"
+        "photo": "/photos/courtneyHeitman.jpg"
     },
     {
         "id": "jon-mills",
@@ -29,6 +29,14 @@
         "bio": "Jon is a Pluralsight author, Microsoft MVP, and international speaker focusing on JavaScript both in the browser and on the server.  Jonathan Mills is a JavaScript and Node.js expert working in the mean stack with individuals and companies to help build their technical skills to cope with the constantly changing landscape of software development. ",
         "title": "",
         "description": "Many .Net and Java developers live by the SOLID principles to make their software designs more understandable, flexible, and maintainable. As more business logic moves to the front end with frameworks like React and Angular, developers often lose touch with these principles and resort to more reactionary code. It doesn’t have to be that way. In this session, you will learn how to apply all five of the SOLID principles to your front-end JavaScript applications.",
-        "photo": ""
+        "photo": "/photos/jonMills.jpg"
+    },
+    {
+        "id": "jeff-strauss",
+        "name": "Jeff Straus",
+        "bio": "Jeff is a Pluralsight author, Microsoft MVP, and international speaker focusing on JavaScript both in the browser and on the server.  Jonathan Mills is a JavaScript and Node.js expert working in the mean stack with individuals and companies to help build their technical skills to cope with the constantly changing landscape of software development. ",
+        "title": "",
+        "description": "Many .Net and Java developers live by the SOLID principles to make their software designs more understandable, flexible, and maintainable. As more business logic moves to the front end with frameworks like React and Angular, developers often lose touch with these principles and resort to more reactionary code. It doesn’t have to be that way. In this session, you will learn how to apply all five of the SOLID principles to your front-end JavaScript applications.",
+        "photo": "/photos/jeffStraus.jpg"
     }
 ]

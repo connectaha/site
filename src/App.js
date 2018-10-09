@@ -2,10 +2,9 @@ import React from 'react'
 import { Router, Link } from 'react-static'
 import styled, { injectGlobal } from 'styled-components'
 import { hot } from 'react-hot-loader'
-import { Flex, NavLink, Toolbar } from 'rebass';
-import Icon from 'react-simple-icons';
-import theme from './theme';
-import { Provider as ThemeProvider } from 'rebass';
+import { Flex, NavLink, Toolbar, Provider as ThemeProvider } from 'rebass'
+import Icon from 'react-simple-icons'
+import theme from './theme'
 
 //
 import Routes from 'react-static-routes'
@@ -17,6 +16,7 @@ injectGlobal`
     font-size: 16px;
     margin: 0;
     padding: 0;
+    background-color: #0d1d42;
   }
 `
 
@@ -31,15 +31,14 @@ const App = () => (
     <Router>
       <AppStyles>
         <div className="content">
-          <Toolbar color='white' bg='gray'>
-            <NavLink to='/' is={Link} children='Connectaha' />
-            <NavLink to='https://papercall.io/connectaha' ml='auto' is={Link} children='Submit a Talk' />
-            <NavLink to='/details' is={Link} children='Details' />
-            <NavLink to='https://twitter.com/connectaha' is={Link}>
-              <Icon name='twitter' />
+          <Toolbar color="white" bg="darkblue" ml={4} mr={4}>
+            <NavLink to="https://papercall.io/connectaha" ml="auto" is={Link} children="Submit a Talk" />
+            <NavLink to="/details" is={Link} children="Details" />
+            <NavLink to="https://twitter.com/connectaha" is={Link}>
+              <Icon name="twitter" />
             </NavLink>
-            <NavLink to='https://www.facebook.com/connectaha/' is={Link}>
-              <Icon name='facebook'/>
+            <NavLink to="https://www.facebook.com/connectaha/" is={Link}>
+              <Icon name="facebook" />
             </NavLink>
           </Toolbar>
           <Routes />
