@@ -46,7 +46,7 @@ const Image = styled.img`
 export default withRouteData(({ speakers }) => (
   <div>
     <center>
-      <Image mt={5} mb={32} mx={[4, 5, 6, 7]} src={logo} alt="Connectaha Logo" width={[1, 0.75, 0.5]} height="131" />
+      <Image mt={5} mb={32} mx={[4, 5, 6, 7]} src={logo} href="/" alt="Connectaha Logo" width={[1, 0.75, 0.5]} height="131" />
     </center>
     <Flex flexWrap="wrap" flexFlow="rowwrap" p="32">
       {speakers.map(speaker => (

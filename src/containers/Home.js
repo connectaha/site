@@ -95,7 +95,7 @@ export default class Home extends Component {
   render () {
     return (<div>
       <Center mt={5} mb={5} mx={[4, 5, 6, 7]}>
-        <Image pt={5} pb={5} src={logo} alt="Connectaha Logo" width={[1, 0.75, 0.5]} height="131" />
+        <Image pt={5} pb={5} src={logo} href="/" alt="Connectaha Logo" width={[1, 0.75, 0.5]} height="131" />
         <Row width={[1, 0.75, 0.5]}>
           <Text>A new conference is coming to Omaha. A conference that believes
            that everyone in the software world can learn from each other. A conference
@@ -117,6 +117,6 @@ export default class Home extends Component {
         </Row>
       </Center>
       <ButterToast />
-            </div>)
+    </div>)
   }
 }
