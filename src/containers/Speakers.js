@@ -21,7 +21,7 @@ export default withRouteData(({ speakers }) => (
         <Image mt={5} mb={32} mx={[4, 5, 6, 7]} src={logo} onClick={() => { window.location = '/' }} alt="Connectaha Logo" width={[1, 0.75, 0.5]} height="131" />
       </Clickable>
     </center>
-    <Flex flexWrap="wrap" flexFlow="rowwrap" p="32">
+    <Flex flexWrap="wrap" flexFlow="rowwrap" p={32}>
       {
         speakers.map(speaker => (
           <Clickable>
@@ -36,10 +36,10 @@ export default withRouteData(({ speakers }) => (
                 onClick={() => { window.location = `/speakers/${speaker.id}` }}>
                 <Image src={speaker.photo} />
                 <Box px={2}>
-                  <Text fontSize={4}>
+                  <Text color="black" fontSize={4}>
                     {speaker.firstName}
                   </Text>
-                  <Text fontSize={4}>
+                  <Text color="black" fontSize={4}>
                     {speaker.lastName}
                   </Text>
                 </Box>

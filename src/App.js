@@ -2,7 +2,7 @@ import React from 'react'
 import { Router, Link } from 'react-static'
 import styled, { injectGlobal } from 'styled-components'
 import { hot } from 'react-hot-loader'
-import { Flex, NavLink, Toolbar, Provider as ThemeProvider } from 'rebass'
+import { NavLink, Toolbar, Provider as ThemeProvider } from 'rebass'
 import Icon from 'react-simple-icons'
 import theme from './theme'
 
@@ -17,6 +17,7 @@ injectGlobal`
     margin: 0;
     padding: 0;
     background-color: #0d1d42;
+    color: white;
   }
 `
 
@@ -32,7 +33,8 @@ const App = () => (
       <AppStyles>
         <div className="content">
           <Toolbar color="white" bg="darkblue" ml={4} mr={4}>
-            <NavLink to="https://papercall.io/connectaha" ml="auto" is={Link} children="Submit a Talk" />
+            <NavLink to="/speakers" is={Link} ml="auto" children="Speakers" />
+            <NavLink to="https://papercall.io/connectaha" is={Link} children="Submit a Talk" />
             <NavLink to="/details" is={Link} children="Details" />
             <NavLink to="https://twitter.com/connectaha" is={Link}>
               <Icon name="twitter" />
