@@ -6,7 +6,7 @@ import { Image, NavLink, Toolbar, Provider as ThemeProvider } from 'rebass'
 import Icon from 'react-simple-icons'
 import Routes from 'react-static-routes'
 import theme from './theme'
-import logo from '../connectaha_r_400.svg'
+import logo from './connectaha_r_400.svg'
 //
 
 

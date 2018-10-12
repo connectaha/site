@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import { post } from 'axios'
 import styled from 'styled-components'
-import { color, fontSize, space, width } from 'styled-system'
-import { Button, Flex } from 'rebass'
-import logo from '../connectaha_r_400.svg'
+import { fontSize, space, width } from 'styled-system'
+import { Button, Flex, Text } from 'rebass'
 import ButterToast, { CinnamonSugar } from 'butter-toast'
 
 const Center = styled.div`
@@ -30,12 +29,6 @@ Row.defaultProps = {
   justifyContent: 'space-around',
   py: 4,
 }
-
-const Text = styled.div`
-`
-const Image = styled.img`
-  ${width};
-`
 
 const BigButton = styled(Button)`
   flex-grow: 1;
@@ -95,7 +88,6 @@ export default class Home extends Component {
   render () {
     return (<div>
       <Center mt={5} mb={5} mx={[4, 5, 6, 7]}>
-        <Image pt={5} pb={5} src={logo} href="/" alt="Connectaha Logo" width={[1, 0.75, 0.5]} height="131" />
         <Row width={[1, 0.75, 0.5]}>
           <Text>A new conference is coming to Omaha. A conference that believes
            that everyone in the software world can learn from each other. A conference
@@ -117,6 +109,6 @@ export default class Home extends Component {
         </Row>
       </Center>
       <ButterToast />
-            </div>)
+    </div>)
   }
 }
