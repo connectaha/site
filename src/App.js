@@ -2,12 +2,17 @@ import React from 'react'
 import { Router, Link } from 'react-static'
 import styled, { injectGlobal } from 'styled-components'
 import { hot } from 'react-hot-loader'
-import { NavLink, Toolbar, Provider as ThemeProvider } from 'rebass'
+import { Image, NavLink, Toolbar, Provider as ThemeProvider } from 'rebass'
 import Icon from 'react-simple-icons'
-import theme from './theme'
-
-//
 import Routes from 'react-static-routes'
+import theme from './theme'
+import logo from '../connectaha_r_400.svg'
+//
+
+
+const Clickable = styled.div`
+  cursor: pointer;
+`
 
 injectGlobal`
   body {
@@ -43,6 +48,11 @@ const App = () => (
               <Icon name="facebook" />
             </NavLink>
           </Toolbar>
+          <center>
+            <Clickable>
+              <Image mt={5} mb={32} mx={[4, 5, 6, 7]} src={logo} onClick={() => { window.location = '/' }} alt="Connectaha Logo" width={[1, 0.75, 0.5]} height="131" />
+            </Clickable>
+          </center>
           <Routes />
         </div>
       </AppStyles>
