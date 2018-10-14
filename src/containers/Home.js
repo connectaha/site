@@ -104,11 +104,11 @@ export default class Home extends Component {
 
         <Row width={[1, 0.75, 0.5]}>
           <Flex wrap="wrap">
-            <BigButton children="Get a Ticket" onClick={this.goToTickets} />
+            <BigButton children="Buy Tickets" onClick={this.goToTickets} />
           </Flex>
         </Row>
       </Center>
       <ButterToast />
-    </div>)
+            </div>)
   }
 }

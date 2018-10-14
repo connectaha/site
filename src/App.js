@@ -2,7 +2,7 @@ import React from 'react'
 import { Router, Link } from 'react-static'
 import styled, { injectGlobal } from 'styled-components'
 import { hot } from 'react-hot-loader'
-import { Image, NavLink, Toolbar, Provider as ThemeProvider } from 'rebass'
+import { Image, Button, NavLink, Toolbar, Provider as ThemeProvider } from 'rebass'
 import Icon from 'react-simple-icons'
 import Routes from 'react-static-routes'
 import theme from './theme'
@@ -40,15 +40,18 @@ const App = () => (
             <NavLink to="https://papercall.io/connectaha" is={Link} children="Submit a Talk" />
             <NavLink to="/details" is={Link} children="Details" />
             <NavLink to="https://twitter.com/connectaha" is={Link}>
-              <Icon name="twitter" />
+              <Icon ml={6}name="twitter" />
             </NavLink>
             <NavLink to="https://www.facebook.com/connectaha/" is={Link}>
               <Icon name="facebook" />
             </NavLink>
+            <NavLink to="https://www.eventbrite.com/e/connectaha-conference-2019-tickets-49878979370" is={Link}>
+              <Button bg="light" color="primary" ml={6}>Buy Tickets</Button>
+            </NavLink>
           </Toolbar>
           <center>
             <Clickable>
-              <Image pb={5} mt={5} mb={32} mx={[4, 5, 6, 7]} src={logo} onClick={() => { window.location = '/' }} alt="Connectaha Logo" width={[0.75, 0.6, 0.5]} height="131" />
+              <Image pb={5} mt={5} mb={32} mx={[4, 5, 6, 7]} src={logo} onClick={() => { window.location = '/' }} alt="Connectaha Logo" width={[0.65, 0.55, 0.45]} height="131" />
             </Clickable>
           </center>
           <Routes />
