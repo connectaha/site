@@ -23,13 +23,13 @@ export default withRouteData(({ speaker, nextId, previousId }) => (
           </Flex>
           <Flex flexDirection="column">
             <Text fontSize={1} fontWeight={900} pb={4}>Bio</Text>
-            <Text fontSize={[1, 2]} fontWeight={300}>{speaker.bio}</Text>
+            <Text fontSize={[1, 2]} pb={6} fontWeight={300}>{speaker.bio}</Text>
           </Flex>
         </Flex>
       </Flex>
       <Flex alignItems="space-between">
-        <Button fontSize={3} p={5} bg="light" color="primary" onClick={() => { window.location = `/speakers/${previousId}` }}>Previous</Button>
-        <Button fontSize={3} p={5} bg="light" color="primary" onClick={() => { window.location = `/speakers/${nextId}` }}>Next</Button>
+        <Button fontSize={3} p={5} bg="white" color="gray" mr={4} onClick={() => { window.location = `/speakers/${previousId}` }}>Previous</Button>
+        <Button fontSize={3} p={5} bg="white" color="gray" ml="auto" onClick={() => { window.location = `/speakers/${nextId}` }}>Next</Button>
       </Flex>
     </Box>
   </Flex>
