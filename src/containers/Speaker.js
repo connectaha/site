@@ -1,11 +1,15 @@
 import React from 'react'
 import { withRouteData } from 'react-static'
 import { Box, Flex, Image, Text } from 'rebass'
+import styled from 'styled-components'
 
+const RoundedImage = styled(Image)`
+    border-radius: 50%;
+`
 export default withRouteData(({ speaker }) => (
   <Flex mx={[3, 4, 5]} flexWrap="wrap">
     <Box width={[1, 1 / 3]}>
-      <Image src={speaker.photo} mt={3} />
+      <RoundedImage src={speaker.photo} mt={3} />
     </Box>
     <Box width={[1, 2 / 3]} px={5}>
       <Flex flexWrap="nowrap" alignItems="space-between">
