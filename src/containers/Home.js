@@ -89,7 +89,7 @@ export default class Home extends Component {
     return (<div>
       <Center mt={5} mb={5} mx={[4, 5, 6, 7]}>
         <Row width={[1, 0.75, 0.5]}>
-          <Text>A new conference is coming to Omaha. A conference that believes
+          <Text fontSize={3} fontWeight={300} >A new conference is coming to Omaha. A conference that believes
            that everyone in the software world can learn from each other. A conference
            that believes quality software only happens when everyone on the team is
            communicating. A conference that believes those with less experience provide
@@ -97,7 +97,7 @@ export default class Home extends Component {
           </Text>
         </Row>
         <Row width={[1, 0.75, 0.5]}>
-          <Text>
+          <Text fontSize={3} fontWeight={300} >
             A conference that believes there’s power when people talk.
           </Text>
         </Row>

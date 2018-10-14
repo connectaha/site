@@ -48,7 +48,7 @@ const App = () => (
           </Toolbar>
           <center>
             <Clickable>
-              <Image mt={5} mb={32} mx={[4, 5, 6, 7]} src={logo} onClick={() => { window.location = '/' }} alt="Connectaha Logo" width={[0.75, 0.6, 0.5]} height="131" />
+              <Image pb={5} mt={5} mb={32} mx={[4, 5, 6, 7]} src={logo} onClick={() => { window.location = '/' }} alt="Connectaha Logo" width={[0.75, 0.6, 0.5]} height="131" />
             </Clickable>
           </center>
           <Routes />
