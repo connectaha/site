@@ -7,8 +7,6 @@ import Icon from 'react-simple-icons'
 import Routes from 'react-static-routes'
 import theme from './theme'
 import logo from './connectaha_r_400.svg'
-//
-
 
 const Clickable = styled.div`
   cursor: pointer;
@@ -50,7 +48,7 @@ const App = () => (
           </Toolbar>
           <center>
             <Clickable>
-              <Image mt={5} mb={32} mx={[4, 5, 6, 7]} src={logo} onClick={() => { window.location = '/' }} alt="Connectaha Logo" width={[1, 0.75, 0.5]} height="131" />
+              <Image mt={5} mb={32} mx={[4, 5, 6, 7]} src={logo} onClick={() => { window.location = '/' }} alt="Connectaha Logo" width={[0.75, 0.6, 0.5]} height="131" />
             </Clickable>
           </center>
           <Routes />

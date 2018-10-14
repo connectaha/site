@@ -7,15 +7,15 @@ export default withRouteData(({ speaker }) => (
     <Box width={[1, 1 / 3]}>
       <Image src={speaker.photo} mt={3} />
     </Box>
-    <Box width={[1, 2 / 3]}>
+    <Box width={[1, 2 / 3]} px={5}>
       <Flex flexWrap="nowrap" alignItems="space-between">
         <Flex flexDirection="column">
           <Flex flexDirection="column">
-            <Text fontSize={5} pb={3} >{speaker.title}</Text>
-            <Text fontSize={[2, 3]} pb={3}>{speaker.description}</Text>
+            <Text fontSize={5} pb={5} >{speaker.title}</Text>
+            <Text fontSize={[2, 3]} pb={5}>{speaker.description}</Text>
           </Flex>
           <Flex flexDirection="column">
-            <Text fontSize={5} pb={3}>{speaker.firstName} {speaker.lastName}</Text>
+            <Text fontSize={5} pb={5}>{speaker.firstName} {speaker.lastName}</Text>
             <Text fontSize={[2, 3]}>{speaker.bio}</Text>
           </Flex>
         </Flex>
