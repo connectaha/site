@@ -3,7 +3,7 @@ import { withRouteData } from 'react-static'
 import { Box, Flex, Image, Text } from 'rebass'
 
 export default withRouteData(({ speaker }) => (
-  <Flex mx={[3, 4, 5]}>
+  <Flex mx={[3, 4, 5]} flexWrap="wrap">
     <Box width={[1, 1 / 3]}>
       <Image src={speaker.photo} mt={3} />
     </Box>
