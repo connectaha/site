@@ -24,11 +24,13 @@ export default {
         getData: () => ({
           speakers
         }),
-        children: speakers.map(speaker => ({
+        children: speakers.map((speaker, i, arr) => ({
           path: `/${speaker.id}`,
           component: 'src/containers/Speaker',
           getData: () => ({
             speaker,
+            nextId:  i + 1 === arr.length ? arr[0].id : arr[i + 1].id,
+            previousId: i === 0 ? arr[arr.length - 1].id : arr[i - 1].id
           }),
         }))
       },
@@ -49,7 +51,7 @@ export default {
     return html
   },
   Document: class CustomHtml extends Component {
-    render () {
+    render() {
       const {
         Html, Head, Body, children, renderMeta,
       } = this.props
