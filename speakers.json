@@ -35,7 +35,7 @@
         "lastName": "Mills",
         "bio": "Jon is a Pluralsight author, Microsoft MVP, and international speaker focusing on JavaScript both in the browser and on the server.  Jonathan Mills is a JavaScript and Node.js expert working in the mean stack with individuals and companies to help build their technical skills to cope with the constantly changing landscape of software development. ",
         "title": "",
-        "description": "Many .Net and Java developers live by the SOLID principles to make their software designs more understandable, flexible, and maintainable. As more business logic moves to the front end with frameworks like React and Angular, developers often lose touch with these principles and resort to more reactionary code. It doesn’t have to be that way. In this session, you will learn how to apply all five of the SOLID principles to your front-end JavaScript applications.",
+        "description": "",
         "photo": "/photos/jonMills.jpg",
         "organization": "Epiq Global"
     },
@@ -45,7 +45,7 @@
         "lastName": "Strauss",
         "bio": "Jeff is a software developer, an entrepreneur, and an attorney. As a consultant at WWT Asynchrony Labs, with unique experiences that combine technology and law, he maintains a passion for solving problems with inspired solutions, improving life through technology. A dedicated member of the developer community, Jeff travels internationally to speak on both technical and business-oriented topics. He is a Microsoft MVP and enjoys serving on the board of directors for the Kansas City Developer Conference.",
         "title": "",
-        "description": "Many .Net and Java developers live by the SOLID principles to make their software designs more understandable, flexible, and maintainable. As more business logic moves to the front end with frameworks like React and Angular, developers often lose touch with these principles and resort to more reactionary code. It doesn’t have to be that way. In this session, you will learn how to apply all five of the SOLID principles to your front-end JavaScript applications.",
+        "description": "",
         "photo": "/photos/jeffStraus.jpg",
         "organization": "World Wide Technology"
     }
