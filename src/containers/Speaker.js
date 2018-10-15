@@ -2,9 +2,16 @@ import React from 'react'
 import { withRouteData } from 'react-static'
 import { Box, Button, Flex, Image, Text } from 'rebass'
 import styled from 'styled-components'
+import NavigateNext from 'rmdi/lib/NavigateNext'
+import NavigateBefore from 'rmdi/lib/NavigateBefore'
 
 const RoundedImage = styled(Image)`
-    border-radius: 50%;
+  border-radius: 50%;
+`
+
+const RoundedButton = styled(Button)`
+  cursor: pointer;
+  border-radius: 50%;
 `
 export default withRouteData(({ speaker, nextId, previousId }) => (
   <Flex mx={[3, 4, 5]} flexWrap="wrap">
@@ -28,8 +35,12 @@ export default withRouteData(({ speaker, nextId, previousId }) => (
         </Flex>
       </Flex>
       <Flex alignItems="space-between">
-        <Button fontSize={3} p={5} bg="white" color="gray" mr={4} onClick={() => { window.location = `/speakers/${previousId}` }}>Previous</Button>
-        <Button fontSize={3} p={5} bg="white" color="gray" ml="auto" onClick={() => { window.location = `/speakers/${nextId}` }}>Next</Button>
+        <RoundedButton fontSize={3} p={5} bg="transparent" color="light" mr={4} onClick={() => { window.location = `/speakers/${previousId}` }}>
+          <NavigateBefore size={32} />
+        </RoundedButton>
+        <RoundedButton fontSize={3} p={5} bg="transparent" color="light" ml="auto" onClick={() => { window.location = `/speakers/${nextId}` }}>
+          <NavigateNext size={32} />
+        </RoundedButton>
       </Flex>
     </Box>
   </Flex>
