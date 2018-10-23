@@ -5,6 +5,9 @@ const speakers = require('./speakers.json');
 
 export default {
   siteRoot: '',
+  plugins: [
+    ["react-static-plugin-google-analytics", {id: 'UA-127926946-1'}]
+  ],
   getSiteData: () => ({
     title: 'Connectaha',
   }),
@@ -63,15 +66,6 @@ export default {
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet" />
             <title>Connectaha</title>
-            <!-- Global site tag (gtag.js) - Google Analytics -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127926946-1"></script>
-            <script>
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-
-              gtag('config', 'UA-127926946-1');
-            </script>
 
             {renderMeta.styleTags}
           </Head>
