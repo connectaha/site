@@ -5,9 +5,6 @@ const speakers = require('./speakers.json');
 
 export default {
   siteRoot: '',
-  plugins: [
-    ["react-static-plugin-google-analytics", {id: 'UA-127926946-1'}]
-  ],
   getSiteData: () => ({
     title: 'Connectaha',
   }),
