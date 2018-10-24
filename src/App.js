@@ -29,6 +29,10 @@ const AppStyles = styled.div`
     max-width: 100%;
   }
 `
+const FileLink = styled.a`
+   color: white;
+   text-decoration: none;
+`
 
 const App = () => (
   <ThemeProvider theme={theme}>
@@ -39,6 +43,7 @@ const App = () => (
             <NavLink to="/speakers" is={Link} ml="auto" children="Speakers" />
             <NavLink to="https://papercall.io/connectaha" is={Link} children="Submit a Talk" />
             <NavLink to="/details" is={Link} children="Details" />
+            <FileLink href="./2019_Connectaha_Prospectus.pdf" >Sponsorship</FileLink>
             <NavLink to="https://twitter.com/connectaha" is={Link}>
               <Icon ml={6}name="twitter" />
             </NavLink>
