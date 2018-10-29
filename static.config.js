@@ -1,8 +1,10 @@
 import axios from 'axios'
 import React, { Component } from 'react'
 import { ServerStyleSheet } from 'styled-components'
+const speakers = require('./speakers.json');
 
 export default {
+  siteRoot: '',
   getSiteData: () => ({
     title: 'Connectaha',
   }),
@@ -15,6 +17,22 @@ export default {
       {
         path: '/details',
         component: 'src/containers/Details'
+      },
+      {
+        path: '/speakers',
+        component: 'src/containers/Speakers',
+        getData: () => ({
+          speakers
+        }),
+        children: speakers.map((speaker, i, arr) => ({
+          path: `/${speaker.id}`,
+          component: 'src/containers/Speaker',
+          getData: () => ({
+            speaker,
+            nextId:  i + 1 === arr.length ? arr[0].id : arr[i + 1].id,
+            previousId: i === 0 ? arr[arr.length - 1].id : arr[i - 1].id
+          }),
+        }))
       },
       {
         path: '/sponsorship',
@@ -33,7 +51,7 @@ export default {
     return html
   },
   Document: class CustomHtml extends Component {
-    render () {
+    render() {
       const {
         Html, Head, Body, children, renderMeta,
       } = this.props
@@ -45,6 +63,7 @@ export default {
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet" />
             <title>Connectaha</title>
+
             {renderMeta.styleTags}
           </Head>
           <Body>{children}</Body>
