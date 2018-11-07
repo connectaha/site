@@ -63,8 +63,8 @@ const AppHeader = styled.div`
   }
 `
 const AppFooter = styled.div`
-border-top: 1px solid #467abe;
-display: flex;
+  border-top: 1px solid #467abe;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
