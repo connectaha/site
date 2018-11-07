@@ -47,7 +47,6 @@ const AppHeader = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 10px;
-  border-bottom: 1px solid #467abe;
 
   > img {
     margin: 0;
@@ -63,7 +62,6 @@ const AppHeader = styled.div`
   }
 `
 const AppFooter = styled.div`
-  border-top: 1px solid #467abe;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -89,7 +87,7 @@ const App = () => (
         </AppHeader>
         <Routes />
         <AppFooter>
-          <div>
+          <AppFooter-left>
             <NavLink to="https://twitter.com/connectaha" is={Link}>
               <Icon ml={4}name="twitter" />
             </NavLink>
@@ -98,8 +96,10 @@ const App = () => (
             </NavLink>
             <NavLink to="https://papercall.io/connectaha" is={Link} children="Submit a Talk" />
             <NavLink ml={4} to="/details" is={Link} children="About" />
-          </div>
-          <div><p>Copyright © Connectaha, LLC. All rights reserved.</p></div>
+          </AppFooter-left>
+          <AppFooter-right>
+            <p>Copyright © Connectaha, LLC. All rights reserved.</p>
+          </AppFooter-right>
         </AppFooter>
       </AppStyles>
     </Router>

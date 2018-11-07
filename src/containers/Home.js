@@ -109,6 +109,6 @@ export default class Home extends Component {
         </Row>
       </Center>
       <ButterToast />
-            </div>)
+    </div>)
   }
 }
