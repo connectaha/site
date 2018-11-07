@@ -19,6 +19,22 @@ export default {
       component: 'src/containers/Details',
     },
     {
+      path: '/speakers',
+      component: 'src/containers/Speakers',
+      getData: () => ({
+        speakers
+      }),
+      children: speakers.map((speaker, i, arr) => ({
+        path: `/${speaker.id}`,
+        component: 'src/containers/Speaker',
+        getData: () => ({
+          speaker,
+          nextId:  i + 1 === arr.length ? arr[0].id : arr[i + 1].id,
+          previousId: i === 0 ? arr[arr.length - 1].id : arr[i - 1].id
+        }),
+      }))
+    },
+    {
       path: '/sponsorship',
       component: 'src/containers/Sponsorship',
     },

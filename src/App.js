@@ -2,7 +2,7 @@ import React from 'react'
 import { Router, Link } from 'react-static'
 import styled, { injectGlobal } from 'styled-components'
 import { hot } from 'react-hot-loader'
-import { Header, Image, Button, Flex, NavLink, Toolbar, Provider as ThemeProvider } from 'rebass'
+import { Image, Button, Flex, NavLink, Provider as ThemeProvider } from 'rebass'
 import Icon from 'react-simple-icons'
 import Routes from 'react-static-routes'
 import theme from './theme'
@@ -24,23 +24,36 @@ injectGlobal`
   }
 `
 const AppStyles = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width:1200px;
+  margin: 0 auto;
+  
+
   img {
     max-width: 100%;
   }
 `
+const FileLink = styled.a`
+   color: white;
+   text-decoration: none;
+   cursor: pointer;
+`
 
 const AppHeader = styled.div`
-  border-bottom: solid 1px #467abe;  
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 10px;
+  border-bottom: 1px solid #467abe;
 
   > img {
     margin: 0;
     min-width: none;
     width: auto;
+    cursor: pointer;
   }
 
   Header-right {
@@ -50,12 +63,13 @@ const AppHeader = styled.div`
   }
 `
 const AppFooter = styled.div`
-  border-top: solid 1px #467abe;
-  display: flex;
+border-top: 1px solid #467abe;
+display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 10px;
+  margin-top: auto;
 `
 
 
@@ -66,8 +80,8 @@ const App = () => (
         <AppHeader>
           <Image pb={5} pt={5} mt={5} mb={32} mx={[1, 2, 3, 4]} src={logo} onClick={() => { window.location = '/' }} alt="Connectaha Logo" width={[0.5, 0.4, 0.3]} height="100" />
           <Header-right flexWrap="wrap" flexFlow="rowwrap">
+            <FileLink ml={4} href="./2019_Connectaha_Prospectus.pdf" >Sponsorship</FileLink>
             <NavLink ml={4} to="/speakers" is={Link} children="Speakers" />
-            <NavLink ml={4} to="/sponsors" is={Link} children="Sponsorship" />
             <NavLink ml={4} to="https://www.eventbrite.com/e/connectaha-conference-2019-tickets-49878979370" is={Link}>
               <Button bg="light" color="primary">Buy Tickets</Button>
             </NavLink>
@@ -82,6 +96,7 @@ const App = () => (
             <NavLink to="https://www.facebook.com/connectaha/" is={Link}>
               <Icon name="facebook" />
             </NavLink>
+            <NavLink to="https://papercall.io/connectaha" is={Link} children="Submit a Talk" />
             <NavLink ml={4} to="/details" is={Link} children="About" />
           </AppFooter-left>
           <AppFooter-right>
