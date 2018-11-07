@@ -30,6 +30,7 @@ const AppStyles = styled.div`
 `
 
 const AppHeader = styled.div`
+  border-bottom: solid 1px #467abe;  
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -49,17 +50,12 @@ const AppHeader = styled.div`
   }
 `
 const AppFooter = styled.div`
+  border-top: solid 1px #467abe;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 10px;
-
-  Header-right {
-    margin: 0;
-    flex: 0 0 auto;
-    padding: 0 0 0 20px;
-  }
 `
 
 
@@ -68,7 +64,7 @@ const App = () => (
     <Router>
       <AppStyles>
         <AppHeader>
-          <Image pb={5} mt={5} mb={32} mx={[1, 2, 3, 4]} src={logo} onClick={() => { window.location = '/' }} alt="Connectaha Logo" width={[0.5, 0.4, 0.3]} height="100" />
+          <Image pb={5} pt={5} mt={5} mb={32} mx={[1, 2, 3, 4]} src={logo} onClick={() => { window.location = '/' }} alt="Connectaha Logo" width={[0.5, 0.4, 0.3]} height="100" />
           <Header-right flexWrap="wrap" flexFlow="rowwrap">
             <NavLink ml={4} to="/speakers" is={Link} children="Speakers" />
             <NavLink ml={4} to="/sponsors" is={Link} children="Sponsorship" />
@@ -86,6 +82,7 @@ const App = () => (
             <NavLink to="https://www.facebook.com/connectaha/" is={Link}>
               <Icon name="facebook" />
             </NavLink>
+            <NavLink ml={4} to="/details" is={Link} children="About" />
           </AppFooter-left>
           <AppFooter-right>
             <p>Copyright © Connectaha, LLC. All rights reserved.</p>

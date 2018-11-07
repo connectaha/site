@@ -87,7 +87,7 @@ export default class Home extends Component {
 
   render () {
     return (<div>
-      <Center mt={5} mb={5} mx={[4, 5, 6, 7]}>
+      <Center mt={5} mb={5} mx={[7, 6, 5, 4]}>
         <Row width={[1, 0.75, 0.5]}>
           <Text fontSize={3} fontWeight={300} >A new conference is coming to Omaha. A conference that believes
            that everyone in the software world can learn from each other. A conference
