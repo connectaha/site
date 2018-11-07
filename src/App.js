@@ -89,7 +89,7 @@ const App = () => (
         </AppHeader>
         <Routes />
         <AppFooter>
-          <AppFooter-left>
+          <div>
             <NavLink to="https://twitter.com/connectaha" is={Link}>
               <Icon ml={4}name="twitter" />
             </NavLink>
@@ -98,10 +98,8 @@ const App = () => (
             </NavLink>
             <NavLink to="https://papercall.io/connectaha" is={Link} children="Submit a Talk" />
             <NavLink ml={4} to="/details" is={Link} children="About" />
-          </AppFooter-left>
-          <AppFooter-right>
-            <p>Copyright © Connectaha, LLC. All rights reserved.</p>
-          </AppFooter-right>
+          </div>
+          <div><p>Copyright © Connectaha, LLC. All rights reserved.</p></div>
         </AppFooter>
       </AppStyles>
     </Router>
