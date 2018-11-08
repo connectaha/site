@@ -2,7 +2,7 @@ import React from 'react'
 import { Router, Link } from 'react-static'
 import styled, { injectGlobal } from 'styled-components'
 import { hot } from 'react-hot-loader'
-import { Image, Button, Flex, NavLink, Provider as ThemeProvider } from 'rebass'
+import { Image, Button, NavLink, Provider as ThemeProvider } from 'rebass'
 import Icon from 'react-simple-icons'
 import Routes from 'react-static-routes'
 import theme from './theme'
@@ -59,6 +59,8 @@ const AppHeader = styled.div`
     margin: 0;
     flex: 0 0 auto;
     padding: 0 0 0 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 `
 const AppFooter = styled.div`
@@ -77,7 +79,7 @@ const App = () => (
       <AppStyles>
         <AppHeader>
           <Image pb={5} pt={5} mt={5} mb={32} mx={[1, 2, 3, 4]} src={logo} onClick={() => { window.location = '/' }} alt="Connectaha Logo" width={[0.5, 0.4, 0.3]} height="100" />
-          <Header-right flexWrap="wrap" flexFlow="rowwrap">
+          <Header-right>
             <FileLink ml={4} href="./2019_Connectaha_Prospectus.pdf" >Sponsorship</FileLink>
             <NavLink ml={4} to="/speakers" is={Link} children="Speakers" />
             <NavLink ml={4} to="https://www.eventbrite.com/e/connectaha-conference-2019-tickets-49878979370" is={Link}>
@@ -94,7 +96,6 @@ const App = () => (
             <NavLink to="https://www.facebook.com/connectaha/" is={Link}>
               <Icon name="facebook" />
             </NavLink>
-            <NavLink to="https://papercall.io/connectaha" is={Link} children="Submit a Talk" />
             <NavLink ml={4} to="/details" is={Link} children="About" />
           </AppFooter-left>
           <AppFooter-right>
