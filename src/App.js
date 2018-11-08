@@ -2,11 +2,11 @@ import React from 'react'
 import { Router, Link } from 'react-static'
 import styled, { injectGlobal } from 'styled-components'
 import { hot } from 'react-hot-loader'
-import { Image, Button, NavLink, Toolbar, Provider as ThemeProvider } from 'rebass'
+import { Image, Button, NavLink, Provider as ThemeProvider } from 'rebass'
 import Icon from 'react-simple-icons'
 import Routes from 'react-static-routes'
 import theme from './theme'
-import logo from './connectaha_r_400.svg'
+import logo from './logo_300.svg'
 
 const Clickable = styled.div`
   cursor: pointer;
@@ -23,39 +23,85 @@ injectGlobal`
     color: white;
   }
 `
-
 const AppStyles = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width:1200px;
+  margin: 0 auto;
+  
+
   img {
     max-width: 100%;
   }
 `
+const FileLink = styled.a`
+   color: white;
+   text-decoration: none;
+   cursor: pointer;
+`
+
+const AppHeader = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+
+  > img {
+    margin: 0;
+    min-width: none;
+    width: auto;
+    cursor: pointer;
+  }
+
+  Header-right {
+    margin: 0;
+    flex: 0 0 auto;
+    padding: 0 0 0 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+`
+const AppFooter = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-top: auto;
+`
+
 
 const App = () => (
   <ThemeProvider theme={theme}>
     <Router>
       <AppStyles>
-        <div className="content">
-          <Toolbar color="white" bg="darkblue" ml={4} mr={4}>
-            <NavLink to="/speakers" is={Link} ml="auto" children="Speakers" />
-            <NavLink to="https://papercall.io/connectaha" is={Link} children="Submit a Talk" />
-            <NavLink to="/details" is={Link} children="Details" />
+        <AppHeader>
+          <Image pb={5} pt={5} mt={5} mb={32} mx={[1, 2, 3, 4]} src={logo} onClick={() => { window.location = '/' }} alt="Connectaha Logo" width={[0.5, 0.4, 0.3]} height="100" />
+          <Header-right>
+            <FileLink ml={4} href="./2019_Connectaha_Prospectus.pdf" >Sponsorship</FileLink>
+            <NavLink ml={4} to="/speakers" is={Link} children="Speakers" />
+            <NavLink ml={4} to="https://www.eventbrite.com/e/connectaha-conference-2019-tickets-49878979370" is={Link}>
+              <Button bg="light" color="primary">Buy Tickets</Button>
+            </NavLink>
+          </Header-right>
+        </AppHeader>
+        <Routes />
+        <AppFooter>
+          <AppFooter-left>
             <NavLink to="https://twitter.com/connectaha" is={Link}>
-              <Icon ml={6}name="twitter" />
+              <Icon ml={4}name="twitter" />
             </NavLink>
             <NavLink to="https://www.facebook.com/connectaha/" is={Link}>
               <Icon name="facebook" />
             </NavLink>
-            <NavLink to="https://www.eventbrite.com/e/connectaha-conference-2019-tickets-49878979370" is={Link}>
-              <Button bg="light" color="primary" ml={6}>Buy Tickets</Button>
-            </NavLink>
-          </Toolbar>
-          <center>
-            <Clickable>
-              <Image pb={5} mt={5} mb={32} mx={[4, 5, 6, 7]} src={logo} onClick={() => { window.location = '/' }} alt="Connectaha Logo" width={[0.65, 0.55, 0.45]} height="131" />
-            </Clickable>
-          </center>
-          <Routes />
-        </div>
+            <NavLink ml={4} to="/details" is={Link} children="About" />
+          </AppFooter-left>
+          <AppFooter-right>
+            <p>Copyright © Connectaha, LLC. All rights reserved.</p>
+          </AppFooter-right>
+        </AppFooter>
       </AppStyles>
     </Router>
   </ThemeProvider>
