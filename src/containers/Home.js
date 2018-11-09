@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { post } from 'axios'
 import styled from 'styled-components'
 import { fontSize, space, width } from 'styled-system'
-import { Button, Flex, Text, Link, Image } from 'rebass'
+import { Button, Flex, Text, Link, Image, Card, Heading } from 'rebass'
 import ButterToast, { CinnamonSugar } from 'butter-toast'
 
 const Center = styled.div`
@@ -94,6 +94,15 @@ export default class Home extends Component {
             Our CFP is open: <Link color="#ffffff" href="https://papercall.io/connectaha">Submit a Talk!</Link>
           </Text>
         </Row>
+      </Center>
+      <Center mt={5} mb={5} mx={[7, 6, 5, 4]}>
+        <Heading textAlign="center" fontSize={[5, 6]}>
+          <Row fontSize={[3, 4, 5]} fontWeight="bold">March 8, 2019</Row>
+          <Row>Walter Scott Conference Center</Row>
+          <Row>6450 Pine St., Omaha NE 68106</Row>
+        </Heading>
+      </Center>
+      <Center mt={5} mb={5} mx={[7, 6, 5, 4]}>
         <Row width={[1, 0.75, 0.5]}>
           <Text fontSize={3} fontWeight={300} >A new conference is coming to Omaha. A conference that believes
            that everyone in the software world can learn from each other. A conference
@@ -114,6 +123,6 @@ export default class Home extends Component {
           </Flex>
         </Row>
       </Center>
-            </div>)
+    </div>)
   }
 }

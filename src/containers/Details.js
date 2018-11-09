@@ -1,10 +1,11 @@
 import React, { Component, Fragment } from 'react'
-import { Flex, Link, Text } from 'rebass'
+import { Flex, Link, Text, Heading } from 'rebass'
 
 export default class Default extends Component {
   render () {
     return (
       <Fragment>
+        <Heading pl={4} pt={6} pb={4} color="white">About Our Conference</Heading>
         <Flex flexDirection="column" alignItems="center" justifyContent="center" py={4}>
           <Text>Connectaha will be on March 8 at the <Link href="http://www.scottcenter.com/" color="white">Scott Conference Center</Link> in Omaha, NE</Text>
           <Text>6450 Pine St.</Text>
