@@ -47,6 +47,7 @@ const AppHeader = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 10px;
+  border-bottom: 1px solid #174899;
 
   > img {
     margin: 0;

@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import { post } from 'axios'
 import styled from 'styled-components'
 import { fontSize, space, width } from 'styled-system'
-import { Button, Flex, Text, Link, Image, Card, Heading } from 'rebass'
+import { Button, Banner, Flex, Text, Link, Image, Card, Heading } from 'rebass'
 import ButterToast, { CinnamonSugar } from 'butter-toast'
-import Banner from './presenter.jpg'
+import BannerImage from './presenter.jpg'
 
 const Center = styled.div`
   display: flex;
@@ -96,9 +96,10 @@ export default class Home extends Component {
           </Text>
         </Row>
       </Center>
+
       <Card m={16} p={2} backgroundSize="cover" width={[1, 1, 1 / 2]} borderRadius={8} boxShadow="0 0 16px rgba(0, 0, 0, .25)"
         Flex>
-        <Image src={Banner} />
+        <Image src={BannerImage} />
       </Card>
 
       <Center mt={5} mb={5} mx={[7, 6, 5, 4]}>
