@@ -1,13 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { withRouteData } from 'react-static'
-import {
-  Box,
-  Card,
-  Image,
-  Flex,
-  Text,
-} from 'rebass'
+import { Box, Card, Image, Flex, Text, Heading } from 'rebass'
 import logo from '../connectaha_r_400.svg'
 
 const Clickable = styled.div`
@@ -16,11 +10,12 @@ const Clickable = styled.div`
 
 export default withRouteData(({ speakers }) => (
   <div>
+    <Heading pl={4} pt={6} pb={4} color="white">Speakers</Heading>
     <Flex flexWrap="wrap" flexFlow="rowwrap" p={32}>
       {
         speakers.map(speaker => (
           <Clickable>
-            <Box width={256} height={400}>
+            <Box width={280} height={440}>
               <Card
                 m={16}
                 p={2}
