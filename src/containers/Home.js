@@ -96,19 +96,17 @@ export default class Home extends Component {
           </Text>
         </Row>
       </Center>
-
-      <Banner color="white" minHeight="40vh" borderRadius={8} backgroundImage={BannerImage}>
+      <Banner color="white" minHeight="40vh" backgroundSize="cover" borderRadius={8} backgroundImage={BannerImage}>
         <Heading>March 8, 2019</Heading>
         <Heading>Walter Scott Conference Center</Heading>
         <Heading>6450 Pine St. Omaha, NE 68106</Heading>
       </Banner>
-
-      <Center mt={5} mb={5} mx={[7, 6, 5, 4]}>
+      <Center>
         <Row width={[1, 0.75, 0.5]}>
           <Text fontSize={3} fontWeight={300} >A new conference is coming to Omaha. A conference that believes
-           that everyone in the software world can learn from each other. A conference
-           that believes quality software only happens when everyone on the team is
-           communicating. A conference that believes those with less experience provide
+          that everyone in the software world can learn from each other. A conference
+          that believes quality software only happens when everyone on the team is
+          communicating. A conference that believes those with less experience provide
           just as much value as the most senior team member.
           </Text>
         </Row>
