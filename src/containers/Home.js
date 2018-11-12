@@ -103,7 +103,7 @@ export default class Home extends Component {
       </Banner>
       <Center>
         <Row width={[1, 0.75, 0.5]}>
-          <Text fontSize={3} fontWeight={300} >A new conference is coming to Omaha. A conference that believes
+          <Text fontSize={3} pt={4} fontWeight={300} >A new conference is coming to Omaha. A conference that believes
           that everyone in the software world can learn from each other. A conference
           that believes quality software only happens when everyone on the team is
           communicating. A conference that believes those with less experience provide
@@ -122,6 +122,6 @@ export default class Home extends Component {
           </Flex>
         </Row>
       </Center>
-    </div>)
+            </div>)
   }
 }
