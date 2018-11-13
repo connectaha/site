@@ -8,10 +8,6 @@ import Routes from 'react-static-routes'
 import theme from './theme'
 import logo from './logo_300.svg'
 
-const Clickable = styled.div`
-  cursor: pointer;
-`
-
 injectGlobal`
   body {
     font-family: 'Barlow', sans-serif;
@@ -71,6 +67,7 @@ const AppFooter = styled.div`
   flex-wrap: wrap;
   padding: 10px;
   margin-top: auto;
+  border-top: 1px solid #174899;
 `
 
 
@@ -80,17 +77,17 @@ const App = () => (
       <AppStyles>
         <AppHeader>
           <Image pb={5} pt={5} mt={5} mb={32} mx={[1, 2, 3, 4]} src={logo} onClick={() => { window.location = '/' }} alt="Connectaha Logo" width={[0.5, 0.4, 0.3]} height="100" />
-          <Header-right>
+          <header-right>
             <FileLink ml={4} href="./2019_Connectaha_Prospectus.pdf" >Sponsorship</FileLink>
             <NavLink ml={4} to="/speakers" is={Link} children="Speakers" />
             <NavLink ml={4} to="https://www.eventbrite.com/e/connectaha-conference-2019-tickets-49878979370" is={Link}>
-              <Button bg="light" color="primary">Buy Tickets</Button>
+              <Button bg="action" color="white" border="none">Buy Tickets</Button>
             </NavLink>
-          </Header-right>
+          </header-right>
         </AppHeader>
         <Routes />
         <AppFooter>
-          <AppFooter-left>
+          <appfooter-left>
             <NavLink to="https://twitter.com/connectaha" is={Link}>
               <Icon ml={4}name="twitter" />
             </NavLink>
@@ -98,10 +95,10 @@ const App = () => (
               <Icon name="facebook" />
             </NavLink>
             <NavLink ml={4} to="/details" is={Link} children="About" />
-          </AppFooter-left>
-          <AppFooter-right>
+          </appfooter-left>
+          <appfooter-right>
             <p>Copyright © Connectaha, LLC. All rights reserved.</p>
-          </AppFooter-right>
+          </appfooter-right>
         </AppFooter>
       </AppStyles>
     </Router>
