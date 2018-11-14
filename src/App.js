@@ -87,18 +87,18 @@ const App = () => (
         </AppHeader>
         <Routes />
         <AppFooter>
-          <appfooter-left>
+          <div>
+            <p>Copyright © Connectaha, LLC. All rights reserved.</p>
+          </div>
+          <div>
+            <NavLink ml={4} to="/details" is={Link}>About</NavLink>
             <NavLink to="https://twitter.com/connectaha" is={Link}>
               <Icon ml={4}name="twitter" />
             </NavLink>
             <NavLink to="https://www.facebook.com/connectaha/" is={Link}>
               <Icon name="facebook" />
             </NavLink>
-            <NavLink ml={4} to="/details" is={Link} children="About" />
-          </appfooter-left>
-          <appfooter-right>
-            <p>Copyright © Connectaha, LLC. All rights reserved.</p>
-          </appfooter-right>
+          </div>
         </AppFooter>
       </AppStyles>
     </Router>

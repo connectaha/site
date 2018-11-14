@@ -130,6 +130,141 @@ module.exports = function(module) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactStatic = __webpack_require__(3);
+
+var _rebass = __webpack_require__(1);
+
+var _styledComponents = __webpack_require__(2);
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+var _NavigateNext = __webpack_require__(32);
+
+var _NavigateNext2 = _interopRequireDefault(_NavigateNext);
+
+var _NavigateBefore = __webpack_require__(33);
+
+var _NavigateBefore2 = _interopRequireDefault(_NavigateBefore);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var RoundedImage = (0, _styledComponents2.default)(_rebass.Image).withConfig({
+  displayName: 'Speaker__RoundedImage'
+})(['border-radius:50%;']);
+
+var RoundedButton = (0, _styledComponents2.default)(_rebass.Button).withConfig({
+  displayName: 'Speaker__RoundedButton'
+})(['cursor:pointer;border-radius:50%;']);
+exports.default = (0, _reactStatic.withRouteData)(function (_ref) {
+  var speaker = _ref.speaker,
+      nextId = _ref.nextId,
+      previousId = _ref.previousId;
+
+  var org = speaker.organization ? '/ ' + speaker.organization : '';
+
+  return _react2.default.createElement(
+    _rebass.Flex,
+    { mx: [3, 4, 5], flexWrap: 'wrap' },
+    _react2.default.createElement(
+      _rebass.Box,
+      { width: [1, 1 / 3] },
+      _react2.default.createElement(RoundedImage, { src: speaker.photo, pt: 4, mt: 3 })
+    ),
+    _react2.default.createElement(
+      _rebass.Box,
+      { width: [1, 2 / 3], px: 5 },
+      _react2.default.createElement(
+        _rebass.Flex,
+        { flexWrap: 'nowrap', alignItems: 'space-between' },
+        _react2.default.createElement(
+          _rebass.Flex,
+          { flexDirection: 'column' },
+          _react2.default.createElement(
+            _rebass.Flex,
+            { flexDirection: 'column' },
+            _react2.default.createElement(
+              _rebass.Text,
+              { fontSize: 1, fontWeight: 900, pt: 4, pb: 4 },
+              'Speaker'
+            ),
+            _react2.default.createElement(
+              _rebass.Text,
+              { fontSize: 5, pb: 7 },
+              speaker.firstName,
+              ' ',
+              speaker.lastName,
+              ' ',
+              org
+            ),
+            _react2.default.createElement(
+              _rebass.Text,
+              { fontSize: 1, fontWeight: 900, pb: 4 },
+              'Session'
+            ),
+            _react2.default.createElement(
+              _rebass.Text,
+              { fontSize: 3, pb: 2 },
+              speaker.title
+            ),
+            _react2.default.createElement(
+              _rebass.Text,
+              { fontSize: [1, 2], pb: 7, fontWeight: 300 },
+              speaker.description
+            )
+          ),
+          _react2.default.createElement(
+            _rebass.Flex,
+            { flexDirection: 'column' },
+            _react2.default.createElement(
+              _rebass.Text,
+              { fontSize: 1, fontWeight: 900, pb: 4 },
+              'Bio'
+            ),
+            _react2.default.createElement(
+              _rebass.Text,
+              { fontSize: [1, 2], pb: 6, fontWeight: 300 },
+              speaker.bio
+            )
+          )
+        )
+      ),
+      _react2.default.createElement(
+        _rebass.Flex,
+        { alignItems: 'space-between' },
+        _react2.default.createElement(
+          RoundedButton,
+          { fontSize: 3, p: 5, bg: 'transparent', color: 'light', mr: 4, onClick: function onClick() {
+              window.location = '/speakers/' + previousId;
+            } },
+          _react2.default.createElement(_NavigateBefore2.default, { size: 32 })
+        ),
+        _react2.default.createElement(
+          RoundedButton,
+          { fontSize: 3, p: 5, bg: 'transparent', color: 'light', ml: 'auto', onClick: function onClick() {
+              window.location = '/speakers/' + nextId;
+            } },
+          _react2.default.createElement(_NavigateNext2.default, { size: 32 })
+        )
+      )
+    )
+  );
+});
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 /* WEBPACK VAR INJECTION */(function(module) {
 
 Object.defineProperty(exports, "__esModule", {
@@ -243,13 +378,13 @@ var cacheProm = exports.cacheProm = function cacheProm(pr, chunkName, props, pro
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)(module)))
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports) {
 
 module.exports = require("prop-types");
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -271,7 +406,7 @@ var _styledComponents = __webpack_require__(2);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _styledSystem = __webpack_require__(8);
+var _styledSystem = __webpack_require__(9);
 
 var _rebass = __webpack_require__(1);
 
@@ -400,17 +535,17 @@ var Home = function (_Component) {
           { color: 'white', minHeight: '40vh', borderRadius: 8, backgroundImage: _presenter2.default },
           _react2.default.createElement(
             _rebass.Heading,
-            null,
+            { fontSize: 5 },
             'March 8, 2019'
           ),
           _react2.default.createElement(
             _rebass.Heading,
-            null,
+            { fontSize: 3 },
             'Walter Scott Conference Center'
           ),
           _react2.default.createElement(
             _rebass.Heading,
-            null,
+            { fontSize: 3 },
             '6450 Pine St. Omaha, NE 68106'
           )
         ),
@@ -419,7 +554,7 @@ var Home = function (_Component) {
           { mt: 5, mb: 5, mx: [7, 6, 5, 4] },
           _react2.default.createElement(
             Row,
-            { width: [1, 0.75, 0.5] },
+            { width: [1.5, 1, 0.75] },
             _react2.default.createElement(
               _rebass.Text,
               { fontSize: 3, fontWeight: 300 },
@@ -441,7 +576,11 @@ var Home = function (_Component) {
             _react2.default.createElement(
               _rebass.Flex,
               { wrap: 'wrap' },
-              _react2.default.createElement(BigButton, { children: 'Buy Tickets', onClick: this.goToTickets })
+              _react2.default.createElement(
+                BigButton,
+                { bg: 'action', color: 'white', border: 'none', onClick: this.goToTickets },
+                'Buy Tickets'
+              )
             )
           )
         )
@@ -455,13 +594,13 @@ var Home = function (_Component) {
 exports.default = Home;
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports) {
 
 module.exports = require("styled-system");
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -558,7 +697,7 @@ var Default = function (_Component) {
 exports.default = Default;
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -584,6 +723,10 @@ var _connectaha_r_ = __webpack_require__(31);
 
 var _connectaha_r_2 = _interopRequireDefault(_connectaha_r_);
 
+var _Speaker = __webpack_require__(5);
+
+var _Speaker2 = _interopRequireDefault(_Speaker);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Clickable = _styledComponents2.default.div.withConfig({
@@ -602,11 +745,11 @@ exports.default = (0, _reactStatic.withRouteData)(function (_ref) {
     ),
     _react2.default.createElement(
       _rebass.Flex,
-      { flexWrap: 'wrap', flexFlow: 'rowwrap', p: 32 },
+      { flexWrap: 'wrap', p: 32 },
       speakers.map(function (speaker) {
         return _react2.default.createElement(
           Clickable,
-          null,
+          { key: speaker.id },
           _react2.default.createElement(
             _rebass.Box,
             { width: 280, height: 440 },
@@ -618,7 +761,6 @@ exports.default = (0, _reactStatic.withRouteData)(function (_ref) {
                 width: [1, 1, 1 / 2],
                 borderRadius: 8,
                 boxShadow: '0 0 16px rgba(0, 0, 0, .25)',
-                Flex: true,
                 onClick: function onClick() {
                   window.location = '/speakers/' + speaker.id;
                 } },
@@ -641,141 +783,6 @@ exports.default = (0, _reactStatic.withRouteData)(function (_ref) {
           )
         );
       })
-    )
-  );
-});
-
-/***/ }),
-/* 11 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactStatic = __webpack_require__(3);
-
-var _rebass = __webpack_require__(1);
-
-var _styledComponents = __webpack_require__(2);
-
-var _styledComponents2 = _interopRequireDefault(_styledComponents);
-
-var _NavigateNext = __webpack_require__(32);
-
-var _NavigateNext2 = _interopRequireDefault(_NavigateNext);
-
-var _NavigateBefore = __webpack_require__(33);
-
-var _NavigateBefore2 = _interopRequireDefault(_NavigateBefore);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var RoundedImage = (0, _styledComponents2.default)(_rebass.Image).withConfig({
-  displayName: 'Speaker__RoundedImage'
-})(['border-radius:50%;']);
-
-var RoundedButton = (0, _styledComponents2.default)(_rebass.Button).withConfig({
-  displayName: 'Speaker__RoundedButton'
-})(['cursor:pointer;border-radius:50%;']);
-exports.default = (0, _reactStatic.withRouteData)(function (_ref) {
-  var speaker = _ref.speaker,
-      nextId = _ref.nextId,
-      previousId = _ref.previousId;
-
-  var org = speaker.organization ? '/ ' + speaker.organization : '';
-
-  return _react2.default.createElement(
-    _rebass.Flex,
-    { mx: [3, 4, 5], flexWrap: 'wrap' },
-    _react2.default.createElement(
-      _rebass.Box,
-      { width: [1, 1 / 3] },
-      _react2.default.createElement(RoundedImage, { src: speaker.photo, pt: 4, mt: 3 })
-    ),
-    _react2.default.createElement(
-      _rebass.Box,
-      { width: [1, 2 / 3], px: 5 },
-      _react2.default.createElement(
-        _rebass.Flex,
-        { flexWrap: 'nowrap', alignItems: 'space-between' },
-        _react2.default.createElement(
-          _rebass.Flex,
-          { flexDirection: 'column' },
-          _react2.default.createElement(
-            _rebass.Flex,
-            { flexDirection: 'column' },
-            _react2.default.createElement(
-              _rebass.Text,
-              { fontSize: 1, fontWeight: 900, pt: 4, pb: 4 },
-              'Speaker'
-            ),
-            _react2.default.createElement(
-              _rebass.Text,
-              { fontSize: 5, pb: 7 },
-              speaker.firstName,
-              ' ',
-              speaker.lastName,
-              ' ',
-              org
-            ),
-            _react2.default.createElement(
-              _rebass.Text,
-              { fontSize: 1, fontWeight: 900, pb: 4 },
-              'Session'
-            ),
-            _react2.default.createElement(
-              _rebass.Text,
-              { fontSize: 3, pb: 2 },
-              speaker.title
-            ),
-            _react2.default.createElement(
-              _rebass.Text,
-              { fontSize: [1, 2], pb: 7, fontWeight: 300 },
-              speaker.description
-            )
-          ),
-          _react2.default.createElement(
-            _rebass.Flex,
-            { flexDirection: 'column' },
-            _react2.default.createElement(
-              _rebass.Text,
-              { fontSize: 1, fontWeight: 900, pb: 4 },
-              'Bio'
-            ),
-            _react2.default.createElement(
-              _rebass.Text,
-              { fontSize: [1, 2], pb: 6, fontWeight: 300 },
-              speaker.bio
-            )
-          )
-        )
-      ),
-      _react2.default.createElement(
-        _rebass.Flex,
-        { alignItems: 'space-between' },
-        _react2.default.createElement(
-          RoundedButton,
-          { fontSize: 3, p: 5, bg: 'transparent', color: 'light', mr: 4, onClick: function onClick() {
-              window.location = '/speakers/' + previousId;
-            } },
-          _react2.default.createElement(_NavigateBefore2.default, { size: 32 })
-        ),
-        _react2.default.createElement(
-          RoundedButton,
-          { fontSize: 3, p: 5, bg: 'transparent', color: 'light', ml: 'auto', onClick: function onClick() {
-              window.location = '/speakers/' + nextId;
-            } },
-          _react2.default.createElement(_NavigateNext2.default, { size: 32 })
-        )
-      )
     )
   );
 });
@@ -972,7 +979,7 @@ var AppHeader = _styledComponents2.default.div.withConfig({
 })(['display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:10px;border-bottom:1px solid #174899;> img{margin:0;min-width:none;width:auto;cursor:pointer;}Header-right{margin:0;flex:0 0 auto;padding:0 0 0 20px;flex-direction:row;flex-wrap:wrap;}']);
 var AppFooter = _styledComponents2.default.div.withConfig({
   displayName: 'App__AppFooter'
-})(['display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:10px;margin-top:auto;']);
+})(['display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:10px;margin-top:auto;border-top:1px solid #174899;']);
 
 var App = function App() {
   return _react2.default.createElement(
@@ -1004,7 +1011,7 @@ var App = function App() {
               { ml: 4, to: 'https://www.eventbrite.com/e/connectaha-conference-2019-tickets-49878979370', is: _reactStatic.Link },
               _react2.default.createElement(
                 _rebass.Button,
-                { bg: 'light', color: 'primary' },
+                { bg: 'action', color: 'white', border: 'none' },
                 'Buy Tickets'
               )
             )
@@ -1012,11 +1019,25 @@ var App = function App() {
         ),
         _react2.default.createElement(_reactStaticRoutes2.default, null),
         _react2.default.createElement(
-          'appfooter',
+          AppFooter,
           null,
           _react2.default.createElement(
-            'appfooter-left',
+            'div',
             null,
+            _react2.default.createElement(
+              'p',
+              null,
+              'Copyright \xA9 Connectaha, LLC. All rights reserved.'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            null,
+            _react2.default.createElement(
+              _rebass.NavLink,
+              { ml: 4, to: '/details', is: _reactStatic.Link },
+              'About'
+            ),
             _react2.default.createElement(
               _rebass.NavLink,
               { to: 'https://twitter.com/connectaha', is: _reactStatic.Link },
@@ -1026,16 +1047,6 @@ var App = function App() {
               _rebass.NavLink,
               { to: 'https://www.facebook.com/connectaha/', is: _reactStatic.Link },
               _react2.default.createElement(_reactSimpleIcons2.default, { name: 'facebook' })
-            ),
-            _react2.default.createElement(_rebass.NavLink, { ml: 4, to: '/details', is: _reactStatic.Link, children: 'About' })
-          ),
-          _react2.default.createElement(
-            'appfooter-right',
-            null,
-            _react2.default.createElement(
-              'p',
-              null,
-              'Copyright \xA9 Connectaha, LLC. All rights reserved.'
             )
           )
         )
@@ -1126,7 +1137,7 @@ var t_0 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
   id: '../src/containers/Home',
   file: '/Users/brianpope/Documents/GitHub/site/dist/react-static-routes.js',
   load: function load() {
-    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 7)), (0, _importCss3.default)('src/containers/Home', {
+    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 8)), (0, _importCss3.default)('src/containers/Home', {
       disableWarnings: true
     })]).then(function (proms) {
       return proms[0];
@@ -1136,7 +1147,7 @@ var t_0 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
     return _path3.default.join(__dirname, '../src/containers/Home');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(7);
+    return /*require.resolve*/(8);
   },
   chunkName: function chunkName() {
     return 'src/containers/Home';
@@ -1146,7 +1157,7 @@ var t_1 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
   id: '../src/containers/Details',
   file: '/Users/brianpope/Documents/GitHub/site/dist/react-static-routes.js',
   load: function load() {
-    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 9)), (0, _importCss3.default)('src/containers/Details', {
+    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 10)), (0, _importCss3.default)('src/containers/Details', {
       disableWarnings: true
     })]).then(function (proms) {
       return proms[0];
@@ -1156,7 +1167,7 @@ var t_1 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
     return _path3.default.join(__dirname, '../src/containers/Details');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(9);
+    return /*require.resolve*/(10);
   },
   chunkName: function chunkName() {
     return 'src/containers/Details';
@@ -1166,7 +1177,7 @@ var t_2 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
   id: '../src/containers/Speakers',
   file: '/Users/brianpope/Documents/GitHub/site/dist/react-static-routes.js',
   load: function load() {
-    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 10)), (0, _importCss3.default)('src/containers/Speakers', {
+    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 11)), (0, _importCss3.default)('src/containers/Speakers', {
       disableWarnings: true
     })]).then(function (proms) {
       return proms[0];
@@ -1176,7 +1187,7 @@ var t_2 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
     return _path3.default.join(__dirname, '../src/containers/Speakers');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(10);
+    return /*require.resolve*/(11);
   },
   chunkName: function chunkName() {
     return 'src/containers/Speakers';
@@ -1186,7 +1197,7 @@ var t_3 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
   id: '../src/containers/Speaker',
   file: '/Users/brianpope/Documents/GitHub/site/dist/react-static-routes.js',
   load: function load() {
-    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 11)), (0, _importCss3.default)('src/containers/Speaker', {
+    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 5)), (0, _importCss3.default)('src/containers/Speaker', {
       disableWarnings: true
     })]).then(function (proms) {
       return proms[0];
@@ -1196,7 +1207,7 @@ var t_3 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
     return _path3.default.join(__dirname, '../src/containers/Speaker');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(11);
+    return /*require.resolve*/(5);
   },
   chunkName: function chunkName() {
     return 'src/containers/Speaker';
@@ -1390,7 +1401,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(6);
+var _propTypes = __webpack_require__(7);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -1400,7 +1411,7 @@ var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
 var _requireUniversalModule2 = _interopRequireDefault(_requireUniversalModule);
 
-var _utils = __webpack_require__(5);
+var _utils = __webpack_require__(6);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1706,7 +1717,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.clearChunks = exports.flushModuleIds = exports.flushChunkNames = exports.MODULE_IDS = exports.CHUNK_NAMES = undefined;
 exports.default = requireUniversalModule;
 
-var _utils = __webpack_require__(5);
+var _utils = __webpack_require__(6);
 
 var CHUNK_NAMES = exports.CHUNK_NAMES = new Set();
 var MODULE_IDS = exports.MODULE_IDS = new Set();
@@ -1892,7 +1903,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(6);
+var _propTypes = __webpack_require__(7);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -1995,7 +2006,7 @@ var _styledComponents = __webpack_require__(2);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _styledSystem = __webpack_require__(8);
+var _styledSystem = __webpack_require__(9);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2028,7 +2039,8 @@ exports.default = {
     white: '#ffffff',
     gray: '#58595b',
     dark: '#58595b',
-    darkblue: '#0d1d42'
+    darkblue: '#0d1d42',
+    action: '#ff6600'
   },
   fontSizes: [14, 16, 20, 24, 32, 48, 64],
   space: ['0rem', '0.236rem', '0.382rem', '0.618rem', '1rem', '1.618rem', '2.618rem', '4.236rem', '6.854rem'],
@@ -2044,4 +2056,4 @@ module.exports = __webpack_require__.p + "static/logo_300.a7fea248.svg";
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.9dd041c9.js.map
+//# sourceMappingURL=static.023c9029.js.map

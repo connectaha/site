@@ -99,13 +99,13 @@ export default class Home extends Component {
         </Center>
 
         <Banner color="white" minHeight="40vh" borderRadius={8} backgroundImage={BannerImage}>
-          <Heading>March 8, 2019</Heading>
-          <Heading>Walter Scott Conference Center</Heading>
-          <Heading>6450 Pine St. Omaha, NE 68106</Heading>
+          <Heading fontSize={5}>March 8, 2019</Heading>
+          <Heading fontSize={3}>Walter Scott Conference Center</Heading>
+          <Heading fontSize={3}>6450 Pine St. Omaha, NE 68106</Heading>
         </Banner>
 
         <Center mt={5} mb={5} mx={[7, 6, 5, 4]}>
-          <Row width={[1, 0.75, 0.5]}>
+          <Row width={[1.5, 1, 0.75]}>
             <Text fontSize={3} fontWeight={300} >A new conference is coming to Omaha.
               A conference that believes that everyone in the software world can learn
               from each other. A conference that believes quality software only happens
@@ -122,7 +122,7 @@ export default class Home extends Component {
 
           <Row width={[1, 0.75, 0.5]}>
             <Flex wrap="wrap">
-              <BigButton bg="action" color="white" border="none" children="Buy Tickets" onClick={this.goToTickets} />
+              <BigButton bg="action" color="white" border="none" onClick={this.goToTickets}>Buy Tickets</BigButton>
             </Flex>
           </Row>
         </Center>
