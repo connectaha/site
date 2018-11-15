@@ -1017,7 +1017,11 @@ var App = function App() {
             )
           )
         ),
-        _react2.default.createElement(_reactStaticRoutes2.default, null),
+        _react2.default.createElement(
+          'div',
+          null,
+          _react2.default.createElement(_reactStaticRoutes2.default, null)
+        ),
         _react2.default.createElement(
           AppFooter,
           null,
@@ -1135,7 +1139,7 @@ var universalOptions = {
 
 var t_0 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/Home',
-  file: '/Users/brianpope/Documents/GitHub/site/dist/react-static-routes.js',
+  file: '/Users/nate/code/connectaha/conf-page/dist/react-static-routes.js',
   load: function load() {
     return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 8)), (0, _importCss3.default)('src/containers/Home', {
       disableWarnings: true
@@ -1155,7 +1159,7 @@ var t_0 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
 }), universalOptions);
 var t_1 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/Details',
-  file: '/Users/brianpope/Documents/GitHub/site/dist/react-static-routes.js',
+  file: '/Users/nate/code/connectaha/conf-page/dist/react-static-routes.js',
   load: function load() {
     return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 10)), (0, _importCss3.default)('src/containers/Details', {
       disableWarnings: true
@@ -1175,7 +1179,7 @@ var t_1 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
 }), universalOptions);
 var t_2 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/Speakers',
-  file: '/Users/brianpope/Documents/GitHub/site/dist/react-static-routes.js',
+  file: '/Users/nate/code/connectaha/conf-page/dist/react-static-routes.js',
   load: function load() {
     return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 11)), (0, _importCss3.default)('src/containers/Speakers', {
       disableWarnings: true
@@ -1195,7 +1199,7 @@ var t_2 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
 }), universalOptions);
 var t_3 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/Speaker',
-  file: '/Users/brianpope/Documents/GitHub/site/dist/react-static-routes.js',
+  file: '/Users/nate/code/connectaha/conf-page/dist/react-static-routes.js',
   load: function load() {
     return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 5)), (0, _importCss3.default)('src/containers/Speaker', {
       disableWarnings: true
@@ -1215,7 +1219,7 @@ var t_3 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
 }), universalOptions);
 var t_4 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/Sponsorship',
-  file: '/Users/brianpope/Documents/GitHub/site/dist/react-static-routes.js',
+  file: '/Users/nate/code/connectaha/conf-page/dist/react-static-routes.js',
   load: function load() {
     return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 12)), (0, _importCss3.default)('src/containers/Sponsorship', {
       disableWarnings: true
@@ -1235,7 +1239,7 @@ var t_4 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
 }), universalOptions);
 var t_5 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/404',
-  file: '/Users/brianpope/Documents/GitHub/site/dist/react-static-routes.js',
+  file: '/Users/nate/code/connectaha/conf-page/dist/react-static-routes.js',
   load: function load() {
     return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 13)), (0, _importCss3.default)('src/containers/404', {
       disableWarnings: true
@@ -2056,4 +2060,4 @@ module.exports = __webpack_require__.p + "static/logo_300.a7fea248.svg";
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.023c9029.js.map
+//# sourceMappingURL=static.9e46a926.js.map
