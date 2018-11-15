@@ -81,5 +81,16 @@
         "title": "How to Work with People: A Guide to Playing Nicely with Others",
         "description": "Humans. No matter what we might wish, we have to work with them to get stuff done. Unfortunately, when we join a team it doesn’t come with a manual. Figuring out how to get things done and get everyone pulling in the same direction can be a nightmare.\r\n\r\nBut it doesn’t have to be! In this example-driven talk you’ll learn what a personality type is, you’ll learn some methods for communicating better with others, and you’ll dip a toe into the psychology of team dynamics - all without having to read a huge textbook or a bunch of manager-focused books trying to sell you something. You’ll come away with tools you can use to be a better teammate and to create a stronger team, regardless of your role. Let’s get started actually working together!",
         "photo": "/photos/arthurDoler.jpg"
+    },
+    {
+        "id": "michael-perdunn",
+        "firstName": "Michael",
+        "lastName": "Perdunn",
+        "email": "mkperdunn@gmail.com",
+        "bio": "Michael Perdunn is a project manager, speaker, and consultant. He has a Master’s degree in Communication and brings over 12 years of experience managing projects in various sectors. Currently, he is consulting helping companies them transform their cybersecurity effectiveness. He is also an instructor in Information Systems and Quantitative Analysis at the University of Nebraska at Omaha.\r\n",
+        "organization": "",
+        "title": "What can Escape Rooms teach us about Cybersecurity?",
+        "description": "The popularity of Escape Rooms have exploded. In the past four years, they have grown by an astounding 1000%. The premise is simple, a group has 60 minutes to search for clues, put those clues together correctly to solve puzzles, and successfully escape. When Cybersecurity teams respond to an incident, they have a limited amount of time to search through alerts and logs to find clues, put them together correctly to determine the impact, and respond successfully defend to their company from breach. Given the stress of the situation, many teams make mistakes and fail. Applying some simple principles, incident response can be dramatically improved. This interactive presentation will guide participants through the theory behind games such as escape rooms and the proven techniques for solving them. Then we will apply those to Cybersecurity teams through some great stories of incident response success and failures.",
+        "photo": "/photos/michaelPerdunn.jpg"
     }
 ]
