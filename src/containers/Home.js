@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { post } from 'axios'
 import styled from 'styled-components'
 import { fontSize, space, width } from 'styled-system'
-import { Button, Banner, Flex, Text, Link, Image, Card, Heading } from 'rebass'
+import { Button, Banner, Flex, Text, Link, Heading } from 'rebass'
 import ButterToast, { CinnamonSugar } from 'butter-toast'
 import BannerImage from './presenter.jpg'
 
@@ -88,42 +88,44 @@ export default class Home extends Component {
 
 
   render () {
-    return (<div>
-      <Center mt={5} mb={5} mx={[7, 6, 5, 4]}>
-        <Row pt={4} width={[1, 0.75, 0.5]}>
-          <Text fontSize={4} link="white" fontWeight={300} >
-            Our CFP is open: <Link color="white" href="https://papercall.io/connectaha">Submit a Talk!</Link>
-          </Text>
-        </Row>
-      </Center>
+    return (
+      <div>
+        <Center mt={5} mb={5} mx={[7, 6, 5, 4]}>
+          <Row pt={4} width={[1, 0.75, 0.5]}>
+            <Text fontSize={4} link="white" fontWeight={300} >
+              Our CFP is open: <Link color="white" href="https://papercall.io/connectaha">Submit a Talk!</Link>
+            </Text>
+          </Row>
+        </Center>
 
-      <Banner color="white" minHeight="40vh" borderRadius={8} backgroundImage={BannerImage}>
-        <Heading>March 8, 2019</Heading>
-        <Heading>Walter Scott Conference Center</Heading>
-        <Heading>6450 Pine St. Omaha, NE 68106</Heading>
-      </Banner>
+        <Banner color="white" minHeight="40vh" borderRadius={8} backgroundImage={BannerImage}>
+          <Heading fontSize={5}>March 8, 2019</Heading>
+          <Heading fontSize={3}>Walter Scott Conference Center</Heading>
+          <Heading fontSize={3}>6450 Pine St. Omaha, NE 68106</Heading>
+        </Banner>
 
-      <Center mt={5} mb={5} mx={[7, 6, 5, 4]}>
-        <Row width={[1, 0.75, 0.5]}>
-          <Text fontSize={3} fontWeight={300} >A new conference is coming to Omaha. A conference that believes
-           that everyone in the software world can learn from each other. A conference
-           that believes quality software only happens when everyone on the team is
-           communicating. A conference that believes those with less experience provide
-          just as much value as the most senior team member.
-          </Text>
-        </Row>
-        <Row width={[1, 0.75, 0.5]}>
-          <Text fontSize={3} fontWeight={300} >
-            A conference that believes there’s power when people talk.
-          </Text>
-        </Row>
+        <Center mt={5} mb={5} mx={[7, 6, 5, 4]}>
+          <Row width={[1.5, 1, 0.75]}>
+            <Text fontSize={3} fontWeight={300} >A new conference is coming to Omaha.
+              A conference that believes that everyone in the software world can learn
+              from each other. A conference that believes quality software only happens
+              when everyone on the team is communicating. A conference that believes
+              those with less experience provide just as much value as the most senior
+              team member.
+            </Text>
+          </Row>
+          <Row width={[1, 0.75, 0.5]}>
+            <Text fontSize={3} fontWeight={300} >
+              A conference that believes there’s power when people talk.
+            </Text>
+          </Row>
 
-        <Row width={[1, 0.75, 0.5]}>
-          <Flex wrap="wrap">
-            <BigButton children="Buy Tickets" onClick={this.goToTickets} />
-          </Flex>
-        </Row>
-      </Center>
-    </div>)
+          <Row width={[1, 0.75, 0.5]}>
+            <Flex wrap="wrap">
+              <BigButton bg="action" color="white" border="none" onClick={this.goToTickets}>Buy Tickets</BigButton>
+            </Flex>
+          </Row>
+        </Center>
+      </div>)
   }
 }

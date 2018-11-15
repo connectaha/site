@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { withRouteData } from 'react-static'
 import { Box, Card, Image, Flex, Text, Heading } from 'rebass'
 import logo from '../connectaha_r_400.svg'
+import Speaker from './Speaker'
 
 const Clickable = styled.div`
   cursor: pointer;
@@ -11,10 +12,10 @@ const Clickable = styled.div`
 export default withRouteData(({ speakers }) => (
   <div>
     <Heading pl={4} pt={6} pb={4} color="white">Speakers</Heading>
-    <Flex flexWrap="wrap" flexFlow="rowwrap" p={32}>
+    <Flex flexWrap="wrap" p={32}>
       {
         speakers.map(speaker => (
-          <Clickable>
+          <Clickable key={speaker.id}>
             <Box width={280} height={440}>
               <Card
                 m={16}
@@ -22,7 +23,6 @@ export default withRouteData(({ speakers }) => (
                 width={[1, 1, 1 / 2]}
                 borderRadius={8}
                 boxShadow="0 0 16px rgba(0, 0, 0, .25)"
-                Flex
                 onClick={() => { window.location = `/speakers/${speaker.id}` }}>
                 <Image src={speaker.photo} />
                 <Box px={2}>
