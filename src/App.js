@@ -78,9 +78,9 @@ const App = () => (
         <AppHeader>
           <Image pb={5} pt={5} mt={5} mb={32} mx={[1, 2, 3, 4]} src={logo} onClick={() => { window.location = '/' }} alt="Connectaha Logo" width={[0.5, 0.4, 0.3]} height="100" />
           <header-right>
-            <FileLink ml={4} href="./2019_Connectaha_Prospectus.pdf" >Sponsorship</FileLink>
+            <FileLink ml={4} target="_blank" href="/2019_Connectaha_Prospectus.pdf" >Sponsorship</FileLink>
             <NavLink ml={4} to="/speakers" is={Link} children="Speakers" />
-            <NavLink ml={4} to="https://www.eventbrite.com/e/connectaha-conference-2019-tickets-49878979370" is={Link}>
+            <NavLink ml={4} target="_blank" to="https://www.eventbrite.com/e/connectaha-conference-2019-tickets-49878979370" is={Link}>
               <Button bg="action" color="white" border="none">Buy Tickets</Button>
             </NavLink>
           </header-right>
