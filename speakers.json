@@ -207,7 +207,7 @@
         "title": "What can Escape Rooms teach us about Cybersecurity?",
         "description": "The popularity of Escape Rooms have exploded. In the past four years, they have grown by an astounding 1000%. The premise is simple, a group has 60 minutes to search for clues, put those clues together correctly to solve puzzles, and successfully escape. When Cybersecurity teams respond to an incident, they have a limited amount of time to search through alerts and logs to find clues, put them together correctly to determine the impact, and respond successfully defend to their company from breach. Given the stress of the situation, many teams make mistakes and fail. Applying some simple principles, incident response can be dramatically improved. This interactive presentation will guide participants through the theory behind games such as escape rooms and the proven techniques for solving them. Then we will apply those to Cybersecurity teams through some great stories of incident response success and failures.",
         "organization": "",
-        "photo": "/photos/"
+        "photo": "/photos/michaelPerdunn.jpg"
     },
     {
         "id": "alison-hawke",
@@ -217,7 +217,7 @@
         "title": "A Hero's Journey: Manual Tester to Automation QA",
         "description": "**Prologue: Once Upon A Time in Software**\r\n \r\nOnce there was a project that was frustrating, it had lots of bugs and made the team unhappy. For the next project, we tried something new: the QA on the team would learn C# and she would write automated tests before the developers started coding. The team was happy, and the app runs to this day with only bugs caused by bad data the client told us could never exist. \r\n\r\nThe end. Or is it really... The Beginning?\r\n\r\nThis talk is the story of a learning quest, what I've discovered along the way teaching QAs to write test automation in Java, C#, and JavaScript, and my own journey of picking up new languages for fun, like Elixir. It is aimed at QA testers who want to broaden their testing skills, and at developers who want to help them get there. No prior coding knowledge is required for the QAs.",
         "organization": "WWT Asynchrony Labs",
-        "photo": "/photos/"
+        "photo": "/photos/alisonHawke.jpg"
     },
     {
         "id": "cameron-presley",
@@ -227,7 +227,7 @@
         "title": "How Functional Programming Made Me A Better Developer",
         "description": "With the rise in popularity recently, functional programming has become \"The Next Big Thing\". As of today, there are tons of frameworks and tools that can be used to for front-end, back-end, desktop, and mobile development. With that being said, the majority of us are still using object-oriented languages for our day jobs and don't need to learn functional programming, right?\r\n\r\nIn this talk, I'll walk you through my experiences learning functional programming over the last year, how my style of programming has changed, and now how I think about programming with regards to both functional and object-oriented paradigms",
         "organization": "SentryOne",
-        "photo": "/photos/"
+        "photo": "/photos/cameronPresley.jpg"
     },
     {
         "id": "arthur-doler",
@@ -237,7 +237,7 @@
         "title": "How to Work with People: A Guide to Playing Nicely with Others",
         "description": "Humans. No matter what we might wish, we have to work with them to get stuff done. Unfortunately, when we join a team it doesn’t come with a manual. Figuring out how to get things done and get everyone pulling in the same direction can be a nightmare.\r\n\r\nBut it doesn’t have to be! In this example-driven talk you’ll learn what a personality type is, you’ll learn some methods for communicating better with others, and you’ll dip a toe into the psychology of team dynamics - all without having to read a huge textbook or a bunch of manager-focused books trying to sell you something. You’ll come away with tools you can use to be a better teammate and to create a stronger team, regardless of your role. Let’s get started actually working together!",
         "organization": "Aviture",
-        "photo": "/photos/"
+        "photo": "/photos/arthurDoler.jpg"
     },
     {
         "id": "john-henry-müller",
@@ -247,7 +247,7 @@
         "title": "From Color Palette to Color System",
         "description": "Color touches literally every pixel of digital products. That's why it is so important to get color right in a design system.\r\n\r\nIn this talk, John Henry Müller (Design Director at Hudl) divulges mistakes made and practical lessons learned about color while creating Uniform, Hudl's design system.\r\n\r\nWhat you'll learn:\r\n\r\n* Tips and tricks creating a durable color scheme \r\n* Common pitfalls when defining a color palette\r\n* Understand color contrast for accessibility ",
         "organization": "",
-        "photo": "/photos/"
+        "photo": "/photos/johnHenry.jpg"
     },
     {
         "id": "beth-laing",
@@ -257,7 +257,7 @@
         "title": "You're Hired! Avoiding missteps and false starts in your new job",
         "description": "Congratulations on your new job... now what! Starting a new job, especially if it’s your first one, is always exciting... and stressful. Here’s how to take control of the situation and make sure that you’re ready to start strong from day one. As superficial as it sounds, you want to look your best when you are meeting so many people for the first time. But you should dress appropriately for your environment - a suit would be out of place in most technical organizations. The what not to wear part is easy… but what should you wear? Getting the people part right is key.First, ask a lot of questions. Use the 70/30 rule -- ask questions 70% of the time and share your stories and ideas 30% of the time. This is your chance to learn about the company, your project and the people that you will be working with, so you want to spend most of your time listening. Be ready with a plan for getting up-to-speed, even if all the parts are not in place when you start. Chances are your accounts and access might not be fully functional from day one, so be ready with things to do in the meantime. You’ll leave with a checklist of things to do so you walk in the door on day one ready to go.",
         "organization": "Women Who Code, Atlanta",
-        "photo": "/photos/"
+        "photo": "/photos/bethLaing.jpg"
     },
     {
         "id": "courtney-heitman",
@@ -267,6 +267,26 @@
         "title": "Mapping the User's Journey",
         "description": "Do you feel like you don't actually know your users? Do they struggle through the flow of your website, and you don’t know why? \r\n\r\nThis session will introduce you to empathy mapping, and how it will help you to relate to your users better. Once we have some empathy (mapping), we'll go over user journey mapping, so we can better understand what questions and pain points our users are having as they move through our site.",
         "organization": "Gallup",
-        "photo": "/photos/"
+        "photo": "/photos/courtneyHeitman.jpg"
+    },
+    {
+        "id": "jon-mills",
+        "firstName": "Jonathan",
+        "lastName": "Mills",
+        "bio": "Jon is a Pluralsight author, Microsoft MVP, and international speaker focusing on JavaScript both in the browser and on the server.  Jonathan Mills is a JavaScript and Node.js expert working in the mean stack with individuals and companies to help build their technical skills to cope with the constantly changing landscape of software development. ",
+        "title": "",
+        "description": "",
+        "photo": "/photos/jonMills.jpg",
+        "organization": "Epiq Global"
+    },
+    {
+        "id": "jeff-strauss",
+        "firstName": "Jeff",
+        "lastName": "Strauss",
+        "bio": "Jeff is a software developer, an entrepreneur, and an attorney. As a consultant at WWT Asynchrony Labs, with unique experiences that combine technology and law, he maintains a passion for solving problems with inspired solutions, improving life through technology. A dedicated member of the developer community, Jeff travels internationally to speak on both technical and business-oriented topics. He is a Microsoft MVP and enjoys serving on the board of directors for the Kansas City Developer Conference.",
+        "title": "",
+        "description": "",
+        "photo": "/photos/jeffStraus.jpg",
+        "organization": "World Wide Technology"
     }
 ]

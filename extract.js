@@ -4,6 +4,7 @@ const {
 const { writeFileSync } = require('fs')
 
 const papercall = require('./Connectaha Submissions.json')
+const keynotes = require('./keynotes.json')
 
 
 function extract () {
@@ -25,6 +26,10 @@ function extract () {
       }
     })
   )(papercall)
+
+  keynotes.forEach(speaker => {
+    speakers.push(speaker)
+  })
 
   writeFileSync('./speakers.json', JSON.stringify(speakers))
 }
