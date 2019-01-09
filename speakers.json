@@ -17,7 +17,7 @@
         "title": "NgRx: Redux-style State Management in Angular",
         "description": "We’ve heard that using TypeScript can help us avoid painful bugs programmers commonly run into when writing JavaScript by type-checking our code. One of purposes of TypeScript is to “statically identify constructs that are likely to be errors”. With NgRx we can take advantage of this type safety by using TypeScript classes as action creators with readonly type properties, so we can then infer the action object types in our state management code.\r\n\r\nNgRx provides a structuring mechanism for larger applications; it's a design pattern teaches you how to think. In this pattern, the developer needs to identify the streams of values the application is interested in and how they are combined to produce meaningful information for the view layer. The streams, the various applications states, and the view layer models are what we are setting out to define when we use Redux-style state management. This talk will show how to use the various NgRx reactive libraries for Angular state management to build out our application streams and then consume them in our components and services.\r\n",
         "organization": "PRX",
-        "photo": "/photos/"
+        "photo": ""
     },
     {
         "id": "jeremy-clark",
@@ -37,7 +37,7 @@
         "title": "Grow The Future With Internship 2.0",
         "description": "Farm Credit Services of America has a different take on what an Internship experience should be. We took the idea of an Internship, and made it AWESOME! The Intern Program is team based, and allows a small group of software development students to work together on a team along with four or five full-time mentors and leaders to create a greenfield enterprise application. The experience allows the students to iterate through the full software development life cycle in an enterprise environment: from sketching out wire-frames to deploying an enterprise application in Production. \r\n\r\nWe will also talk through how we do our intern interviews differently. Our interviews do not consist of the traditional sit-down interview with questions. We have a fun and relaxed process that let's the candidates express their creativity, collaboration, problem solving, and their personality. This helps to insure that we are investing in people that fit our culture.\r\n\r\nOne of the greatest benefits to our approach is that the students get an experience of what life is like in the real world. The amount of learning that happens when you apply the theory that's been learned in school across the entirety of the software development life-cycle in highly-collaborative enterprise team environment is indescribable. ",
         "organization": "Farm Credit Services of America",
-        "photo": "/photos/"
+        "photo": ""
     },
     {
         "id": "thomas-cleberg",
@@ -47,7 +47,7 @@
         "title": "Model Management: The Least You Can Do",
         "description": "Data science projects are most visible right after initial delivery, but the data science team’s responsibility goes far beyond that. This talk introduces the basics of ModelOps, Model Lifecycle Management, an operational model for data science team work products, and common open-source tools for achieving a minimum level of transparency, reproducibility, and risk management for those produces.",
         "organization": "Mutual of Omaha",
-        "photo": "/photos/"
+        "photo": ""
     },
     {
         "id": "javier-lozano",
@@ -57,7 +57,7 @@
         "title": ".NET Yesterday, Today, and Tomorrow",
         "description": "Trying to make sense of .NET Core and .NET Standard? Looking for ways to reuse your current .NET Framework code? In this session we will cover how you can take your existing .NET Framework code and reuse it in your .NET Standard/Core applications with ease.",
         "organization": "Lozanotek, Inc.",
-        "photo": "/photos/"
+        "photo": ""
     },
     {
         "id": "michelle-mras",
@@ -67,7 +67,7 @@
         "title": "Why Do They Do That?",
         "description": "This fun and eye-opening activity will truly unleash participates views of themselves and those they interact with. Participants learn their basic behavior style and how to better communicate to other behavior styles through the use of BANKCODE. Audiences laugh, bond and quickly realize why miscommunications occurred within past interactions and how to avoid them problems in the future. Together, they learn how to clearly communicate with each other. They receive immediate validation of what is being taught through confirmation from the other behavior groups. ",
         "organization": "Mras Inc",
-        "photo": "/photos/"
+        "photo": ""
     },
     {
         "id": "simon-yost",
@@ -87,7 +87,7 @@
         "title": "Health: The Most Important Dev Tool",
         "description": "Working in the tech industry often involves spending long hours sitting down, staring at a screen, consuming copious amounts of pizza and caffeine. The work is mentally demanding and can be stressful. In the rush to get everything done, it can be easy to neglect our health. But a healthy body and mind are necessary for effective performance. Based on HR training, research, and personal experience, this session provides realistic suggestions for managing your well-being at work. It covers the connection between physical and mental health, as well as how to discuss these topics with your employer. You’ll leave with a better idea of how to take care of yourself and be a happier, healthier, more productive person.",
         "organization": "",
-        "photo": "/photos/"
+        "photo": ""
     },
     {
         "id": "chris-demars",
@@ -97,7 +97,7 @@
         "title": "I Can't See: Low Vision A11Y & Users",
         "description": "When you think of low vision, what comes to mind? A user that is near sighted? How about far sighted? Maybe partially blind? These are all qualifying cases of poor vision, but low vision is more complicated than the prescription of glasses or contacts.\r\n\r\nAccording to the World Health Organization, they categorize low vision based on specific levels of visual acuity and field of vision (W3.org, 2016). With that in mind, we as developers can look at different categories of low vision including color vision, visual acuity, contrast sensitivity, etc and make an effort to bake in things like zoom, non-conflicting colors, and re-wrapping of columns in to our code.\r\n\r\nMy talk will cover what vision accessibility is, different categories of low vision, what the needs of the users are, and what we as developers can do to achieve a great user experience for low vision users.",
         "organization": "United Shore",
-        "photo": "/photos/"
+        "photo": ""
     },
     {
         "id": "greg-dick",
@@ -127,7 +127,7 @@
         "title": "Build your Brand (or someone else will do it for you)",
         "description": "For this presentation I will share some proven strategies that empower software makers. Branding seems to be a real blind spot for many software engineers. As an engineer myself, I know that often we focus on a solution when the problem is not yet clear. The problem, or opportunity, is to develop and maintain a satisfying career in the future of software. As you face failure and success over and over again, how you react is a big part of your personal brand. The areas you focus on and projects you attach yourself to are also a part of that brand. Don't let someone else be your puppet master, pull your own strings.",
         "organization": "Wallaby Consulting",
-        "photo": "/photos/"
+        "photo": ""
     },
     {
         "id": "katia-wheeler",
@@ -137,7 +137,7 @@
         "title": "Thinking About React, Atomically",
         "description": "Atomic Design is the concept of breaking down user interfaces into smaller, simpler elements. There are five different levels in atomic design: atoms, molecules, organism, templates, and pages. These levels are combined to make user interfaces.\r\n\r\nReact, at its core, follows Atomic Design inherently by encouraging developers to keep components as simple and as broken down as possible. From this simplicity, we can create more complex components and containers of components to create the user interfaces for our applications. Following these patterns gives us, as developers, an easy to manage (and test) ecosystem within our React applications.\r\n\r\nDuring this talk, we'll dive into the roots of Atomic Design and how we can apply these design principles to our React applications.",
         "organization": "Balance Innovations",
-        "photo": "/photos/katiaKWheeler.jpg"
+        "photo": "/photos/katiaWheeler.jpeg"
     },
     {
         "id": "mike-hostetler",
@@ -147,7 +147,7 @@
         "title": "Python for the Curious",
         "description": "Python is used in many applications today and yet some people seem mystified by it. Maybe it's the whitespace, maybe it's dynamic typing, maybe it's because it seems... too clean looking. Yet Python is useful for one-off scripts and for full-blown web applications (just ask Instagram or Pinterest). And Python is becoming the de facto language in many data science applications. We will touch on all this, show some examples, and make fun of \"enterprise\" languages as we look at a simple, yet powerful, language.",
         "organization": "Object Partners, Inc",
-        "photo": "/photos/"
+        "photo": ""
     },
     {
         "id": "michael-eaton",
@@ -157,7 +157,7 @@
         "title": "Leadership Journey: From Software Developer to Leader",
         "description": "You’ve spent years working on your technical skills and can write code with the best of them. Then, one day, a leadership position opens up on your team, and you start thinking about it. Should I or shouldn’t I? What if I hate it? What if I love it? What if I'm not that good at it? In this interactive session, we’ll explore “why leadership,” answer some hard questions, and talk about one developer’s path from writing code to leading people.",
         "organization": "Matched Pattern",
-        "photo": "/photos/"
+        "photo": ""
     },
     {
         "id": "jason-swett",
@@ -177,7 +177,7 @@
         "title": "Stop, Collaborate and Listen",
         "description": "Remember back to the BEST work you’ve ever done with a team of people. There was room for creativity, there was open & free-wheeling dialogue, and a real sense of excitement to dig into the work. Why did it go so well? Because the foundations were in place to make working in concert possible. We’re going to tell you how to recreate that wherever you are right now.\r\n\r\nTeams accomplish more than individuals. We need to maximize that work using more interesting, creative and most importantly effective solutions to collaborating. Join for a deep dive on how and when to apply a host of techniques.",
         "organization": "Proxibid ; Hudl",
-        "photo": "/photos/"
+        "photo": ""
     },
     {
         "id": "ash-banaszek",
@@ -187,7 +187,7 @@
         "title": "Fear, Pain, and Loathing: Empathizing with your Users' Plight",
         "description": "You're a developer given a relatively straightforward assignment: replace an old application with a new technology. \"Make it easy to use... Make it sharp! Oh, and don't change anything.\"\r\n\r\nThis session discusses the basics of user interface usability from a user's perspective. When your application is live, the user is the person who will be using that system day in and day out. They determine your application's success or failure by adopting, undermining, or abandoning your application. With such importance, it is imperative to have some understanding of your users' requirements, constraints, and goals. This session will help you develop skills to build empathy and better communicate with your users, while also meeting the needs and requirements of your project stakeholders.",
         "organization": "Union Pacific",
-        "photo": "/photos/"
+        "photo": ""
     },
     {
         "id": "jeff-fritz",
@@ -197,7 +197,7 @@
         "title": "Zero to Community Hero - Start Live Coding on Twitch",
         "description": "You're at a conference, and learning a ton. That's awesome, but how do you continue learning after the event? Let's break out of just socializing and learning from the folks in our local geographic area, and embrace a more global community using the Twitch live video platform to write code, discuss technology topics, and even broadcast local user-groups. \r\nWe'll go beyond just playing Fortnite or League of Legends, and talk about hosting educational content on Twitch. Join one of the leaders of this movement, Jeff Fritz as he gives you an inside look at how to get started streaming, participating, and building new communities with online video",
         "organization": "Microsoft",
-        "photo": "/photos/"
+        "photo": ""
     },
     {
         "id": "michael-k-perdunn",
