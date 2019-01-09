@@ -1,8 +1,10 @@
 import axios from 'axios'
 import React, { Component } from 'react'
 import { ServerStyleSheet } from 'styled-components'
+import {prop, sortBy} from 'ramda'
 
-const speakers = require('./speakers.json')
+const unsortedSpeakers =  require('./speakers.json')
+const speakers = sortBy(prop('id'), unsortedSpeakers)
 
 export default {
   siteRoot: '',

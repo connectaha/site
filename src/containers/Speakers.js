@@ -2,18 +2,20 @@ import React from 'react'
 import styled from 'styled-components'
 import { withRouteData } from 'react-static'
 import { Box, Card, Image, Flex, Text, Heading } from 'rebass'
-import logo from '../connectaha_r_400.svg'
-import Speaker from './Speaker'
+import shuffle from 'shuffle-array'
 
 const Clickable = styled.div`
   cursor: pointer;
 `
 
-export default withRouteData(({ speakers }) => (
-  <div>
-    <Heading pl={4} pt={6} pb={4} color="white">Speakers</Heading>
-    <Flex flexWrap="wrap" p={32}>
-      {
+export default withRouteData(({ speakers }) => 
+  // const shuffled = shuffle(speakers)
+   (
+
+    <div>
+      <Heading pl={4} pt={6} pb={4} color="white">Speakers</Heading>
+      <Flex flexWrap="wrap" p={32}>
+        {
         speakers.map(speaker => (
           <Clickable key={speaker.id}>
             <Box width={280} height={440}>
@@ -37,5 +39,6 @@ export default withRouteData(({ speakers }) => (
             </Box>
           </Clickable>))
       }
-    </Flex>
-  </div>))
+      </Flex>
+    </div>)
+)
