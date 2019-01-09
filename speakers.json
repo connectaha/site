@@ -7,7 +7,7 @@
         "title": "Overcoming Delay: How The Best Developers Increase Productivity",
         "description": "In the software industry, it’s common to be on a project with an aggressive timeline.  Even if the schedule was correct, plans don't always go the way you expect and become off track. Teams end up working more extended hours, try to add people to the project or make other heroic efforts to try and “save the day’ and finish on time.  In my experience, rarely have those efforts worked and when it did, the team was so burned out it took several weeks to get motivated to tackle another project.\r\n\r\nThere should be a better way to complete projects on time, so teams feel a sense of accomplishment and are excited to take on the next project. In this session, we discuss three key behaviors you can do with your team, unlocking a better way to work to help the team succeed.\r\n",
         "organization": "Lunamark",
-        "photo": "/photos/"
+        "photo": "/photos/paulGower.jpg"
     },
     {
         "id": "sandi-barr",
@@ -27,7 +27,7 @@
         "title": "Becoming a Social Developer: A Guide for Introverts",
         "description": "This is NOT a highly-interactive workshop. Now that you feel a bit safer, make the most of your time here: talk to other developers. This is easy -- and incredibly terrifying. A few simple steps (and a bit of bravery) is all that it takes to get started. Building your developer network will boost your knowledge, your skills, and your career. Can an introvert become a social developer? YES! And we can do this while staying true to ourselves.",
         "organization": "",
-        "photo": "/photos/"
+        "photo": "/photos/jeremyClark.jpg"
     },
     {
         "id": "patrick-wolff",
@@ -77,7 +77,7 @@
         "title": "Closing the Fidelity Gap with UI Engineering",
         "description": "In 2018 the US market for digital transformation was $437 billion which reflects 16.8% growth year-over-year (Shirer & Smith, 2017). Simultaneously, two-thirds of all business leaders believe that their companies must pick up the pace of digitalization to remain competitive (Moore, 2017). Yet, even with this demand, teams implement solutions that lack of agility. Tangoe’s Murray lays it out: “Developers are coding to specific spec sheets with little conceptual understanding of how this button or feature fits within the overall user experience.”\r\n\r\nThe lack of agility and conceptual understanding of the whole results in a gap—the fidelity gap—where the marriage design and engineering is not as strong as the product creators intended. Symptoms may include a lack of consistency, responsiveness, navigation, and accessibility (Abramov, 2018).\r\n\r\nJoin Simon Yost to explore filling the fidelity gap with stack-neutral concepts and practices that engineering and design teams can work together to champion on any stack.",
         "organization": "Slalom Consulting",
-        "photo": "/photos/"
+        "photo": "/photos/simonYost.jpg"
     },
     {
         "id": "cassandra-faris",
@@ -107,7 +107,7 @@
         "title": "Inverting the Management Relationship",
         "description": "In most manager/employee relationships, the employee is a resource for the manager. The manager has a goal, something they are responsible for, and the employee is helping them to meet their goal. When it goes well, the manager is also providing feedback and coaching that helps the employee improve and grow their career. When it doesn't go well, the manager's goals trump the needs of the employee, and the employee must sink or swim. Often times, these two dynamics are at odds with each other and can even put the manager in a difficult position.\r\nAt Hudl, we took a different approach. We used a form a matrix management where managers don't typically work on the same team as their reports. We removed the delegating aspect from management, and this led to a completely different dynamic in the manager/report relationship. It actually inverted the relationship where it is now clear that the manager is a resource for the report. Our managers focus their efforts on coaching and growing the skills of their reports. Our successes are seeing our reports meet their goals. \r\nThis dynamic provides an interesting mix of pros and cons. I'll talk through those as well as the logistics of running a product team with this structure. My goal is for anyone in a more traditional org structure to start thinking about the benefits of changing up their structure.",
         "organization": "Hudl",
-        "photo": "/photos/"
+        "photo": "/photos/gregDick.jpg"
     },
     {
         "id": "charlie-koster",
@@ -117,7 +117,7 @@
         "title": "AI Doesn't Have to Be Hard",
         "description": "Artificial Intelligence can be an intimidating topic to approach. You might be thinking that it’s a topic perhaps better handled by academia or tech giants like Google.. Nonsense! In this talk we will explore some of the lesser known AI algorithms including Markov Chains, Genetic Algorithms, and K-Means clustering in a beginner friendly way. By the end of this talk you'll be armed with the knowledge to write your own AI solutions and you'll recognize the kinds of business problems that are suited for each technique.",
         "organization": "Aviture",
-        "photo": "/photos/"
+        "photo": "/photos/charlieKoster.jpeg"
     },
     {
         "id": "dustin-collins",
@@ -137,7 +137,7 @@
         "title": "Thinking About React, Atomically",
         "description": "Atomic Design is the concept of breaking down user interfaces into smaller, simpler elements. There are five different levels in atomic design: atoms, molecules, organism, templates, and pages. These levels are combined to make user interfaces.\r\n\r\nReact, at its core, follows Atomic Design inherently by encouraging developers to keep components as simple and as broken down as possible. From this simplicity, we can create more complex components and containers of components to create the user interfaces for our applications. Following these patterns gives us, as developers, an easy to manage (and test) ecosystem within our React applications.\r\n\r\nDuring this talk, we'll dive into the roots of Atomic Design and how we can apply these design principles to our React applications.",
         "organization": "Balance Innovations",
-        "photo": "/photos/"
+        "photo": "/photos/katiaKWheeler.jpg"
     },
     {
         "id": "mike-hostetler",
@@ -167,7 +167,7 @@
         "title": "Using Tests as a Tool to Wrangle Legacy Projects",
         "description": "Most code in the world is legacy code. Legacy projects tend to be lacking in test coverage. Unfortunately, legacy projects are often written in such a way that it makes it difficult to add tests - tests that are badly needed in order to start paying down technical debt and get the project on the right track.\r\n\r\nFortunately there are some effective ways of wrangling legacy code into submission. If we can break apart a legacy project's entanglement of dependencies, making the code more modular and loosely coupled, we can add tests more easily. But breaking apart dependencies is tricky and requires a few certain techniques in order to be done safely.\r\n\r\nMain points:\r\n\r\n- Why legacy projects are harder to test than greenfield projects\r\n- Why adding tests to legacy projects is risky\r\n- How to mitigate the risks of modifying legacy code\r\n- What dependency injection is, why it’s useful in testing legacy projects, and how to use it\r\n- How to break dependencies using Michael Feathers’ “sprout class” technique",
         "organization": "",
-        "photo": "/photos/"
+        "photo": "/photos/jasonSwett.jpg"
     },
     {
         "id": "kathy-i-andersen--nicholas-tuck",
