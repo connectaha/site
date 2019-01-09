@@ -3,7 +3,7 @@ const {
 } = require('ramda')
 const { writeFileSync } = require('fs')
 
-const papercall = require('../../../Downloads/Connectaha Submissions (6).json')
+const papercall = require('./Connectaha Submissions.json')
 
 
 function extract () {
