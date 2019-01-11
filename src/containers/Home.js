@@ -90,21 +90,14 @@ export default class Home extends Component {
   render () {
     return (
       <div>
-        <Center mt={5} mb={5} mx={[7, 6, 5, 4]}>
-          <Row pt={4} width={[1, 0.75, 0.5]}>
-            <Text fontSize={4} link="white" fontWeight={300} >
-              Our CFP is open: <Link color="white" href="https://papercall.io/connectaha">Submit a Talk!</Link>
-            </Text>
-          </Row>
-        </Center>
 
-        <Banner color="white" minHeight="40vh" borderRadius={8} backgroundImage={BannerImage}>
+        <Banner mt={5} mb={5} color="white" minHeight="40vh" borderRadius={8} backgroundImage={BannerImage}>
           <Heading fontSize={5}>March 8, 2019</Heading>
           <Heading fontSize={3}>Walter Scott Conference Center</Heading>
           <Heading fontSize={3}>6450 Pine St. Omaha, NE 68106</Heading>
         </Banner>
 
-        <Center mt={5} mb={5} mx={[7, 6, 5, 4]}>
+        <Center mt={3} mb={3} mx={[7, 6, 5, 4]}>
           <Row width={[1, 0.75, 0.65]}>
             <Text fontSize={3} fontWeight={300} >A new conference is coming to Omaha.
               A conference that believes that everyone in the software world can learn
