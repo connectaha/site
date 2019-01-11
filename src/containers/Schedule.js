@@ -12,9 +12,9 @@ const Clickable = styled.div`
 export default withRouteData(({ speakers }) => (
   <div>
     <Heading pl={4} pt={6} pb={4} color="white">Schedule</Heading>
-    <Flex flexWrap="wrap" p={4} my={2} color="white">
-      <Box width={[1, 1/8]} >
-        Center Room
+    <Flex flexWrap="wrap" p={4} my={4} color="white">
+      <Box width={[1, 1/8]}>
+      Schedule
       </Box>
       <Box width={[1, 1/8]} >
         Time
@@ -41,10 +41,9 @@ export default withRouteData(({ speakers }) => (
         width={[1, 1/8]} >
         Southeast Room
       </Box>
-      <Divider w={1} borderColor="white" borderBottom />
     </Flex>
 
-    <Flex flexWrap="wrap" p={4} my={2} color="white" >
+    <Flex flexWrap="wrap" px={4} py={5} my={4} color="darkblue" bg="white">
       <Box
         width={[1, 1/8]}>
         Opening Keynote
@@ -59,7 +58,7 @@ export default withRouteData(({ speakers }) => (
       </Box>
     </Flex>
 
-    <Flex flexWrap="wrap" p={4} my={2} color="white">
+    <Flex flexWrap="wrap" p={4} my={4} color="darkblue" bg="white">
       <Box
         width={[1, 1/8]} >
         Session 1
@@ -85,7 +84,7 @@ export default withRouteData(({ speakers }) => (
       </Box>
     </Flex>
 
-    <Flex flexWrap="wrap" p={4} my={2} color="darkblue">
+    <Flex flexWrap="wrap" py={1} px={4} my={4} color="white">
       <Box
         width={[1, 1/8]}>
         Break
@@ -95,7 +94,7 @@ export default withRouteData(({ speakers }) => (
       </Box>
     </Flex>
 
-    <Flex flexWrap="wrap" p={4} my={2} color="white">
+    <Flex flexWrap="wrap" p={4} my={4} color="darkblue" bg="white">
       <Box width={[1, 1/8]} >
         Session 2
       </Box>
@@ -124,7 +123,7 @@ export default withRouteData(({ speakers }) => (
       </Box>
     </Flex>
 
-    <Flex flexWrap="wrap" p={4} my={2} color="darkblue">
+    <Flex flexWrap="wrap" py={1} px={4} my={4} color="white">
       <Box
         width={[1, 1/8]} >
         Break
@@ -135,7 +134,7 @@ export default withRouteData(({ speakers }) => (
       </Box>
     </Flex>
 
-    <Flex flexWrap="wrap" p={4} my={2} color="white">
+    <Flex flexWrap="wrap" p={4} my={4} color="darkblue" bg="white">
       <Box width={[1, 1/8]}>
         Session 3
       </Box>
@@ -160,7 +159,7 @@ export default withRouteData(({ speakers }) => (
       </Box>
     </Flex>
 
-    <Flex flexWrap="wrap" p={4} my={2} color="darkblue">
+    <Flex flexWrap="wrap" py={6} px={4} my={4} color="white">
       <Box width={[1, 1/8]}>
         Lunch
       </Box>
@@ -169,7 +168,7 @@ export default withRouteData(({ speakers }) => (
       </Box>
     </Flex>
 
-    <Flex flexWrap="wrap" p={4} my={2} color="white">
+    <Flex flexWrap="wrap" p={4} my={4} color="darkblue" bg="white">
       <Box width={[1, 1/8]}>
         Session 4
       </Box>
@@ -194,7 +193,7 @@ export default withRouteData(({ speakers }) => (
       </Box>
     </Flex>
 
-    <Flex flexWrap="wrap" p={4} my={2} color="darkblue" >
+    <Flex flexWrap="wrap" py={1} px={4} my={4} color="white">
       <Box
         width={[1, 1/8]}>
         Break
@@ -205,7 +204,7 @@ export default withRouteData(({ speakers }) => (
       </Box>
     </Flex>
 
-    <Flex flexWrap="wrap" p={4} my={2} color="white">
+    <Flex flexWrap="wrap" p={4} my={4} color="darkblue" bg="white">
       <Box width={[1, 1/8]}>
         Session 5
       </Box>
@@ -230,7 +229,7 @@ export default withRouteData(({ speakers }) => (
       </Box>
     </Flex>
 
-    <Flex flexWrap="wrap" p={4} my={2} color="white">
+    <Flex flexWrap="wrap" py={1} px={4} my={4} color="white">
       <Box width={[1, 1/8]} >
         Break
       </Box>
@@ -240,7 +239,7 @@ export default withRouteData(({ speakers }) => (
       <Box width={[1, 3/4]} />
     </Flex>
 
-    <Flex flexWrap="wrap" p={4} my={2} color="white">
+    <Flex flexWrap="wrap" p={4} my={4} color="darkblue" bg="white">
       <Box width={[1, 1/8]}>
         Session 6
       </Box>
@@ -265,7 +264,7 @@ export default withRouteData(({ speakers }) => (
       </Box>
     </Flex>
 
-    <Flex flexWrap="wrap" p={4} my={2} color="white">
+    <Flex flexWrap="wrap" px={4} py={5} my={4} color="darkblue" bg="white">
       <Box
         width={[1, 1/8]} >
         Closing Keynote
