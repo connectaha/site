@@ -7,11 +7,13 @@
     "start": "react-static start",
     "stage": "react-static build --staging",
     "build": "react-static build",
-    "serve": "serve dist -p 3000"
+    "serve": "serve dist -p 3000",
+    "speakers": "node -e 'require(\"./extract\").extract()'"
   },
   "dependencies": {
     "axios": "^0.16.2",
     "butter-toast": "^2.1.2",
+    "ramda": "^0.26.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-router": "^4.2.0",
@@ -20,6 +22,7 @@
     "react-static-plugin-google-analytics": "0.0.0",
     "rebass": "^2.1.0",
     "rmdi": "^1.0.1",
+    "shuffle-array": "^1.0.1",
     "styled-components": "^3",
     "styled-system": "^3.0.2"
   },
