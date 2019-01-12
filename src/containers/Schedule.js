@@ -144,7 +144,6 @@ export default withRouteData(({ speakers }) => (
         TBD<br />
         TBD<br />
         <br />
-        Secure by Design
       </Box>
       <Box
         width={[1, 1/8]} p={1}>
@@ -160,7 +159,6 @@ export default withRouteData(({ speakers }) => (
         TBD<br />
         TBD<br />
         <br />
-        I Can't See: Low Vision A11Y & Users
       </Box>
     </Flex>
 
