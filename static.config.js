@@ -21,6 +21,10 @@ export default {
       component: 'src/containers/Details',
     },
     {
+      path: '/schedule',
+      component: 'src/containers/Schedule',
+    },
+    {
       path: '/speakers',
       component: 'src/containers/Speakers',
       getData: () => ({

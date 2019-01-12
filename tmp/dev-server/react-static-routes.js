@@ -7,10 +7,11 @@ import { cleanPath } from 'react-static'
 
 import t_0 from '../../src/containers/Home'
 import t_1 from '../../src/containers/Details'
-import t_2 from '../../src/containers/Speakers'
-import t_3 from '../../src/containers/Speaker'
-import t_4 from '../../src/containers/Sponsorship'
-import t_5 from '../../src/containers/404'
+import t_2 from '../../src/containers/Schedule'
+import t_3 from '../../src/containers/Speakers'
+import t_4 from '../../src/containers/Speaker'
+import t_5 from '../../src/containers/Sponsorship'
+import t_6 from '../../src/containers/404'
 
 // Template Map
 global.componentsByTemplateID = global.componentsByTemplateID || [
@@ -19,12 +20,13 @@ t_1,
 t_2,
 t_3,
 t_4,
-t_5
+t_5,
+t_6
 ]
 
 // Template Tree
 global.templateIDsByPath = global.templateIDsByPath || {
-  '404': 5
+  '404': 6
 }
 
 // Get template for given path
