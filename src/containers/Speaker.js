@@ -13,6 +13,11 @@ const RoundedButton = styled(Button)`
   cursor: pointer;
   border-radius: 50%;
 `
+
+const TextBlock = styled(Text)`
+  white-space: pre-line;
+`
+
 export default withRouteData(({ speaker, nextId, previousId }) => {
   const org = speaker.organization ? `/ ${speaker.organization}` : ''
 
@@ -29,11 +34,11 @@ export default withRouteData(({ speaker, nextId, previousId }) => {
               <Text fontSize={5} pb={7}>{speaker.firstName} {speaker.lastName} {org}</Text>
               <Text fontSize={1} fontWeight={900} pb={4}>Session</Text>
               <Text fontSize={3} pb={2} >{speaker.title}</Text>
-              <Text fontSize={[1, 2]} pb={7} fontWeight={300}>{speaker.description}</Text>
+              <TextBlock fontSize={[1, 2]} pb={7} fontWeight={300}>{speaker.description}</TextBlock>
             </Flex>
             <Flex flexDirection="column">
               <Text fontSize={1} fontWeight={900} pb={4}>Bio</Text>
-              <Text fontSize={[1, 2]} pb={6} fontWeight={300}>{speaker.bio}</Text>
+              <TextBlock fontSize={[1, 2]} pb={6} fontWeight={300}>{speaker.bio}</TextBlock>
             </Flex>
           </Flex>
         </Flex>
