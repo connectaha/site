@@ -90,16 +90,6 @@
         "photo": "/photos/placeholder.jpg"
     },
     {
-        "id": "chris-demars",
-        "firstName": "Chris",
-        "lastName": "DeMars",
-        "bio": "Chris DeMars is a UI developer first, UX architect always, working out of Detroit, Michigan. Chris is also an instructor, teacher assistant, and volunteer for the Ann Arbor chapter of Girl Develop It and co-organizer for the Ann Arbor Accessibility Group. Chris loves coming up with solutions for enterprise applications, which include modular CSS architectures, performance, and advocating for web accessibility. When he is not working on making the web great and inclusive you can find him writing blog posts, recording episodes of his podcast, Tales From The Script, watching horror movies, drinking the finest of beers, or in the woods of northern Michigan.",
-        "title": "I Can't See: Low Vision A11Y & Users",
-        "description": "When you think of low vision, what comes to mind? A user that is near sighted? How about far sighted? Maybe partially blind? These are all qualifying cases of poor vision, but low vision is more complicated than the prescription of glasses or contacts.\r\n\r\nAccording to the World Health Organization, they categorize low vision based on specific levels of visual acuity and field of vision (W3.org, 2016). With that in mind, we as developers can look at different categories of low vision including color vision, visual acuity, contrast sensitivity, etc and make an effort to bake in things like zoom, non-conflicting colors, and re-wrapping of columns in to our code.\r\n\r\nMy talk will cover what vision accessibility is, different categories of low vision, what the needs of the users are, and what we as developers can do to achieve a great user experience for low vision users.",
-        "organization": "United Shore",
-        "photo": "/photos/placeholder.jpg"
-    },
-    {
         "id": "greg-dick",
         "firstName": "Greg",
         "lastName": "Dick",
@@ -174,8 +164,8 @@
         "firstName": "Kathy I.",
         "lastName": "Andersen",
         "bio": "Kathy is an experienced speaker and truly enjoys the opportunity to engage with new people and new ideas. She serves as a Scrum Master at Hudl. There, she has the honor of working with talented teams and individuals supporting the \"business\" side of the Hudl's efforts to market, sell, support, and report on the company's products and services. \r\n\r\nPreviously, she's worked as a Business Analyst and Quality Assurance Analyst, always seeking out interesting problems and better ways of doing things. She also likes to stay engaged in the entrepreneurial communities in Omaha and Lincoln, has taught a Girls Who Code club, is a mentor for the NMotion Startup Accelerator, and likes to tinker on side projects.",
-        "title": "Stop, Collaborate and Listen",
-        "description": "Remember back to the BEST work you’ve ever done with a team of people. There was room for creativity, there was open & free-wheeling dialogue, and a real sense of excitement to dig into the work. Why did it go so well? Because the foundations were in place to make working in concert possible. We’re going to tell you how to recreate that wherever you are right now.\r\n\r\nTeams accomplish more than individuals. We need to maximize that work using more interesting, creative and most importantly effective solutions to collaborating. Join for a deep dive on how and when to apply a host of techniques.",
+        "title": "Something's Rotten in the State of Quality",
+        "description": "Developers, do you really trust QAs when they find a 'bug'? QA folks, do you believe that developers have tested their work before they hand it over? You may identify with this atmosphere of contention surrounding QA. But there’s one underlying question for every team: are we building a quality product?\r\nThe definition of quality should go beyond a list of test cases executed against requirements. From the father of the quality revolution, Edward Deming, to the work of Martin Fowler and Mike Cohn, we’ll lay a theoretical groundwork for what quality is, then we will showcase these definitions with examples. We’ll end with specific activities along the software development life cycle that actually help assure quality. You’ll take away what it truly means to assure quality as well as ways to start putting it into practice.\r\nIf you’re a developer, project manager, product owner, BA, or QA tester, this talk is for you",
         "organization": "Hudl",
         "photo": "/photos/placeholder.jpg"
     },
@@ -184,8 +174,8 @@
         "firstName": "Nicholas",
         "lastName": "Tuck",
         "bio": "",
-        "title": "Stop, Collaborate and Listen",
-        "description": "Remember back to the BEST work you’ve ever done with a team of people. There was room for creativity, there was open & free-wheeling dialogue, and a real sense of excitement to dig into the work. Why did it go so well? Because the foundations were in place to make working in concert possible. We’re going to tell you how to recreate that wherever you are right now.\r\n\r\nTeams accomplish more than individuals. We need to maximize that work using more interesting, creative and most importantly effective solutions to collaborating. Join for a deep dive on how and when to apply a host of techniques.",
+        "title": "Something's Rotten in the State of Quality",
+        "description": "Developers, do you really trust QAs when they find a 'bug'? QA folks, do you believe that developers have tested their work before they hand it over? You may identify with this atmosphere of contention surrounding QA. But there’s one underlying question for every team: are we building a quality product?\r\nThe definition of quality should go beyond a list of test cases executed against requirements. From the father of the quality revolution, Edward Deming, to the work of Martin Fowler and Mike Cohn, we’ll lay a theoretical groundwork for what quality is, then we will showcase these definitions with examples. We’ll end with specific activities along the software development life cycle that actually help assure quality. You’ll take away what it truly means to assure quality as well as ways to start putting it into practice.\r\nIf you’re a developer, project manager, product owner, BA, or QA tester, this talk is for you",
         "organization": "Proxibid",
         "photo": "/photos/placeholder.jpg"
     },
