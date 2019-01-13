@@ -338,7 +338,7 @@ export default withRouteData(({ speakers }) => (
         Katia<br />
         Wheeler<br />
         <br />
-        Exec Boardroom<br />
+        Southeast Room<br />
         <br />
         Thinking About React, Atomically
       </Box>
@@ -400,11 +400,12 @@ export default withRouteData(({ speakers }) => (
       </Box>
       <Box width={[1, 1/8]} p={1}>
         <Divider w={1} borderColor="darkblue" />
-        TBD<br />
-        TBD<br />
+        Kathy I Andersen<br />
+        Nicholas Tuck<br />
         <br />
-        Southeast Room
+        Southeast Room<br />
         <br />
+        Something's Rotten in the State of Quality
       </Box>
     </Flex>
 
