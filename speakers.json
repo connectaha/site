@@ -278,5 +278,15 @@
         "description": "",
         "photo": "/photos/jeffStraus.jpg",
         "organization": "World Wide Technology"
+    },
+    {
+        "id": "mike-douglas",
+        "firstName": "Mike",
+        "lastName": "Douglas",
+        "bio": "Mike Douglas is a Solution Consultant at Deliveron Consulting Services.  He specializes in working with development teams to implement Secure DevOps and Application Lifecycle Management (ALM) solutions to eliminate traditional silos between development, testing, project management, and operations to establish cohesive processes from idea to production.    He is also a Microsoft Visual Studio and Developer Technologies MVP and an Microsoft ALM Ranger",
+        "organization": "Deliveron Consulting Services",
+        "title": "Securing Your CI/CD Pipeline",
+        "description": "Don’t wait until the end of your project to do security testing.  Teams are automating manual tasks such as build, deployment, and functional testing.  Security should be no different.  Transform security from afterthought to continuously validating security every step of the process.  In this session you will see how your CI/CD pipeline can perform continuous validation with every check-in including code analysis, OSS security scanning, and automated penetration testing using Azure DevOps and OWASP ZAP Docker containers.  Learn how continuous security validation, along with secure infrastructure, application, and monitoring can ensure your applications stay secure.\r\n",
+        "photo": "/photos/placeholder.jpg"
     }
 ]
