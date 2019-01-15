@@ -71,10 +71,12 @@ export default withRouteData(({ speakers }) => (
       </Box>
       <Box width={[1, 1/8]} p={1}>
         <Divider w={1} borderColor="darkblue" />
-        TBD<br />
-        TBD<br />
+        Mat<br />
+        Warger<br />
         <br />
         Northeast Room <br />
+        <br />
+        Bootstrap Your App with AWS Amplify!
       </Box>
       <Box width={[1, 1/8]} p={1}>
         <Divider w={1} borderColor="darkblue" />
@@ -143,11 +145,12 @@ export default withRouteData(({ speakers }) => (
       <Box
         width={[1, 1/8]} p={1}>
         <Divider w={1} borderColor="darkblue" />
-        TBD<br />
-        TBD<br />
+        Mike<br />
+        Douglas<br />
         <br />
         Southeast Room<br />
         <br />
+        Securing Your CI/CD Pipeline
       </Box>
     </Flex>
 
