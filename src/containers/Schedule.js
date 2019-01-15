@@ -51,7 +51,7 @@ export default withRouteData(({ speakers }) => (
         <br />
         Southwest Room <br />
         <br />
-        <Link href="/speakers/courtney-heitman" >Mapping the User's Journey</Link><br />
+        Mapping the User's Journey<br />
       </Box>
       <Box width={[1, 1/8]} p={1}>
         <Divider w={1} borderColor="darkblue" />
