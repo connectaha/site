@@ -237,7 +237,7 @@ export default withRouteData(() => (
         1:00p - 2:00p
       </Box>
       <Box width={[1, 1 / 8]} />
-      <Box width={[1, 1 / 8]} p={1} onClick={() => click('john-henry-müller')}>
+      <Box width={[1, 1 / 8]} p={1} onClick={() => click('john-henry-muller')}>
         <Divider w={1} borderColor="darkblue" />
         John Henry<br />
         Müller<br />
