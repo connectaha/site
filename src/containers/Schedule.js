@@ -183,13 +183,14 @@ export default withRouteData(() => (
         <br />
         Zero to Community Hero - Start Live Coding on Twitch
       </Box>
-      <Box width={[1, 1 / 8]} p={1}>
+      <Box width={[1, 1 / 8]} p={1} onClick={() => click('matt-busche')}>
         <Divider w={1} borderColor="darkblue" />
-        TBD<br />
-        TBD<br />
+        Matt <br />
+        Busche <br />
         <br />
         Northwest Room<br />
         <br />
+        Secure by Design
       </Box>
       <Box width={[1, 1 / 8]} p={1} onClick={() => click('alison-hawke')}>
         <Divider w={1} borderColor="darkblue" />
