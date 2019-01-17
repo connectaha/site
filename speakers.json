@@ -110,16 +110,6 @@
         "photo": "/photos/charlieKoster.jpg"
     },
     {
-        "id": "dustin-collins",
-        "firstName": "Dustin",
-        "lastName": "Collins",
-        "bio": "Interactive artist and automation engineer. Interested in the cultures and tools that enable high-performing teams and organizations.",
-        "title": "Build your Brand (or someone else will do it for you)",
-        "description": "For this presentation I will share some proven strategies that empower software makers. Branding seems to be a real blind spot for many software engineers. As an engineer myself, I know that often we focus on a solution when the problem is not yet clear. The problem, or opportunity, is to develop and maintain a satisfying career in the future of software. As you face failure and success over and over again, how you react is a big part of your personal brand. The areas you focus on and projects you attach yourself to are also a part of that brand. Don't let someone else be your puppet master, pull your own strings.",
-        "organization": "Wallaby Consulting",
-        "photo": "/photos/placeholder.jpg"
-    },
-    {
         "id": "katia-wheeler",
         "firstName": "Katia",
         "lastName": "Wheeler",
