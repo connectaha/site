@@ -93,6 +93,7 @@ export default class Home extends Component {
       <div>
         <Head>
           <meta property="og:title" content="2019 Connectaha Conference" />
+          <meta property="twitter:title" content="2019 Connectaha Conference" />
           <meta property="og:url" content="https://www.connectaha.com" />
           <meta property="og:description" content="March 8, 2019 Walter Scott Conference Center" />
           <meta property="og:image" content="https://connectaha.com/static/presenter.1286b8ef.jpg" />
