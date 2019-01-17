@@ -67,6 +67,13 @@ export default {
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <meta property="og:type" content="website" />
+            <meta property="og:title" content="2019 Connectaha Conference" data-react-helmet="true" />
+            <meta property="og:url" content="https://www.connectaha.com"  data-react-helmet="true"/>
+            <meta property="og:description" content="March 8, 2019 Walter Scott Conference Center"  data-react-helmet="true"/>
+            <meta property="og:image" content="https://connectaha.com/static/presenter.1286b8ef.jpg"  data-react-helmet="true"/>
+            <meta name="twitter:card" content="summary_large_image"  data-react-helmet="true"/>
+            <meta property="og:site_name" content="2019 Connectaha Conference"  data-react-helmet="true"/>
+            <meta name="twitter:image:alt" content="March 8, 2019 Walter Scott Conference Center"  data-react-helmet="true"/>
 
             <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet" />
             <title>Connectaha</title>
