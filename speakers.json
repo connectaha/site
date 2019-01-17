@@ -300,5 +300,16 @@
         "title": "Secure by Design",
         "description": "​​As developers we need to build secure software, but can't possibly know everything about security. Secure-by-design is a guiding principle for building software. By tackling security issues when designing an application security is no longer an afterthought after the project has been completed. We'll learn how good design drives security by using patterns, mindsets, and best practices for real world development. We'll also discuss how to find and address flaws in existing code and most importantly we'll discuss how good design encourages security by using domain primitives, the builder pattern, error handling, and validation.  Finally we'll discuss tools that can help prevent these flaws from making it into your code repository, these can be ran on your local machine or as a hook in your continuous integration process.",
         "photo": "/photos/placeholder.jpg"
+    },
+    {
+        "id": "jerry-koske",
+        "firstName": "Jerry",
+        "lastName": "Koske",
+        "email": "jerry.koske@aviture.us.com",
+        "bio": "Jerry is writing this bio, so let’s drop the third person. I’m in my 25th year of ‘professional’ software development, although I’ve been writing code since before the age of 10. My biggest driver is making a real difference in software solutions for people. That journey has led me through the roles of programmer, architect, technical manager, and ultimately crossed into the ‘enemy territory’ of upper management. I try to use my role as a force for good, not evil. The biggest focus in my life are my three smart, funny, and beautiful daughters which I spend as much time as I can with before they outgrow me.",
+        "organization": "Aviture",
+        "title": "Winning the war on Bureaucracy",
+        "description": "Bureaucracy, we’ve all experienced it. We often see it as the enemy of common sense. But do we need all of it? How do you enforce discipline without it? What can you affect when you are a cog in a machine?\r\n\r\nTelecommunications, Finance, Insurance, Government – I’ve been employed in all these industries and have experienced the very worst of what bureaucracy has to offer. Currently, I’m fortunate enough to be part of a ‘great experiment’ to create better engineering environments at Aviture. In this talk I’ll share the trials and tribulations we’ve experienced. We’ll discuss what has worked, what hasn’t, and what you can do to combat unnecessary bureaucracy in your own environment. This includes expanding your sphere of influence. No matter where you are in the organization, you aren’t helpless.\r\n\r\nIf you’d like to remove unnecessary bureaucracy in your own environment, you should find this talk useful.",
+        "photo": "/photos/placeholder.jpg"
     }
 ]
