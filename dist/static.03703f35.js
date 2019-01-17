@@ -382,10 +382,10 @@ var Home = function (_Component) {
         _react2.default.createElement(
           _reactStatic.Head,
           null,
-          _react2.default.createElement('meta', { property: 'og:title', content: '2019 Connectaha Technology Conference' }),
+          _react2.default.createElement('meta', { property: 'og:title', content: '2019 Connectaha Conference' }),
+          _react2.default.createElement('meta', { property: 'og:url', content: 'https://www.connectaha.com' }),
           _react2.default.createElement('meta', { property: 'og:description', content: 'March 8, 2019 Walter Scott Conference Center' }),
           _react2.default.createElement('meta', { property: 'og:image', content: 'https://connectaha.com/static/presenter.1286b8ef.jpg' }),
-          _react2.default.createElement('meta', { property: 'og:url', content: 'https://www.connectaha.com' }),
           _react2.default.createElement('meta', { name: 'twitter:card', content: 'summary_large_image' }),
           _react2.default.createElement('meta', { property: 'og:site_name', content: '2019 Connectaha Conference' }),
           _react2.default.createElement('meta', { name: 'twitter:image:alt', content: 'March 8, 2019 Walter Scott Conference Center' })
@@ -601,9 +601,9 @@ exports.default = (0, _reactStatic.withRouteData)(function () {
       _reactStatic.Head,
       null,
       _react2.default.createElement('meta', { property: 'og:title', content: '2019 Connectaha Schedule' }),
+      _react2.default.createElement('meta', { property: 'og:url', content: 'https://www.connectaha.com/schedule' }),
       _react2.default.createElement('meta', { property: 'og:description', content: 'March 8, 2019 Walter Scott Conference Center' }),
       _react2.default.createElement('meta', { property: 'og:image', content: 'https://connectaha.com/static/presenter.1286b8ef.jpg' }),
-      _react2.default.createElement('meta', { property: 'og:url', content: 'https://www.connectaha.com' }),
       _react2.default.createElement('meta', { name: 'twitter:card', content: 'summary_large_image' }),
       _react2.default.createElement('meta', { property: 'og:site_name', content: '2019 Connectaha Conference' }),
       _react2.default.createElement('meta', { name: 'twitter:image:alt', content: 'March 8, 2019 Walter Scott Conference Center' })
@@ -1359,9 +1359,9 @@ exports.default = (0, _reactStatic.withRouteData)(function (_ref) {
       _reactStatic.Head,
       null,
       _react2.default.createElement('meta', { property: 'og:title', content: '2019 Connectaha Speakers' }),
-      _react2.default.createElement('meta', { property: 'og:description', content: 'March 8, 2019 Walter Scott Conference Center' }),
       _react2.default.createElement('meta', { property: 'og:image', content: 'https://connectaha.com/static/presenter.1286b8ef.jpg' }),
-      _react2.default.createElement('meta', { property: 'og:url', content: 'https://www.connectaha.com' }),
+      _react2.default.createElement('meta', { property: 'og:url', content: 'https://www.connectaha.com/speakers' }),
+      _react2.default.createElement('meta', { property: 'og:description', content: 'March 8, 2019 Walter Scott Conference Center' }),
       _react2.default.createElement('meta', { name: 'twitter:card', content: 'summary_large_image' }),
       _react2.default.createElement('meta', { property: 'og:site_name', content: '2019 Connectaha Conference' }),
       _react2.default.createElement('meta', { name: 'twitter:image:alt', content: 'March 8, 2019 Walter Scott Conference Center' })
@@ -1466,7 +1466,7 @@ exports.default = (0, _reactStatic.withRouteData)(function (_ref) {
       previousId = _ref.previousId;
 
   var org = speaker.organization ? '/ ' + speaker.organization : '';
-  var title = '2019 Connectaha Speaker ' + speaker.firstName + ' ' + speaker.lastName;
+  var title = speaker.title + ' - ' + speaker.firstName + ' ' + speaker.lastName;
   return _react2.default.createElement(
     'div',
     null,
@@ -1474,12 +1474,12 @@ exports.default = (0, _reactStatic.withRouteData)(function (_ref) {
       _reactStatic.Head,
       null,
       _react2.default.createElement('meta', { property: 'og:title', content: title }),
-      _react2.default.createElement('meta', { property: 'og:description', content: 'March 8, 2019 Walter Scott Conference Center' }),
       _react2.default.createElement('meta', { property: 'og:image', content: 'https://connectaha.com' + speaker.photo }),
       _react2.default.createElement('meta', { property: 'og:url', content: 'https://www.connectaha.com/speakers/' + speaker.id }),
+      _react2.default.createElement('meta', { name: 'twitter:image:alt', content: speaker.firstName + ' ' + speaker.lastName }),
+      _react2.default.createElement('meta', { property: 'og:description', content: 'March 8, 2019 Walter Scott Conference Center' }),
       _react2.default.createElement('meta', { name: 'twitter:card', content: 'summary_large_image' }),
-      _react2.default.createElement('meta', { property: 'og:site_name', content: '2019 Connectaha Conference' }),
-      _react2.default.createElement('meta', { name: 'twitter:image:alt', content: speaker.firstName + ' ' + speaker.lastName })
+      _react2.default.createElement('meta', { property: 'og:site_name', content: '2019 Connectaha Conference' })
     ),
     _react2.default.createElement(
       _rebass.Flex,
@@ -2853,4 +2853,4 @@ module.exports = __webpack_require__.p + "static/logo_300.a7fea248.svg";
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.e47f6803.js.map
+//# sourceMappingURL=static.03703f35.js.map
