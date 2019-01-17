@@ -276,10 +276,12 @@ export default withRouteData(() => (
       </Box>
       <Box width={[1, 1 / 8]} p={1}>
         <Divider w={1} borderColor="darkblue" />
-        TBD<br />
-        TBD<br />
+        Michelle<br />
+        Mras<br />
         <br />
         Northeast Room<br />
+        <br />
+        Why Do They Do That?
       </Box>
       <Box width={[1, 1 / 8]} p={1} onClick={() => click('charlie-koster')}>
         <Divider w={1} borderColor="darkblue" />
