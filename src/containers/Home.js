@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Head } from 'react-static'
 import { post } from 'axios'
 import styled from 'styled-components'
 import { fontSize, space, width } from 'styled-system'
@@ -90,7 +91,15 @@ export default class Home extends Component {
   render () {
     return (
       <div>
-
+        <Head>
+          <meta property="og:title" content="2019 Connectaha Technology Conference" />
+          <meta property="og:description" content="March 8, 2019 Walter Scott Conference Center" />
+          <meta property="og:image" content="https://connectaha.com/static/presenter.1286b8ef.jpg" />
+          <meta property="og:url" content="https://www.connectaha.com" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta property="og:site_name" content="2019 Connectaha Conference" />
+          <meta name="twitter:image:alt" content="March 8, 2019 Walter Scott Conference Center" />
+        </Head>
         <Banner mt={5} mb={5} color="white" minHeight="40vh" borderRadius={8} backgroundImage={BannerImage}>
           <Heading fontSize={5}>March 8, 2019</Heading>
           <Heading fontSize={3}>Walter Scott Conference Center</Heading>

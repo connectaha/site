@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { withRouteData } from 'react-static'
+import { Head, withRouteData } from 'react-static'
 import { Box as BaseBox, Flex, Divider, Heading } from 'rebass'
 
 const Box = styled(BaseBox)`
@@ -11,6 +11,15 @@ const click = id => { window.location = `/speakers/${id}` }
 
 export default withRouteData(() => (
   <div>
+    <Head>
+      <meta property="og:title" content="2019 Connectaha Schedule" />
+      <meta property="og:description" content="March 8, 2019 Walter Scott Conference Center" />
+      <meta property="og:image" content="https://connectaha.com/static/presenter.1286b8ef.jpg" />
+      <meta property="og:url" content="https://www.connectaha.com" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta property="og:site_name" content="2019 Connectaha Conference" />
+      <meta name="twitter:image:alt" content="March 8, 2019 Walter Scott Conference Center" />
+    </Head>
     <Heading pl={4} pt={6} pb={4} color="white">Schedule</Heading>
 
     <Flex flexWrap="wrap" px={4} py={5} my={4} color="darkblue" bg="white">
