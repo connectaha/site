@@ -1,9 +1,9 @@
 import axios from 'axios'
 import React, { Component } from 'react'
 import { ServerStyleSheet } from 'styled-components'
-import {filter, prop, sortBy} from 'ramda'
+import { filter, prop, sortBy } from 'ramda'
 
-const unsortedSpeakers =  require('./speakers.json')
+const unsortedSpeakers = require('./speakers.json')
 const speakers = filter(_ => _.photo.length > 0, sortBy(prop('id'), unsortedSpeakers))
 
 export default {
@@ -35,7 +35,7 @@ export default {
         component: 'src/containers/Speaker',
         getData: () => ({
           speaker,
-          nextId:  i + 1 === arr.length ? arr[0].id : arr[i + 1].id,
+          nextId: i + 1 === arr.length ? arr[0].id : arr[i + 1].id,
           previousId: i === 0 ? arr[arr.length - 1].id : arr[i - 1].id
         }),
       }))
@@ -56,16 +56,24 @@ export default {
     return html
   },
   Document: class CustomHtml extends Component {
-    render () {
+    render() {
       const {
         Html, Head, Body, children, renderMeta,
       } = this.props
 
       return (
         <Html>
-           <Head>
+          <Head>
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <meta property="og:title" content="2019 Connectaha Technology Conference" data-react-helmet="true"/>
+            <meta property="og:description" content="March 8, 2019 Walter Scott Conference Center" data-react-helmet="true"/>
+            <meta property="og:image" content="https://connectaha.com/static/presenter.1286b8ef.jpg" data-react-helmet="true"/>
+            <meta property="og:url" content="https://www.connectaha.com" data-react-helmet="true"/>
+            <meta name="twitter:card" content="summary_large_image" data-react-helmet="true"/>
+            <meta property="og:site_name" content="2019 Connectaha Conference" data-react-helmet="true"/>
+            <meta name="twitter:image:alt" content="March 8, 2019 Walter Scott Conference Center" data-react-helmet="true"/>
+
             <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet" />
             <title>Connectaha</title>
 

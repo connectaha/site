@@ -89,13 +89,13 @@ module.exports = require("rebass");
 /* 2 */
 /***/ (function(module, exports) {
 
-module.exports = require("styled-components");
+module.exports = require("react-static");
 
 /***/ }),
 /* 3 */
 /***/ (function(module, exports) {
 
-module.exports = require("react-static");
+module.exports = require("styled-components");
 
 /***/ }),
 /* 4 */
@@ -265,9 +265,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactStatic = __webpack_require__(2);
+
 var _axios = __webpack_require__(29);
 
-var _styledComponents = __webpack_require__(2);
+var _styledComponents = __webpack_require__(3);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
@@ -377,6 +379,17 @@ var Home = function (_Component) {
       return _react2.default.createElement(
         'div',
         null,
+        _react2.default.createElement(
+          _reactStatic.Head,
+          null,
+          _react2.default.createElement('meta', { property: 'og:title', content: '2019 Connectaha Technology Conference' }),
+          _react2.default.createElement('meta', { property: 'og:description', content: 'March 8, 2019 Walter Scott Conference Center' }),
+          _react2.default.createElement('meta', { property: 'og:image', content: 'https://connectaha.com/static/presenter.1286b8ef.jpg' }),
+          _react2.default.createElement('meta', { property: 'og:url', content: 'https://www.connectaha.com' }),
+          _react2.default.createElement('meta', { name: 'twitter:card', content: 'summary_large_image' }),
+          _react2.default.createElement('meta', { property: 'og:site_name', content: '2019 Connectaha Conference' }),
+          _react2.default.createElement('meta', { name: 'twitter:image:alt', content: 'March 8, 2019 Walter Scott Conference Center' })
+        ),
         _react2.default.createElement(
           _rebass.Banner,
           { mt: 5, mb: 5, color: 'white', minHeight: '40vh', borderRadius: 8, backgroundImage: _presenter2.default },
@@ -558,11 +571,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _styledComponents = __webpack_require__(2);
+var _styledComponents = __webpack_require__(3);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _reactStatic = __webpack_require__(3);
+var _reactStatic = __webpack_require__(2);
 
 var _rebass = __webpack_require__(1);
 
@@ -584,6 +597,17 @@ exports.default = (0, _reactStatic.withRouteData)(function () {
   return _react2.default.createElement(
     'div',
     null,
+    _react2.default.createElement(
+      _reactStatic.Head,
+      null,
+      _react2.default.createElement('meta', { property: 'og:title', content: '2019 Connectaha Schedule' }),
+      _react2.default.createElement('meta', { property: 'og:description', content: 'March 8, 2019 Walter Scott Conference Center' }),
+      _react2.default.createElement('meta', { property: 'og:image', content: 'https://connectaha.com/static/presenter.1286b8ef.jpg' }),
+      _react2.default.createElement('meta', { property: 'og:url', content: 'https://www.connectaha.com' }),
+      _react2.default.createElement('meta', { name: 'twitter:card', content: 'summary_large_image' }),
+      _react2.default.createElement('meta', { property: 'og:site_name', content: '2019 Connectaha Conference' }),
+      _react2.default.createElement('meta', { name: 'twitter:image:alt', content: 'March 8, 2019 Walter Scott Conference Center' })
+    ),
     _react2.default.createElement(
       _rebass.Heading,
       { pl: 4, pt: 6, pb: 4, color: 'white' },
@@ -1312,17 +1336,13 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _styledComponents = __webpack_require__(2);
+var _styledComponents = __webpack_require__(3);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _reactStatic = __webpack_require__(3);
+var _reactStatic = __webpack_require__(2);
 
 var _rebass = __webpack_require__(1);
-
-var _shuffleArray = __webpack_require__(32);
-
-var _shuffleArray2 = _interopRequireDefault(_shuffleArray);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1335,6 +1355,17 @@ exports.default = (0, _reactStatic.withRouteData)(function (_ref) {
   return _react2.default.createElement(
     'div',
     null,
+    _react2.default.createElement(
+      _reactStatic.Head,
+      null,
+      _react2.default.createElement('meta', { property: 'og:title', content: '2019 Connectaha Speakers' }),
+      _react2.default.createElement('meta', { property: 'og:description', content: 'March 8, 2019 Walter Scott Conference Center' }),
+      _react2.default.createElement('meta', { property: 'og:image', content: 'https://connectaha.com/static/presenter.1286b8ef.jpg' }),
+      _react2.default.createElement('meta', { property: 'og:url', content: 'https://www.connectaha.com' }),
+      _react2.default.createElement('meta', { name: 'twitter:card', content: 'summary_large_image' }),
+      _react2.default.createElement('meta', { property: 'og:site_name', content: '2019 Connectaha Conference' }),
+      _react2.default.createElement('meta', { name: 'twitter:image:alt', content: 'March 8, 2019 Walter Scott Conference Center' })
+    ),
     _react2.default.createElement(
       _rebass.Heading,
       { pl: 4, pt: 6, pb: 4, color: 'white' },
@@ -1399,19 +1430,19 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactStatic = __webpack_require__(3);
+var _reactStatic = __webpack_require__(2);
 
 var _rebass = __webpack_require__(1);
 
-var _styledComponents = __webpack_require__(2);
+var _styledComponents = __webpack_require__(3);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _NavigateNext = __webpack_require__(33);
+var _NavigateNext = __webpack_require__(32);
 
 var _NavigateNext2 = _interopRequireDefault(_NavigateNext);
 
-var _NavigateBefore = __webpack_require__(34);
+var _NavigateBefore = __webpack_require__(33);
 
 var _NavigateBefore2 = _interopRequireDefault(_NavigateBefore);
 
@@ -1445,7 +1476,10 @@ exports.default = (0, _reactStatic.withRouteData)(function (_ref) {
       _react2.default.createElement('meta', { property: 'og:title', content: title }),
       _react2.default.createElement('meta', { property: 'og:description', content: 'March 8, 2019 Walter Scott Conference Center' }),
       _react2.default.createElement('meta', { property: 'og:image', content: 'https://connectaha.com' + speaker.photo }),
-      _react2.default.createElement('meta', { property: 'og:url', content: 'https://www.connectaha.com/speakers/' + speaker.id })
+      _react2.default.createElement('meta', { property: 'og:url', content: 'https://www.connectaha.com/speakers/' + speaker.id }),
+      _react2.default.createElement('meta', { name: 'twitter:card', content: 'summary_large_image' }),
+      _react2.default.createElement('meta', { property: 'og:site_name', content: '2019 Connectaha Conference' }),
+      _react2.default.createElement('meta', { name: 'twitter:image:alt', content: speaker.firstName + ' ' + speaker.lastName })
     ),
     _react2.default.createElement(
       _rebass.Flex,
@@ -1555,7 +1589,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _rebass = __webpack_require__(1);
 
-var _input = __webpack_require__(35);
+var _input = __webpack_require__(34);
 
 var _input2 = _interopRequireDefault(_input);
 
@@ -1685,9 +1719,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactStatic = __webpack_require__(3);
+var _reactStatic = __webpack_require__(2);
 
-var _styledComponents = __webpack_require__(2);
+var _styledComponents = __webpack_require__(3);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
@@ -1703,11 +1737,11 @@ var _reactStaticRoutes = __webpack_require__(20);
 
 var _reactStaticRoutes2 = _interopRequireDefault(_reactStaticRoutes);
 
-var _theme = __webpack_require__(36);
+var _theme = __webpack_require__(35);
 
 var _theme2 = _interopRequireDefault(_theme);
 
-var _logo_ = __webpack_require__(37);
+var _logo_ = __webpack_require__(36);
 
 var _logo_2 = _interopRequireDefault(_logo_);
 
@@ -1856,7 +1890,7 @@ var _reactUniversalComponent = __webpack_require__(25);
 
 var _reactUniversalComponent2 = _interopRequireDefault(_reactUniversalComponent);
 
-var _reactStatic = __webpack_require__(3);
+var _reactStatic = __webpack_require__(2);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2746,22 +2780,16 @@ module.exports = __webpack_require__.p + "static/presenter.1286b8ef.jpg";
 /* 32 */
 /***/ (function(module, exports) {
 
-module.exports = require("shuffle-array");
+module.exports = require("rmdi/lib/NavigateNext");
 
 /***/ }),
 /* 33 */
 /***/ (function(module, exports) {
 
-module.exports = require("rmdi/lib/NavigateNext");
-
-/***/ }),
-/* 34 */
-/***/ (function(module, exports) {
-
 module.exports = require("rmdi/lib/NavigateBefore");
 
 /***/ }),
-/* 35 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2771,7 +2799,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _styledComponents = __webpack_require__(2);
+var _styledComponents = __webpack_require__(3);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
@@ -2792,7 +2820,7 @@ Input.defaultProps = {
 exports.default = Input;
 
 /***/ }),
-/* 36 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2817,7 +2845,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 37 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/logo_300.a7fea248.svg";
@@ -2825,4 +2853,4 @@ module.exports = __webpack_require__.p + "static/logo_300.a7fea248.svg";
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.3e1b51bf.js.map
+//# sourceMappingURL=static.e47f6803.js.map
