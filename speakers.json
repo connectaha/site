@@ -17,7 +17,7 @@
         "title": "NgRx: Redux-style State Management in Angular",
         "description": "We’ve heard that using TypeScript can help us avoid painful bugs programmers commonly run into when writing JavaScript by type-checking our code. One of purposes of TypeScript is to “statically identify constructs that are likely to be errors”. With NgRx we can take advantage of this type safety by using TypeScript classes as action creators with readonly type properties, so we can then infer the action object types in our state management code.\r\n\r\nNgRx provides a structuring mechanism for larger applications; it's a design pattern teaches you how to think. In this pattern, the developer needs to identify the streams of values the application is interested in and how they are combined to produce meaningful information for the view layer. The streams, the various applications states, and the view layer models are what we are setting out to define when we use Redux-style state management. This talk will show how to use the various NgRx reactive libraries for Angular state management to build out our application streams and then consume them in our components and services.\r\n\r\n",
         "organization": "PRX",
-        "photo": "/photos/placeholder.jpg"
+        "photo": "/photos/sandiBarr.jpg"
     },
     {
         "id": "jeremy-clark",
@@ -87,7 +87,7 @@
         "title": "Health: The Most Important Dev Tool",
         "description": "Working in the tech industry often involves spending long hours sitting down, staring at a screen, consuming copious amounts of pizza and caffeine. The work is mentally demanding and can be stressful. In the rush to get everything done, it can be easy to neglect our health. But a healthy body and mind are necessary for effective performance. Based on HR training, research, and personal experience, this session provides realistic suggestions for managing your well-being at work. It covers the connection between physical and mental health, as well as how to discuss these topics with your employer. You’ll leave with a better idea of how to take care of yourself and be a happier, healthier, more productive person.",
         "organization": "",
-        "photo": "/photos/placeholder.jpg"
+        "photo": "/photos/cassandraFaris.jpeg"
     },
     {
         "id": "greg-dick",
@@ -127,7 +127,7 @@
         "title": "Python for the Curious",
         "description": "Python is used in many applications today and yet some people seem mystified by it. Maybe it's the whitespace, maybe it's dynamic typing, maybe it's because it seems... too clean looking. Yet Python is useful for one-off scripts and for full-blown web applications (just ask Instagram or Pinterest). And Python is becoming the de facto language in many data science applications. We will touch on all this, show some examples, and make fun of \"enterprise\" languages as we look at a simple, yet powerful, language.",
         "organization": "Object Partners, Inc",
-        "photo": "/photos/placeholder.jpg"
+        "photo": "/photos/mikeHostetler.jpg"
     },
     {
         "id": "michael-eaton",
@@ -137,7 +137,7 @@
         "title": "Leadership Journey: From Software Developer to Leader",
         "description": "You’ve spent years working on your technical skills and can write code with the best of them. Then, one day, a leadership position opens up on your team, and you start thinking about it. Should I or shouldn’t I? What if I hate it? What if I love it? What if I'm not that good at it? In this interactive session, we’ll explore “why leadership,” answer some hard questions, and talk about one developer’s path from writing code to leading people.",
         "organization": "Matched Pattern",
-        "photo": "/photos/placeholder.jpg"
+        "photo": "/photos/michaelEaton.jpg"
     },
     {
         "id": "jason-swett",
@@ -157,7 +157,7 @@
         "title": "Something's Rotten in the State of Quality",
         "description": "Developers, do you really trust QAs when they find a 'bug'? QA folks, do you believe that developers have tested their work before they hand it over? You may identify with this atmosphere of contention surrounding QA. But there’s one underlying question for every team: are we building a quality product?\r\n\r\nThe definition of quality should go beyond a list of test cases executed against requirements. From the father of the quality revolution, Edward Deming, to the work of Martin Fowler and Mike Cohn, we’ll lay a theoretical groundwork for what quality is, then we will showcase these definitions with examples. We’ll end with specific activities along the software development life cycle that actually help assure quality. You’ll take away what it truly means to assure quality as well as ways to start putting it into practice.\r\n\r\nIf you’re a developer, project manager, product owner, BA, or QA tester, this talk is for you",
         "organization": "Hudl",
-        "photo": "/photos/placeholder.jpg"
+        "photo": "/photos/kathyAndersen.jpg"
     },
     {
         "id": "nicholas-tuck",
@@ -177,7 +177,7 @@
         "title": "Fear, Pain, and Loathing: Empathizing with your Users' Plight",
         "description": "You're a developer given a relatively straightforward assignment: replace an old application with a new technology. \"Make it easy to use... Make it sharp! Oh, and don't change anything.\"\r\n\r\nThis session discusses the basics of user interface usability from a user's perspective. When your application is live, the user is the person who will be using that system day in and day out. They determine your application's success or failure by adopting, undermining, or abandoning your application. With such importance, it is imperative to have some understanding of your users' requirements, constraints, and goals. This session will help you develop skills to build empathy and better communicate with your users, while also meeting the needs and requirements of your project stakeholders.",
         "organization": "Union Pacific",
-        "photo": "/photos/placeholder.jpg"
+        "photo": "/photos/ashBanaszek.jpg"
     },
     {
         "id": "jeff-fritz",
@@ -187,7 +187,7 @@
         "title": "Zero to Community Hero - Start Live Coding on Twitch",
         "description": "You're at a conference, and learning a ton. That's awesome, but how do you continue learning after the event? Let's break out of just socializing and learning from the folks in our local geographic area, and embrace a more global community using the Twitch live video platform to write code, discuss technology topics, and even broadcast local user-groups. \r\n\r\nWe'll go beyond just playing Fortnite or League of Legends, and talk about hosting educational content on Twitch. Join one of the leaders of this movement, Jeff Fritz as he gives you an inside look at how to get started streaming, participating, and building new communities with online video",
         "organization": "Microsoft",
-        "photo": "/photos/placeholder.jpg"
+        "photo": "/photos/jeffFritz.jpg"
     },
     {
         "id": "alison-hawke",
@@ -277,7 +277,7 @@
         "organization": "Deliveron Consulting Services",
         "title": "Securing Your CI/CD Pipeline",
         "description": "Don’t wait until the end of your project to do security testing.  Teams are automating manual tasks such as build, deployment, and functional testing.  Security should be no different.  Transform security from afterthought to continuously validating security every step of the process.  In this session you will see how your CI/CD pipeline can perform continuous validation with every check-in including code analysis, OSS security scanning, and automated penetration testing using Azure DevOps and OWASP ZAP Docker containers.  Learn how continuous security validation, along with secure infrastructure, application, and monitoring can ensure your applications stay secure.\r\n",
-        "photo": "/photos/placeholder.jpg"
+        "photo": "/photos/mikeDouglas.jpg"
     },
     {
         "id": "mat-warger",
@@ -288,7 +288,7 @@
         "organization": "Keyhole Software",
         "title": "Bootstrap Your App with AWS Amplify!",
         "description": "Front-end development can be complicated. There are enough libraries and enough churn to make anyone feel lost in the shuffle. Common concerns for any modern web application include features like authentication, user content, APIs, and analytics. In this session, you will get a break-down and demo of the key features of AWS Amplify, an open-source toolchain from Amazon. Amplify abstracts away the common functionality that so many applications share and allows developers to focus on building – not plumbing! This session will walk through a simple application high-lighting the features and tools the library provides. This should leave you with the knowledge of \"how and why\" you would integrate this with your own projects. The session will use React to demonstrate the features of the library, but general front-end development experience is all that is required.",
-        "photo": "/photos/placeholder.jpg"
+        "photo": "/photos/matWarger.jpg"
     },
     {
         "id": "matt-busche",
