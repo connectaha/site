@@ -1,0 +1,17 @@
+[
+    {
+        "id": "farm-credit",
+        "name": "Farm Credit Services of America",
+        "photo": "/photos/fca.jpg"
+    },
+    {
+        "id": "aviture",
+        "name": "Aviture, Inc.",
+        "photo": "/photos/aviture.jpg"
+    },
+    {
+        "id": "proxibid",
+        "name": "Proxibid",
+        "photo": "/photos/proxibid.jpg"
+    }
+]

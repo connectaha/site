@@ -80,6 +80,7 @@ const App = () => (
           <header-right>
             <NavLink ml={4} to="/schedule" is={Link} children="Schedule" />
             <NavLink ml={4} to="/speakers" is={Link} children="Speakers" />
+            <NavLink ml={4} to="/sponsors" is={Link} children="Sponsors" />
             <NavLink ml={4} to="https://www.eventbrite.com/e/connectaha-conference-2019-tickets-49878979370" is={Link}>
               <Button bg="action" color="white" border="none">Buy Tickets</Button>
             </NavLink>
