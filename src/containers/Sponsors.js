@@ -24,7 +24,7 @@ export default withRouteData(({ sponsors }) =>
         {
           sponsors.map(sponsor => (
             <Clickable key={sponsor.id}>
-              <Box width={280} height={440}>
+              <Box width={340} height={340}>
                 <Card
                   m={16}
                   p={2}
@@ -33,11 +33,6 @@ export default withRouteData(({ sponsors }) =>
                   boxShadow="0 0 16px rgba(0, 0, 0, .25)"
                   onClick={() => { window.location = `/sponsors/${sponsor.id}` }}>
                   <Image src={sponsor.photo} />
-                  <Box px={2}>
-                    <Text color="black" fontSize={4}>
-                      {sponsor.name}
-                    </Text>
-                  </Box>
                 </Card>
               </Box>
             </Clickable>)
