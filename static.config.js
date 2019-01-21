@@ -49,15 +49,6 @@ export default {
       getData: () => ({
         sponsors
       }),
-      children: sponsors.map((sponsor, i, arr) => ({
-        path: `/${sponsor.id}`,
-        component: 'src/containers/Sponsor',
-        getData: () => ({
-          sponsor,
-          nextId: i + 1 === arr.length ? arr[0].id : arr[i + 1].id,
-          previousId: i === 0 ? arr[arr.length - 1].id : arr[i - 1].id
-        }),
-      }))
     },
     {
       is404: true,

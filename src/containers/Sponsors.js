@@ -42,7 +42,7 @@ export default withRouteData(({ sponsors }) => {
           )
         }
       </Flex>
-      <Text fontSize="32px" pl={4} pt={6} pb={4} color="white">Tier 2</Text>
+      <Text fontSize="24px" pl={6} pt={6} pb={4} color="white">Tier 2</Text>
       <Flex flexWrap="wrap" p={32}>
         {
           tier2.map(sponsor => (

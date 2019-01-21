@@ -24,7 +24,7 @@ const t_1 = universal(import('../src/containers/Details'), universalOptions)
 const t_2 = universal(import('../src/containers/Schedule'), universalOptions)
 const t_3 = universal(import('../src/containers/Speakers'), universalOptions)
 const t_4 = universal(import('../src/containers/Speaker'), universalOptions)
-const t_5 = universal(import('../src/containers/Sponsorship'), universalOptions)
+const t_5 = universal(import('../src/containers/Sponsors'), universalOptions)
 const t_6 = universal(import('../src/containers/404'), universalOptions)
 
 
