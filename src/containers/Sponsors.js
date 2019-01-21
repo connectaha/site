@@ -7,8 +7,10 @@ const Clickable = styled.div`
   cursor: pointer;
 `
 
-export default withRouteData(({ sponsors }) =>
-  (
+export default withRouteData(({ sponsors }) => {
+  const tier1 = sponsors.filter(s => s.tier === '1')
+  const tier2 = sponsors.filter(s => s.tier === '2')
+  return (
     <div>
       <Head>
         <meta property="og:title" content="2019 Connectaha Sponsors" />
@@ -20,11 +22,32 @@ export default withRouteData(({ sponsors }) =>
         <meta name="twitter:image:alt" content="March 8, 2019 Walter Scott Conference Center" />
       </Head>
       <Heading pl={4} pt={6} pb={4} color="white">Sponsors</Heading>
+      <Text fontSize="24px" pl={6} pt={6} pb={4} color="white">Tier 1</Text>
       <Flex flexWrap="wrap" p={32}>
         {
-          sponsors.map(sponsor => (
+          tier1.map(sponsor => (
             <Clickable key={sponsor.id}>
-              <Box width={340} height={340}>
+              <Box width={370} height={370}>
+                <Card
+                  m={16}
+                  p={2}
+                  width={[1, 1, 1 / 2]}
+                  borderRadius={8}
+                  boxShadow="0 0 16px rgba(0, 0, 0, .25)"
+                  onClick={() => window.open(sponsor.url)}>
+                  <Image src={sponsor.photo} />
+                </Card>
+              </Box>
+            </Clickable>)
+          )
+        }
+      </Flex>
+      <Text fontSize="32px" pl={4} pt={6} pb={4} color="white">Tier 2</Text>
+      <Flex flexWrap="wrap" p={32}>
+        {
+          tier2.map(sponsor => (
+            <Clickable key={sponsor.id}>
+              <Box width={240} height={240}>
                 <Card
                   m={16}
                   p={2}
@@ -40,4 +63,5 @@ export default withRouteData(({ sponsors }) =>
         }
       </Flex>
     </div>)
+}
 )
