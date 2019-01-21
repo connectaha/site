@@ -54,7 +54,7 @@ export default withRouteData(({ sponsors }) => {
                   width={[1, 1, 1 / 2]}
                   borderRadius={8}
                   boxShadow="0 0 16px rgba(0, 0, 0, .25)"
-                  onClick={() => { window.location = `/sponsors/${sponsor.id}` }}>
+                  onClick={() => window.open(sponsor.url)}>
                   <Image src={sponsor.photo} />
                 </Card>
               </Box>
