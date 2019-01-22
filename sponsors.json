@@ -47,5 +47,12 @@
         "tier": "2",
         "photo": "/photos/pluralsight.jpg",
         "url": "https://www.pluralsight.com/"
+    },
+    {
+        "id": "dynamo",
+        "name": "Dynamo",
+        "tier": "2",
+        "photo": "/photos/dynamo.jpg",
+        "url": "https://godynamo.co/"
     }
 ]
