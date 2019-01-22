@@ -33,5 +33,12 @@
         "tier": "2",
         "photo": "/photos/pk.jpg",
         "url": "https://prokarma.com/"
+    },
+    {
+        "id": "cri",
+        "name": "Client Resources Incorporated",
+        "tier": "2",
+        "photo": "/photos/cri.jpg",
+        "url": "https://www.clientresourcesinc.com/"
     }
 ]
