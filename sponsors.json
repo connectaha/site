@@ -54,5 +54,19 @@
         "tier": "2",
         "photo": "/photos/dynamo.jpg",
         "url": "https://godynamo.co/"
+    },
+    {
+        "id": "quantum",
+        "name": "Quantum",
+        "tier": "2",
+        "photo": "/photos/quantum.jpg",
+        "url": "https://www.quantumworkplace.com/"
+    },
+    {
+        "id": "tek",
+        "name": "TEKsystems",
+        "tier": "2",
+        "photo": "/photos/tek.jpg",
+        "url": "https://www.teksystems.com"
     }
 ]
