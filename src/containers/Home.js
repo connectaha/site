@@ -3,7 +3,7 @@ import { Head } from 'react-static'
 import { post } from 'axios'
 import styled from 'styled-components'
 import { fontSize, space, width } from 'styled-system'
-import { Button, Banner, Flex, Text, Link, Heading } from 'rebass'
+import { Button, Banner, Flex, Text, Heading } from 'rebass'
 import ButterToast, { CinnamonSugar } from 'butter-toast'
 import BannerImage from './presenter.jpg'
 
