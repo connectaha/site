@@ -26,5 +26,12 @@
         "tier": "2",
         "photo": "/photos/advantagetech.jpg",
         "url": "https://advantagetech.net/"
+    },
+    {
+        "id": "prokarma",
+        "name": "Prokarma",
+        "tier": "2",
+        "photo": "/photos/pk.jpg",
+        "url": "https://prokarma.com/"
     }
 ]
