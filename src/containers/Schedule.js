@@ -387,7 +387,7 @@ export default withRouteData(() => (
         <br />
         NgRx: Redux-style State Management in Angular
       </Box>
-      <Box width={[1, 1 / 8]} p={1} p={1} onClick={() => click('ash-banaszek')}>
+      <Box width={[1, 1 / 8]} p={1} onClick={() => click('ash-banaszek')}>
         <Divider w={1} borderColor="darkblue" />
         Ash<br />
         Banaszek<br />

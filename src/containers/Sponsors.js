@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Head, withRouteData } from 'react-static'
-import { Box, Card, Image, Flex, Text, Heading } from 'rebass'
+import { Box, Card, Image, Flex, Text } from 'rebass'
 
 const Clickable = styled.div`
   cursor: pointer;
@@ -21,8 +21,8 @@ export default withRouteData(({ sponsors }) => {
         <meta property="og:site_name" content="2019 Connectaha Conference" />
         <meta name="twitter:image:alt" content="March 8, 2019 Walter Scott Conference Center" />
       </Head>
-      <Heading pl={4} pt={6} pb={4} color="white">Sponsors</Heading>
-      <Text fontSize="24px" pl={6} pt={6} pb={4} color="white">Tier 1</Text>
+      <Text fontSize="32px" pl={4} pt={4} pb={2} color="white">Sponsors</Text>
+      <Text fontSize="20px" pl={4} pt={2} color="white">Tier 1</Text>
       <Flex flexWrap="wrap" p={32}>
         {
           tier1.map(sponsor => (
@@ -42,7 +42,7 @@ export default withRouteData(({ sponsors }) => {
           )
         }
       </Flex>
-      <Text fontSize="24px" pl={6} pt={6} pb={4} color="white">Tier 2</Text>
+      <Text fontSize="20px" pl={4} pt={2} color="white">Tier 2</Text>
       <Flex flexWrap="wrap" p={32}>
         {
           tier2.map(sponsor => (
