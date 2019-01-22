@@ -10,7 +10,7 @@ import t_1 from '../../src/containers/Details'
 import t_2 from '../../src/containers/Schedule'
 import t_3 from '../../src/containers/Speakers'
 import t_4 from '../../src/containers/Speaker'
-import t_5 from '../../src/containers/Sponsorship'
+import t_5 from '../../src/containers/Sponsors'
 import t_6 from '../../src/containers/404'
 
 // Template Map

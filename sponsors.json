@@ -1,0 +1,37 @@
+[
+    {
+        "id": "farm-credit",
+        "name": "Farm Credit Services of America",
+        "tier": "1",
+        "photo": "/photos/fca.jpg",
+        "url": "https://www.fcsamerica.com/"
+    },
+    {
+        "id": "aviture",
+        "name": "Aviture, Inc.",
+        "tier": "1",
+        "photo": "/photos/aviture.jpg",
+        "url": "https://www.aviture.us.com/"
+    },
+    {
+        "id": "proxibid",
+        "name": "Proxibid",
+        "tier": "1",
+        "photo": "/photos/proxibid.jpg",
+        "url": "https://www.proxibid.com/"
+    },
+    {
+        "id": "advantagetech",
+        "name": "Advantage Tech",
+        "tier": "2",
+        "photo": "/photos/advantagetech.jpg",
+        "url": "https://advantagetech.net/"
+    },
+    {
+        "id": "prokarma",
+        "name": "Prokarma",
+        "tier": "2",
+        "photo": "/photos/pk.jpg",
+        "url": "https://prokarma.com/"
+    }
+]

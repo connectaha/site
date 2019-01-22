@@ -6,6 +6,9 @@ import { filter, prop, sortBy } from 'ramda'
 const unsortedSpeakers = require('./speakers.json')
 const speakers = filter(_ => _.photo.length > 0, sortBy(prop('id'), unsortedSpeakers))
 
+const unsortedSponsors = require('./sponsors.json')
+const sponsors = filter(_ => _.photo.length > 0, sortBy(prop('id'), unsortedSponsors))
+
 export default {
   siteRoot: '',
   getSiteData: () => ({
@@ -41,8 +44,11 @@ export default {
       }))
     },
     {
-      path: '/sponsorship',
-      component: 'src/containers/Sponsorship',
+      path: '/sponsors',
+      component: 'src/containers/Sponsors',
+      getData: () => ({
+        sponsors
+      }),
     },
     {
       is404: true,
