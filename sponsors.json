@@ -33,5 +33,26 @@
         "tier": "2",
         "photo": "/photos/pk.jpg",
         "url": "https://prokarma.com/"
+    },
+    {
+        "id": "cri",
+        "name": "Client Resources Incorporated",
+        "tier": "2",
+        "photo": "/photos/cri.jpg",
+        "url": "https://www.clientresourcesinc.com/"
+    },
+    {
+        "id": "pluralsight",
+        "name": "Plural Sight",
+        "tier": "2",
+        "photo": "/photos/pluralsight.jpg",
+        "url": "https://www.pluralsight.com/"
+    },
+    {
+        "id": "dynamo",
+        "name": "Dynamo",
+        "tier": "2",
+        "photo": "/photos/dynamo.jpg",
+        "url": "https://godynamo.co/"
     }
 ]
