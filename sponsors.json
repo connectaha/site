@@ -68,5 +68,12 @@
         "tier": "2",
         "photo": "/photos/tek.jpg",
         "url": "https://www.teksystems.com"
+    },
+    {
+        "id": "teamsoftware",
+        "name": "Team Software",
+        "tier": "2",
+        "photo": "/photos/teamsoftware.jpg",
+        "url": "https://teamsoftware.com/"
     }
 ]
