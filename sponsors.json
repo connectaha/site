@@ -75,5 +75,12 @@
         "tier": "2",
         "photo": "/photos/teamsoftware.jpg",
         "url": "https://teamsoftware.com/"
+    },
+    {
+        "id": "suiterswantz",
+        "name": "Suiter Swantz",
+        "tier": "2",
+        "photo": "/photos/suiterswantz.jpg",
+        "url": "https://www.suiter.com/"
     }
 ]
