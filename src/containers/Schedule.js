@@ -72,12 +72,14 @@ export default withRouteData(() => (
         <br />
         Using Tests as a Tool to Wrangle Legacy Projects<br />
       </Box>
-      <Box width={[1, 1 / 8]} p={1}>
+      <Box width={[1, 1 / 8]} p={1} onClick={() => click('herb-scruggs')}>
         <Divider w={1} borderColor="darkblue" />
-        TBD<br />
-        TBD<br />
+        Herb<br />
+        Scrugs<br />
         <br />
         Exec Boardroom <br />
+        <br />
+        Lean Quality Delivery
       </Box>
       <Box width={[1, 1 / 8]} p={1} onClick={() => click('mat-warger')}>
         <Divider w={1} borderColor="darkblue" />
@@ -137,10 +139,12 @@ export default withRouteData(() => (
       </Box>
       <Box width={[1, 1 / 8]} p={1}>
         <Divider w={1} borderColor="darkblue" />
-        TBD<br />
-        TBD<br />
+        Andy Leikos &<br />
+        Levi Liester<br />
         <br />
-        Exec Boardroom
+        Exec Boardroom<br />
+        <br />
+        You’ve Lost That Loving Feeling. Leverage a DevOps mindset to scale your start-up culture.
       </Box>
       <Box
         width={[1, 1 / 8]} p={1} onClick={() => click('jeremy-clark')}>
