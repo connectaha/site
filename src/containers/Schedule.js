@@ -117,7 +117,15 @@ export default withRouteData(() => (
       <Box width={[1, 1 / 8]}>
         9:45a - 10:45a
       </Box>
-      <Box width={[1, 1 / 8]} />
+      <Box width={[1, 1 / 8]} p={1}>
+        <Divider w={1} borderColor="darkblue" />
+        Jonathan Mills<br />
+        Jeff Strauss<br />
+        <br />
+        Center Room<br />
+        <br />
+        AHA Sessions
+      </Box>
       <Box width={[1, 1 / 8]} p={1} onClick={() => click('cameron-presley')}>
         <Divider w={1} borderColor="darkblue" />
         Cameron<br />
@@ -250,7 +258,15 @@ export default withRouteData(() => (
       <Box width={[1, 1 / 8]}>
         1:00p - 2:00p
       </Box>
-      <Box width={[1, 1 / 8]} />
+      <Box width={[1, 1 / 8]} p={1}>
+        <Divider w={1} borderColor="darkblue" />
+        Jeff Fritz<br />
+        Scot Ringenberg<br />
+        <br />
+        Center Room<br />
+        <br />
+        AHA Sessions
+      </Box>
       <Box width={[1, 1 / 8]} p={1} onClick={() => click('john-henry-muller')}>
         <Divider w={1} borderColor="darkblue" />
         John Henry<br />
@@ -316,7 +332,15 @@ export default withRouteData(() => (
       <Box width={[1, 1 / 8]}>
         2:15p - 3:15p
       </Box>
-      <Box width={[1, 1 / 8]} />
+      <Box width={[1, 1 / 8]} p={1}>
+        <Divider w={1} borderColor="darkblue" />
+        John Henry Müller<br />
+        Michelle Mras<br />
+        <br />
+        Center Room<br />
+        <br />
+        AHA Sessions
+      </Box>
       <Box width={[1, 1 / 8]} p={1} onClick={() => click('arthur-doler')}>
         <Divider w={1} borderColor="darkblue" />
         Arthur<br />
