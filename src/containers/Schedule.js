@@ -247,7 +247,44 @@ export default withRouteData(() => (
         Lunch
       </Box>
       <Box width={[1, 7 / 8]}>
-        12:00P - 1:00P
+        12:00P - 12:30P
+      </Box>
+    </Flex>
+
+    <Flex flexWrap="wrap" px={4} py={5} my={4} color="darkblue" bg="white">
+      <Box
+        width={[1, 1 / 8]} >
+        Afternoon Keynote
+      </Box>
+      <Box
+        width={[1, 1 / 8]}>
+        12:30p - 1:15p
+      </Box>
+      <Box
+        width={[1, 1 / 8]} p={1}>
+        <Divider w={1} borderColor="darkblue" />
+        Jeff<br />
+        Strauss<br />
+        <br />
+        Center Room<br />
+        <br />
+        Starting Over
+      </Box>
+      <Box width={[1, 1 / 8]} />
+      <Box width={[1, 1 / 8]} />
+      <Box width={[1, 1 / 8]} />
+      <Box width={[1, 1 / 8]} />
+      <Box width={[1, 1 / 8]} />
+    </Flex>
+
+    <Flex flexWrap="wrap" py={1} px={4} my={4} color="white">
+      <Box
+        width={[1, 1 / 8]}>
+        Break
+      </Box>
+      <Box
+        width={[1, 7 / 8]}>
+        1:15p - 1:30p
       </Box>
     </Flex>
 
@@ -256,7 +293,7 @@ export default withRouteData(() => (
         Session 4
       </Box>
       <Box width={[1, 1 / 8]}>
-        1:00p - 2:00p
+        1:30p - 2:30p
       </Box>
       <Box width={[1, 1 / 8]} p={1}>
         <Divider w={1} borderColor="darkblue" />
@@ -321,7 +358,7 @@ export default withRouteData(() => (
       </Box>
       <Box
         width={[1, 7 / 8]}>
-        2:00p - 2:15p
+        2:30p - 2:45p
       </Box>
     </Flex>
 
@@ -330,7 +367,7 @@ export default withRouteData(() => (
         Session 5
       </Box>
       <Box width={[1, 1 / 8]}>
-        2:15p - 3:15p
+        2:45p - 3:45p
       </Box>
       <Box width={[1, 1 / 8]} p={1}>
         <Divider w={1} borderColor="darkblue" />
@@ -393,7 +430,7 @@ export default withRouteData(() => (
         Break
       </Box>
       <Box width={[1, 1 / 8]}>
-        3:15p - 3:30p
+        3:45p - 4:00p
       </Box>
       <Box width={[1, 3 / 4]} />
     </Flex>
@@ -403,7 +440,7 @@ export default withRouteData(() => (
         Session 6
       </Box>
       <Box width={[1, 1 / 8]}>
-        3:30p - 4:30p
+        4:00p - 5:00p
       </Box>
       <Box width={[1, 1 / 8]} />
       <Box width={[1, 1 / 8]} p={1} onClick={() => click('sandi-barr')}>
@@ -456,19 +493,15 @@ export default withRouteData(() => (
     <Flex flexWrap="wrap" px={4} py={5} my={4} color="darkblue" bg="white">
       <Box
         width={[1, 1 / 8]} >
-        Closing Keynote
+        Connectaha Social
       </Box>
       <Box
         width={[1, 1 / 8]}>
-        4:35p - 5:00p
+        TBD
       </Box>
       <Box
         width={[1, 1 / 8]} p={1}>
         <Divider w={1} borderColor="darkblue" />
-        Jeff<br />
-        Strauss<br />
-        <br />
-        Center Room<br />
       </Box>
       <Box width={[1, 1 / 8]} />
       <Box width={[1, 1 / 8]} />
@@ -476,4 +509,5 @@ export default withRouteData(() => (
       <Box width={[1, 1 / 8]} />
       <Box width={[1, 1 / 8]} />
     </Flex>
+
   </div>))
