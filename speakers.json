@@ -254,10 +254,10 @@
         "firstName": "Jonathan",
         "lastName": "Mills",
         "bio": "Jon is a Pluralsight author, Microsoft MVP, and international speaker focusing on JavaScript both in the browser and on the server.  Jonathan Mills is a JavaScript and Node.js expert working in the mean stack with individuals and companies to help build their technical skills to cope with the constantly changing landscape of software development. ",
-        "title": "",
-        "description": "",
+        "title": "Keeping Up",
+        "description": "Hey, what are your thoughts on Docker? How about Kubernetes? Have you started looking at Vue yet? Although, WebAssembly will replace JavaScript before too long..... Every time I go to an event, I am hit with questions like this. I often feel like I am running up a down escalator and simply can't keep up. Do you ever feel overwhelmed with the constantly changing landscape of software development? Every time we turn around there is something new to keep our eye on. In this session, I encourage you to stop for a minute and take a breath. I will work you through some resources and skills that will help you trim back the noise and allow you to focus on the things that are really important and simply keep an awareness of the rest. ",
         "photo": "/photos/jonMills.jpg",
-        "organization": "Epiq Global"
+        "organization": "World Wide Technology"
     },
     {
         "id": "jeff-strauss",
