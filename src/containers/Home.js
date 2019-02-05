@@ -117,7 +117,7 @@ export default class Home extends Component {
               team member.
             </Text>
           </Row>
-          <Row width={[1, 0.75, 0.5]}>
+          <Row width={[1, 0.75, 0.65]}>
             <Text fontSize={3} fontWeight={300} >
               A conference that believes there’s power when people talk.
             </Text>
