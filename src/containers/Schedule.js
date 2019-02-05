@@ -193,7 +193,7 @@ export default withRouteData(() => (
       </Box>
       <Box width={[1, 1 / 8]} p={1}>
         <Divider w={1} borderColor="darkblue" />
-        Andy Leikos &<br />
+        Andy Liakos &<br />
         Levi Liester<br />
         <br />
         You’ve Lost That Loving Feeling. Leverage a DevOps mindset to scale your start-up culture.
