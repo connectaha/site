@@ -347,4 +347,16 @@
         "description": "",
         "photo": "/photos/andyLiakos.jpg"
     }
+    ,
+    {
+        "id": "michael-mcgee",
+        "firstName": "Michael",
+        "lastName": "McGee",
+        "email": "michael.mcgee@fcsamerica.com",
+        "bio": "Michael is a Quality Assurance Developer at Farm Credit Service of America. He has a been a Software Developer since the days of the Y2K problem. Angular Front-end development and the Microsoft stack is where his passion lies, and he has recently fallen in love with the Cypress.IO testing framework.  He is an advocate for unit testing your code, not littering the earth and being a good steward of your personal finances. If you ask him about fishing, you might not get him to shut up.",
+        "organization": "Farm Credit Services of America",
+        "title": "Lean Quality Delivery",
+        "description": "Lean Quality Delivery is our quality framework encompassing three aspects of developing quality software - functional quality, structural quality, and process quality.  Core to this framework is an understanding that quality and testing are not the same thing.  Every step in the agile development life-cycle impacts quality, therefore every team member is responsible for and has an active part to play in quality.  Fully embracing the shift-left mentality, it is built on a foundation of lean/agile processes, developer best practices, and a risk-based testing philosophy.",
+        "photo": "/photos/michaelMcGee.jpg"
+    }
 ]
