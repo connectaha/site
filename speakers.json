@@ -120,16 +120,6 @@
         "photo": "/photos/katiaWheeler.jpeg"
     },
     {
-        "id": "mike-hostetler",
-        "firstName": "Mike",
-        "lastName": "Hostetler",
-        "bio": "Mike has almost 20 years of experience in technology. He started in networking and Unix administration, and grew into technical support and QA testing. But he has always done some development on the side and decided a few years ago to pursue it full-time. His history of working with users gives Mike a unique perspective on writing software.",
-        "title": "Python for the Curious",
-        "description": "Python is used in many applications today and yet some people seem mystified by it. Maybe it's the whitespace, maybe it's dynamic typing, maybe it's because it seems... too clean looking. Yet Python is useful for one-off scripts and for full-blown web applications (just ask Instagram or Pinterest). And Python is becoming the de facto language in many data science applications. We will touch on all this, show some examples, and make fun of \"enterprise\" languages as we look at a simple, yet powerful, language.",
-        "organization": "Object Partners, Inc",
-        "photo": "/photos/mikeHostetler.jpg"
-    },
-    {
         "id": "michael-eaton",
         "firstName": "Michael",
         "lastName": "Eaton",
@@ -341,8 +331,20 @@
         "email": "levi.liester@proxibid.com",
         "bio": "Corgis, coding, and caffeine, that’s what I do.  I enjoy practicing my craft as a Digital Alchemist at Proxibid. I’m also constantly searching for side projects for fun and profit.  The more people who find value in what I build the better.  I’m not interested in building solutions no one uses.  I’ve worked with a variety of businesses; from startups to enterprises, contracting and full time.  I value transparency in business and personal interactions, and I will rock the boat to get it.",
         "organization": "Proxibid",
-        "title": "Protecting Your Innovation – Patent Protection and the Patent Process",
+        "title": "",
         "description": "",
         "photo": "/photos/leviLiester.jpg"
+    }
+    ,
+    {
+        "id": "andy-liakos",
+        "firstName": "Andy",
+        "lastName": "Liakos",
+        "email": "andy.liakos@proxibid.com",
+        "bio": "Co-Founder, Proxibid \r\n\r\n Being a founding member of a start-up business means you play whatever role the business requires.  For twelve years, Andy led the functional design of many of Proxibid’s core products including Proxibid’s live bidding applications, Proxibid’s website, and numerous special projects. Today, Andy oversees all software operations at Proxibid, responsible for daily live auction operations and developing and seeking out new talent in the industry.\r\n\r\nAndy is no stranger to the stage and public speaking, regularly volunteering his time and talents as a fundraising auctioneer to various nonprofit galas in the Omaha area each year.  Andy is a member of Leadership Omaha Class 40.  Husband to Trish and father of three daughters (Katherine 17, Mallory 8, Eleanor 6).  Andy is an avid runner, gardener, chef, family man and is passionate about creating just about anything.\r\n\r\nOne way people will remember me: I can express the full spectrum of human emotion with my eyebrows.",
+        "organization": "Proxibid",
+        "title": "",
+        "description": "",
+        "photo": "/photos/andyLiakos.jpg"
     }
 ]
