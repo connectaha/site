@@ -120,16 +120,6 @@
         "photo": "/photos/katiaWheeler.jpeg"
     },
     {
-        "id": "mike-hostetler",
-        "firstName": "Mike",
-        "lastName": "Hostetler",
-        "bio": "Mike has almost 20 years of experience in technology. He started in networking and Unix administration, and grew into technical support and QA testing. But he has always done some development on the side and decided a few years ago to pursue it full-time. His history of working with users gives Mike a unique perspective on writing software.",
-        "title": "Python for the Curious",
-        "description": "Python is used in many applications today and yet some people seem mystified by it. Maybe it's the whitespace, maybe it's dynamic typing, maybe it's because it seems... too clean looking. Yet Python is useful for one-off scripts and for full-blown web applications (just ask Instagram or Pinterest). And Python is becoming the de facto language in many data science applications. We will touch on all this, show some examples, and make fun of \"enterprise\" languages as we look at a simple, yet powerful, language.",
-        "organization": "Object Partners, Inc",
-        "photo": "/photos/mikeHostetler.jpg"
-    },
-    {
         "id": "michael-eaton",
         "firstName": "Michael",
         "lastName": "Eaton",
@@ -153,7 +143,7 @@
         "id": "kathy-i-andersen",
         "firstName": "Kathy I.",
         "lastName": "Andersen",
-        "bio": "Kathy is a Scrum Master at Hudl. There, she has the honor of serving the talented teams on the business side of the Hudl's efforts to market, sell, support, and report on the company's products and services. Kathy took an uncommon route to the software world. She went from running a microfinance nonprofit to working at a startup incubator, and there she took the dive into product/software development. On one of her early projects, she ramped up on the scrum framework and agile concepts more broadly. That's how she fell in love with the idea that there really are ways to setup individuals to do their best work and to setup teams to be greater than the sum of their parts. Today you'll find her speaking at conferences and participating in the agile and product development communities in Lincoln, Omaha, and beyond.",
+        "bio": "Kathy is a Scrum Master at Hudl. There, she has the honor of serving the talented teams on the business side of the Hudl's efforts to market, sell, support, and report on the company's products and services. Kathy took an uncommon route to the software world. She went from running a microfinance nonprofit to working at a startup incubator, and there she took the dive into product/software development.\r\n\r\nOn one of her early projects, she ramped up on the scrum framework and agile concepts more broadly. That's how she fell in love with the idea that there really are ways to setup individuals to do their best work and to setup teams to be greater than the sum of their parts. Today you'll find her speaking at conferences and participating in the agile and product development communities in Lincoln, Omaha, and beyond.",
         "title": "Something's Rotten in the State of Quality",
         "description": "Developers, do you really trust QAs when they find a 'bug'? QA folks, do you believe that developers have tested their work before they hand it over? You may identify with this atmosphere of contention surrounding QA. But there’s one underlying question for every team: are we building a quality product?\r\n\r\nThe definition of quality should go beyond a list of test cases executed against requirements. From the father of the quality revolution, Edward Deming, to the work of Martin Fowler and Mike Cohn, we’ll lay a theoretical groundwork for what quality is, then we will showcase these definitions with examples. We’ll end with specific activities along the software development life cycle that actually help assure quality. You’ll take away what it truly means to assure quality as well as ways to start putting it into practice.\r\n\r\nIf you’re a developer, project manager, product owner, BA, or QA tester, this talk is for you.",
         "organization": "Hudl",
@@ -223,7 +213,7 @@
         "id": "john-henry-muller",
         "firstName": "John Henry",
         "lastName": "Müller",
-        "bio": "John Henry Müller is a Design Director at Hudl, a sports technology software used by teams around the world (including Premier League, NBA, NHL, NFL, NCAA, and 98% of high school football teams). At Hudl, he focuses on visual design spanning both product and brand design, with a team of over 30 designers. John Henry led the visual direction of Uniform, Hudl's design system.\r\n\r\nBefore Hudl, John Henry was the design cofounder of a startup called Pack. Before that, he founded a design/dev consultancy called What Cheer, with clients including Squidoo, Hayneedle, Union Pacific Railroad, US Department of Energy and Saddle Creek Records. John Henry lives in Benson, Omaha, Nebraska with his wife, daughter, dog and two cats. He sits on the board of Big Omaha and Maha Music Festival. He was gluten-free before (and after) it was cool.",
+        "bio": "My full name is John Henry Müller. But you can call me John, John Henry, JH, Jilly, or anything else that feels right to you.\r\n\r\nI make things that make people happy. I recently went out on my own as an independent designer. You can hire me :)\r\n\r\nOver the years, people have called me a graphic designer, web designer, art directer, creative directer, UX designer, UI designer, product designer, design cofounder, and design director. I’ve worked with hobbyists, startups, scaling companies, and Fortune 500s. I’ve worked on brands, websites, apps, and design systems. To me, it’s all the same. It’s understanding the problem and finding a creative way to solve it.",
         "title": "From Color Palette to Color System",
         "description": "Color touches literally every pixel of digital products. That's why it is so important to get color right in a design system.\r\n\r\nIn this talk, John Henry Müller (Design Director at Hudl) divulges mistakes made and practical lessons learned about color while creating Uniform, Hudl's design system.\r\n\r\nWhat you'll learn:\r\n\r\n* Tips and tricks creating a durable color scheme \r\n\r\n* Common pitfalls when defining a color palette\r\n\r\n* Understand color contrast for accessibility ",
         "organization": "",
@@ -253,7 +243,7 @@
         "id": "jon-mills",
         "firstName": "Jonathan",
         "lastName": "Mills",
-        "bio": "Jon is a Pluralsight author, Microsoft MVP, and international speaker focusing on JavaScript both in the browser and on the server.  Jonathan Mills is a JavaScript and Node.js expert working in the mean stack with individuals and companies to help build their technical skills to cope with the constantly changing landscape of software development. ",
+        "bio": "Jonathan is a Pluralsight Author, Technology Advisor, and Business Leader. As a member of the Chief Digital Advisory team at World Wide Technology, Jonathan is able to leverage his unique experiences and skills to drive digital transformation for his clients.\r\n\r\nAs a dedicated developer community leader, Jonathan serves on the board of directors for the Kansas City Developers Conference, Microsoft MVP, and is a regular speaker and keynote presenter at conferences around the globe. ",
         "title": "Keeping Up",
         "description": "Hey, what are your thoughts on Docker? How about Kubernetes? Have you started looking at Vue yet? Although, WebAssembly will replace JavaScript before too long..... Every time I go to an event, I am hit with questions like this. I often feel like I am running up a down escalator and simply can't keep up. Do you ever feel overwhelmed with the constantly changing landscape of software development? Every time we turn around there is something new to keep our eye on. In this session, I encourage you to stop for a minute and take a breath. I will work you through some resources and skills that will help you trim back the noise and allow you to focus on the things that are really important and simply keep an awareness of the rest. ",
         "photo": "/photos/jonMills.jpg",
@@ -263,7 +253,7 @@
         "id": "jeff-strauss",
         "firstName": "Jeff",
         "lastName": "Strauss",
-        "bio": "Jeff is a software developer, an entrepreneur, and an attorney. As a consultant at WWT Asynchrony Labs, with unique experiences that combine technology and law, he maintains a passion for solving problems with inspired solutions, improving life through technology. A dedicated member of the developer community, Jeff travels internationally to speak on both technical and business-oriented topics. He is a Microsoft MVP and enjoys serving on the board of directors for the Kansas City Developer Conference.",
+        "bio": "Jeff is a technical architect, an executive consultant, and an attorney. As a member of the Chief Digital Advisor team at World Wide Technology—and with his unique experiences that combine tech and the law—he maintains a passion for solving problems with inspired solutions, improving life and business through technology.\r\n\r\nA dedicated member of the developer community, Jeff travels internationally to speak on both technical and business-oriented topics. He is a Microsoft MVP and serves on the board of directors for the Kansas City Developer Conference.",
         "title": "Starting Over",
         "description": "Adversity. A necessary component of life. Inevitably, we all reach professional and personal moments that require us to take a deep breath and a giant step back. Moving forward again often feels difficult, even impossible. We suffer, immobilized by fear. But fear is more than some pesky roadblock. It is a rational response to adversity. Whether facing a major code refactoring, the changing technology landscape, a new role, or even a fresh career, we can learn to leverage fear and uncertainty to move beyond our hurdles and get the job done! Key life skills exist that can be developed to conquer adversity. Learn to assess risks, build relationships, and recognize opportunities for growth. Starting over may seem insurmountable. Armed with the right skills, perspective, and a little patience, nothing truly is.",
         "photo": "/photos/jeffStraus.jpg",
@@ -276,7 +266,7 @@
         "bio": "Mike Douglas is a Solution Consultant at Deliveron Consulting Services.  He specializes in working with development teams to implement Secure DevOps and Application Lifecycle Management (ALM) solutions to eliminate traditional silos between development, testing, project management, and operations to establish cohesive processes from idea to production.    He is also a Microsoft Visual Studio and Developer Technologies MVP and an Microsoft ALM Ranger",
         "organization": "Deliveron Consulting Services",
         "title": "Securing Your CI/CD Pipeline",
-        "description": "Don’t wait until the end of your project to do security testing.  Teams are automating manual tasks such as build, deployment, and functional testing.  Security should be no different.  Transform security from afterthought to continuously validating security every step of the process.  In this session you will see how your CI/CD pipeline can perform continuous validation with every check-in including code analysis, OSS security scanning, and automated penetration testing using Azure DevOps and OWASP ZAP Docker containers.  Learn how continuous security validation, along with secure infrastructure, application, and monitoring can ensure your applications stay secure.\r\n",
+        "description": "Jeff is a technical architect, an executive consultant, and an attorney. As a member of the Chief Digital Advisor team at World Wide Technology—and with his unique experiences that combine tech and the law—he maintains a passion for solving problems with inspired solutions, improving life and business through technology. A dedicated member of the developer community, Jeff travels internationally to speak on both technical and business-oriented topics. He is a Microsoft MVP and serves on the board of directors for the Kansas City Developer Conference.\r\n",
         "photo": "/photos/mikeDouglas.jpg"
     },
     {
@@ -328,10 +318,45 @@
         "firstName": "Scot",
         "lastName": "Ringenberg",
         "email": "smr@suiter.com",
-        "bio": "Scot M. Ringenberg is a patent attorney and co-owner of Suiter Swantz IP. He received his Bachelor’s Degree in Chemical Engineering from the University of Nebraska Lincoln and his Juris Doctor from the University of Nebraska College of Law. Scot continued his education with the University of Kansas Electrical Engineering and Computer Science Department graduate studies program. He is registered to practice as an attorney before the United States Patent and Trademark Office. Additionally, he has been admitted to the state bars of Nebraska, Kansas, and Missouri. Scot is also a member of numerous professional and community associations including the State Bar Associations of Nebraska, Missouri, and Kansas, the Institute of Electrical and Electronics Engineers, the American Institute of Chemical Engineers, the American Intellectual Property Law Association and the University of Nebraska-Lincoln Alumni Association. When not practicing Intellectual Property law, Scot enjoys golfing, traveling, attending his family’s numerous activities, and following University of Nebraska Athletics.",
+        "bio": "Scot M. Ringenberg is a patent attorney and co-owner of Suiter Swantz IP. He received his Bachelor’s Degree in Chemical Engineering from the University of Nebraska Lincoln and his Juris Doctor from the University of Nebraska College of Law. Scot continued his education with the University of Kansas Electrical Engineering and Computer Science Department graduate studies program. He is registered to practice as an attorney before the United States Patent and Trademark Office. Additionally, he has been admitted to the state bars of Nebraska, Kansas, and Missouri.\r\n\r\nScot is also a member of numerous professional and community associations including the State Bar Associations of Nebraska, Missouri, and Kansas, the Institute of Electrical and Electronics Engineers, the American Institute of Chemical Engineers, the American Intellectual Property Law Association and the University of Nebraska-Lincoln Alumni Association. When not practicing Intellectual Property law, Scot enjoys golfing, traveling, attending his family’s numerous activities, and following University of Nebraska Athletics.",
         "organization": "Suiter Swantz",
         "title": "Protecting Your Innovation – Patent Protection and the Patent Process",
         "description": "Intellectual property law can be used to protect a number of intangible assets. These assets may include inventions, names, logos, symbols, software code, writings, designs, music, recipes, and similar intellectual works. Suiter Swantz IP is a full-service intellectual property law firm that provides client-centric, worldwide protection for your patent, trademark, and copyright needs. We have helped many diverse organizations ranging from individual inventors to early-stage startups to international multi-billion-dollar corporations navigate the complex landscape of intellectual property procurement and protection for more than 20 years. If you any have any questions regarding intellectual property, be sure to stop by and speak with us!",
         "photo": "/photos/scotRingenberg.jpg"
+    },
+    {
+        "id": "levi-liester",
+        "firstName": "Levi",
+        "lastName": "Liester",
+        "email": "levi.liester@proxibid.com",
+        "bio": "Corgis, coding, and caffeine, that’s what I do.  I enjoy practicing my craft as a Digital Alchemist at Proxibid. I’m also constantly searching for side projects for fun and profit.  The more people who find value in what I build the better.  I’m not interested in building solutions no one uses.  I’ve worked with a variety of businesses; from startups to enterprises, contracting and full time.  I value transparency in business and personal interactions, and I will rock the boat to get it.",
+        "organization": "Proxibid",
+        "title": "",
+        "description": "",
+        "photo": "/photos/leviLiester.jpg"
+    }
+    ,
+    {
+        "id": "andy-liakos",
+        "firstName": "Andy",
+        "lastName": "Liakos",
+        "email": "andy.liakos@proxibid.com",
+        "bio": "Co-Founder, Proxibid \r\n\r\n Being a founding member of a start-up business means you play whatever role the business requires.  For twelve years, Andy led the functional design of many of Proxibid’s core products including Proxibid’s live bidding applications, Proxibid’s website, and numerous special projects. Today, Andy oversees all software operations at Proxibid, responsible for daily live auction operations and developing and seeking out new talent in the industry.\r\n\r\nAndy is no stranger to the stage and public speaking, regularly volunteering his time and talents as a fundraising auctioneer to various nonprofit galas in the Omaha area each year.  Andy is a member of Leadership Omaha Class 40.  Husband to Trish and father of three daughters (Katherine 17, Mallory 8, Eleanor 6).  Andy is an avid runner, gardener, chef, family man and is passionate about creating just about anything.\r\n\r\nOne way people will remember me: I can express the full spectrum of human emotion with my eyebrows.",
+        "organization": "Proxibid",
+        "title": "",
+        "description": "",
+        "photo": "/photos/andyLiakos.jpg"
+    }
+    ,
+    {
+        "id": "michael-mcgee",
+        "firstName": "Michael",
+        "lastName": "McGee",
+        "email": "michael.mcgee@fcsamerica.com",
+        "bio": "Michael is a Quality Assurance Developer at Farm Credit Service of America. He has a been a Software Developer since the days of the Y2K problem. Angular Front-end development and the Microsoft stack is where his passion lies, and he has recently fallen in love with the Cypress.IO testing framework.  He is an advocate for unit testing your code, not littering the earth and being a good steward of your personal finances. If you ask him about fishing, you might not get him to shut up.",
+        "organization": "Farm Credit Services of America",
+        "title": "Lean Quality Delivery",
+        "description": "Lean Quality Delivery is our quality framework encompassing three aspects of developing quality software - functional quality, structural quality, and process quality.  Core to this framework is an understanding that quality and testing are not the same thing.  Every step in the agile development life-cycle impacts quality, therefore every team member is responsible for and has an active part to play in quality.  Fully embracing the shift-left mentality, it is built on a foundation of lean/agile processes, developer best practices, and a risk-based testing philosophy.",
+        "photo": "/photos/michaelMcGee.jpg"
     }
 ]

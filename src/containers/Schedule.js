@@ -105,10 +105,13 @@ export default withRouteData(() => (
         <br />
         Using Tests as a Tool to Wrangle Legacy Projects<br />
       </Box>
-      <Box width={[1, 1 / 8]} p={1} onClick={() => click('herb-scruggs')}>
+      <Box width={[1, 1 / 8]} p={1} onClick={() => click('michael-mcgee')}>
         <Divider w={1} borderColor="darkblue" />
         Herb<br />
         Scrugs<br />
+        <br />
+        Michael <br />
+        McGee <br />
         <br />
         Lean Quality Delivery
       </Box>
@@ -494,12 +497,12 @@ export default withRouteData(() => (
         <br />
         Grow The Future With Internship 2.0
       </Box>
-      <Box width={[1, 1 / 8]} p={1} onClick={() => click('mike-hostetler')}>
+      <Box width={[1, 1 / 8]} p={1}>
         <Divider w={1} borderColor="darkblue" />
-        Mike<br />
-        Hostetler<br />
         <br />
-        Python for the Curious<br />
+        <br />
+        <br />
+        <br />
       </Box>
       <Box width={[1, 1 / 8]} p={1} onClick={() => click('javier-lozano')}>
         <Divider w={1} borderColor="darkblue" />
