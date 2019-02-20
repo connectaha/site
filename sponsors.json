@@ -82,5 +82,12 @@
         "tier": "2",
         "photo": "/photos/suiterswantz.jpg",
         "url": "https://www.suiter.com/"
+    },
+    {
+        "id": "buildertrend",
+        "name": "Buildertrend",
+        "tier": "2",
+        "photo": "/photos/buildertrend.jpg",
+        "url": "https://www.buildertrend.com"
     }
 ]
