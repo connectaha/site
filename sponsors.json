@@ -89,5 +89,19 @@
         "tier": "2",
         "photo": "/photos/buildertrend.jpg",
         "url": "https://www.buildertrend.com"
+    },
+    {
+        "id": "spreetail",
+        "name": "Spreetail",
+        "tier": "2",
+        "photo": "/photos/spreetail.jpg",
+        "url": "https://spreetail.com/"
+    },
+    {
+        "id": "atlas",
+        "name": "Atlas Solutions Plus",
+        "tier": "2",
+        "photo": "/photos/atlas.jpg",
+        "url": "https://atlassolutionsgroup.com/"
     }
 ]
