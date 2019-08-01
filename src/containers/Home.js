@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import { fontSize, space, width } from 'styled-system'
 import { Button, Banner, Flex, Text, Heading } from 'rebass'
 import ButterToast, { CinnamonSugar } from 'butter-toast'
-import BannerImage from './presenter.jpg'
+import BannerImage from '../confbanner.jpg'
 
 const Center = styled.div`
   display: flex;
@@ -92,24 +92,27 @@ export default class Home extends Component {
     return (
       <div>
         <Head>
-          <meta property="og:title" content="2019 Connectaha Conference" />
-          <meta property="og:url" content="https://www.connectaha.com" />
-          <meta property="og:description" content="March 8, 2019 Walter Scott Conference Center" />
-          <meta property="og:image" content="https://connectaha.com/static/presenter.1286b8ef.jpg" />
+          <meta property="og:title" content="2019 Connectaha Schedule" />
+          <meta property="og:url" content="https://www.connectaha.com/schedule" />
+          <meta property="og:description" content="March 27, 2020 Walter Scott Conference Center" />
+          <meta property="og:image" content="https://connectaha.com/static/ConfImage.jpg" />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta property="og:site_name" content="2019 Connectaha Conference" />
-          <meta name="twitter:image:alt" content="March 8, 2019 Walter Scott Conference Center" />
+          <meta property="og:site_name" content="2020 Connectaha Conference" />
+          <meta name="twitter:image:alt" content="March 27, 2020 Walter Scott Conference Center" />
         </Head>
 
         <Banner mt={5} mb={5} color="white" minHeight="40vh" borderRadius={8} backgroundImage={BannerImage}>
-          <Heading fontSize={5}>March 8, 2019</Heading>
-          <Heading fontSize={3}>Walter Scott Conference Center</Heading>
-          <Heading fontSize={3}>6450 Pine St. Omaha, NE 68106</Heading>
+          <Heading fontSize={4}>SAVE THE DATE</Heading>
+          <Heading fontSize={6}>Connectaha</Heading>
+          <Heading fontSize={6}>March 27, 2020</Heading>
+          <Heading fontSize={4}>Walter Scott Conference Center</Heading>
+          <Heading fontSize={4}>6450 Pine St. Omaha, NE 68106</Heading>
         </Banner>
 
         <Center mt={3} mb={3} mx={[7, 6, 5, 4]}>
           <Row width={[1, 0.75, 0.65]}>
-            <Text fontSize={3} fontWeight={300} >A new conference is coming to Omaha.
+
+            <Text fontSize={4} fontWeight={300} >A new conference is in Omaha.
               A conference that believes that everyone in the software world can learn
               from each other. A conference that believes quality software only happens
               when everyone on the team is communicating. A conference that believes
@@ -118,15 +121,9 @@ export default class Home extends Component {
             </Text>
           </Row>
           <Row width={[1, 0.75, 0.65]}>
-            <Text fontSize={3} fontWeight={300} >
+            <Text fontSize={4} fontWeight={300} >
               A conference that believes there’s power when people talk.
             </Text>
-          </Row>
-
-          <Row width={[1, 0.75, 0.5]}>
-            <Flex wrap="wrap">
-              <BigButton bg="action" color="white" border="none" onClick={this.goToTickets}>Buy Tickets</BigButton>
-            </Flex>
           </Row>
         </Center>
       </div>)
