@@ -102,16 +102,17 @@ export default class Home extends Component {
         </Head>
 
         <Banner mt={5} mb={5} color="white" minHeight="40vh" borderRadius={8} backgroundImage={BannerImage}>
-          <Heading fontSize={3} color="#ff6600">SAVE THE DATE</Heading>
-          <Heading fontSize={5}>March 27, 2020</Heading>
-          <Heading fontSize={3}>Walter Scott Conference Center</Heading>
-          <Heading fontSize={3}>6450 Pine St. Omaha, NE 68106</Heading>
+          <Heading fontSize={4}>SAVE THE DATE</Heading>
+          <Heading fontSize={6}>Connectaha</Heading>
+          <Heading fontSize={6}>March 27, 2020</Heading>
+          <Heading fontSize={4}>Walter Scott Conference Center</Heading>
+          <Heading fontSize={4}>6450 Pine St. Omaha, NE 68106</Heading>
         </Banner>
 
         <Center mt={3} mb={3} mx={[7, 6, 5, 4]}>
           <Row width={[1, 0.75, 0.65]}>
 
-            <Text fontSize={3} fontWeight={300} >A new conference is in Omaha.
+            <Text fontSize={4} fontWeight={300} >A new conference is in Omaha.
               A conference that believes that everyone in the software world can learn
               from each other. A conference that believes quality software only happens
               when everyone on the team is communicating. A conference that believes
@@ -120,7 +121,7 @@ export default class Home extends Component {
             </Text>
           </Row>
           <Row width={[1, 0.75, 0.65]}>
-            <Text fontSize={3} fontWeight={300} >
+            <Text fontSize={4} fontWeight={300} >
               A conference that believes there’s power when people talk.
             </Text>
           </Row>
