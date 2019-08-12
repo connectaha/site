@@ -101,31 +101,18 @@ export default class Home extends Component {
           <meta name="twitter:image:alt" content="March 27, 2020 Walter Scott Conference Center" />
         </Head>
 
+        <Text p={4} py={4} fontSize={5} fontWeight={200} >
+            A technology conference that connects everyone.
+        </Text>
+
         <Banner mt={5} mb={5} color="white" minHeight="40vh" borderRadius={8} backgroundImage={BannerImage}>
           <Heading fontSize={4}>SAVE THE DATE</Heading>
-          <Heading fontSize={6}>Connectaha</Heading>
-          <Heading fontSize={6}>March 27, 2020</Heading>
+          <Heading fontSize={5}>March 27, 2020</Heading>
           <Heading fontSize={4}>Walter Scott Conference Center</Heading>
-          <Heading fontSize={4}>6450 Pine St. Omaha, NE 68106</Heading>
         </Banner>
-
-        <Center mt={3} mb={3} mx={[7, 6, 5, 4]}>
-          <Row width={[1, 0.75, 0.65]}>
-
-            <Text fontSize={4} fontWeight={300} >A new conference is in Omaha.
-              A conference that believes that everyone in the software world can learn
-              from each other. A conference that believes quality software only happens
-              when everyone on the team is communicating. A conference that believes
-              those with less experience provide just as much value as the most senior
-              team member.
-            </Text>
-          </Row>
-          <Row width={[1, 0.75, 0.65]}>
-            <Text fontSize={4} fontWeight={300} >
-              A conference that believes there’s power when people talk.
-            </Text>
-          </Row>
-        </Center>
+        <Text px={4} fontSize={3} fontWeight={300} >
+          From the outset, Connectaha has been about connecting tech people in and around Nebraska. We believe that we have a lot of good companies and interesting work right here in our own backyard, and we want to expose what’s going on. Join us March 27, 2020.
+        </Text>
       </div>)
   }
 }

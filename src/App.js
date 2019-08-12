@@ -86,7 +86,6 @@ const App = () => (
             <p>Copyright © Connectaha, LLC. All rights reserved.</p>
           </div>
           <div>
-            <NavLink ml={4} to="/details" is={Link}>About</NavLink>
             <NavLink to="https://twitter.com/connectaha" is={Link}>
               <Icon ml={4}name="twitter" />
             </NavLink>
