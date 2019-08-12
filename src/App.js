@@ -2,11 +2,11 @@ import React from 'react'
 import { Router, Link } from 'react-static'
 import styled, { injectGlobal } from 'styled-components'
 import { hot } from 'react-hot-loader'
-import { Image, Button, NavLink, Provider as ThemeProvider } from 'rebass'
+import { Image, NavLink, Provider as ThemeProvider } from 'rebass'
 import Icon from 'react-simple-icons'
 import Routes from 'react-static-routes'
 import theme from './theme'
-import logo from './logo_300.svg'
+import logo from './connectahaLogo.svg'
 
 injectGlobal`
   body {
@@ -40,7 +40,7 @@ const FileLink = styled.a`
 const AppHeader = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: Center;
   flex-wrap: wrap;
   padding: 10px;
   border-bottom: 1px solid #174899;
@@ -51,15 +51,8 @@ const AppHeader = styled.div`
     width: auto;
     cursor: pointer;
   }
-
-  Header-right {
-    margin: 0;
-    flex: 0 0 auto;
-    padding: 0 0 0 20px;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
 `
+
 const AppFooter = styled.div`
   display: flex;
   align-items: center;
@@ -76,7 +69,7 @@ const App = () => (
     <Router>
       <AppStyles>
         <AppHeader>
-          <Image pb={5} pt={5} mt={5} mb={32} mx={[1, 2, 3, 4]} src={logo} onClick={() => { window.location = '/' }} alt="Connectaha Logo" width={[0.5, 0.4, 0.3]} height="100" />
+          <Image py={5} my={5} mx={[1, 2, 3, 4]} src={logo} onClick={() => { window.location = '/' }} alt="Connectaha Logo" width={[2, 1, 0.5]} />
         </AppHeader>
         <div>
           <Routes />

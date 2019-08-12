@@ -101,18 +101,28 @@ export default class Home extends Component {
           <meta name="twitter:image:alt" content="March 27, 2020 Walter Scott Conference Center" />
         </Head>
 
-        <Text p={4} py={4} fontSize={5} fontWeight={200} >
-            A technology conference that connects everyone.
-        </Text>
+        <Center mt={3} mb={3} mx={[7, 6, 5, 4]}>
+          <Row>
+            <Text fontSize={[3, 4]} fontWeight={200} >
+                A technology conference that connects everyone.
+            </Text>
+          </Row>
+        </Center>
 
         <Banner mt={5} mb={5} color="white" minHeight="40vh" borderRadius={8} backgroundImage={BannerImage}>
           <Heading fontSize={4}>SAVE THE DATE</Heading>
           <Heading fontSize={5}>March 27, 2020</Heading>
           <Heading fontSize={4}>Walter Scott Conference Center</Heading>
         </Banner>
-        <Text px={4} fontSize={3} fontWeight={300} >
-          From the outset, Connectaha has been about connecting tech people in and around Nebraska. We believe that we have a lot of good companies and interesting work right here in our own backyard, and we want to expose what’s going on. Join us March 27, 2020.
-        </Text>
+
+        <Center mt={3} mb={3} mx={[7, 6, 5, 4]}>
+          <Row width={[1, 0.75, 0.65]}>
+            <Text fontSize={3} fontWeight={300} >
+              Connectaha is a technical conference that is about connecting tech people in and around Nebraska.
+              From the outset, Connectaha has been about connecting tech people in and around Nebraska. We believe that we have a lot of good companies and interesting work right here in our own backyard, and we want to expose what’s going on.
+            </Text>
+          </Row>
+        </Center>
       </div>)
   }
 }
