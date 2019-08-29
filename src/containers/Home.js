@@ -104,7 +104,7 @@ export default class Home extends Component {
         <Center mt={3} mb={3} mx={[7, 6, 5, 4]}>
           <Row>
             <Text fontSize={[3, 4]} fontWeight={200} >
-                A technology conference that connects everyone.
+                A technical conference that believes there is power when people talk.
             </Text>
           </Row>
         </Center>
