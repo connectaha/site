@@ -117,7 +117,7 @@ export default class Home extends Component {
             <Text mb={4} px={2} fontSize={[3, 4]} fontWeight={200}>
               Speakers! We need your talks:
             </Text>
-            <a href="https://www.papercall.io/connectaha2020">Submit a Talk Here</a>
+            <a href="https://www.papercall.io/connectaha-2020">Submit a Talk Here</a>
           </Row>
           <Row>
             <Text fontSize={[3, 4]} fontWeight={500} >
