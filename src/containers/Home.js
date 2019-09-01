@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import { Head } from 'react-static'
+import { Head, Link } from 'react-static'
 import { post } from 'axios'
 import styled from 'styled-components'
 import { fontSize, space, width } from 'styled-system'
-import { Button, Banner, Flex, Text, Heading } from 'rebass'
+import { Button, Banner, Text, Heading } from 'rebass'
 import ButterToast, { CinnamonSugar } from 'butter-toast'
 import BannerImage from '../confbanner.jpg'
 
@@ -24,6 +24,10 @@ const Row = styled.div`
   ${fontSize};
   ${space};
   ${width};
+  > a {
+    color: #ff6600;
+    cursor: pointer;
+  }
 `
 
 Row.defaultProps = {
@@ -43,6 +47,13 @@ BigButton.defaultProps = {
   bg: 'light',
   color: 'primary',
 }
+
+const SpeakerLink = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+`
 
 export default class Home extends Component {
   constructor () {
@@ -80,7 +91,7 @@ export default class Home extends Component {
   }
 
   goToTickets = () => {
-    window.location = 'https://www.eventbrite.com/e/connectaha-conference-2019-tickets-49878979370'
+    window.location = 'https://www.eventbrite.com/e/connectaha-technology-conference-tickets-71091044227?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing'
   };
 
   goToCfp = () => {
@@ -103,8 +114,14 @@ export default class Home extends Component {
 
         <Center mt={3} mb={3} mx={[7, 6, 5, 4]}>
           <Row>
-            <Text fontSize={[3, 4]} fontWeight={200} >
-                A technology conference that connects everyone.
+            <Text mb={4} px={2} fontSize={[3, 4]} fontWeight={200}>
+              Speakers! We need your talks:
+            </Text>
+            <a href="https://www.papercall.io/connectaha2020">Submit a Talk Here</a>
+          </Row>
+          <Row>
+            <Text fontSize={[3, 4]} fontWeight={500} >
+                A technical conference that believes there is power when people talk.
             </Text>
           </Row>
         </Center>

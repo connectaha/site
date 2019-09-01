@@ -2,7 +2,7 @@ import React from 'react'
 import { Router, Link } from 'react-static'
 import styled, { injectGlobal } from 'styled-components'
 import { hot } from 'react-hot-loader'
-import { Image, NavLink, Provider as ThemeProvider } from 'rebass'
+import { Image, NavLink, Button, Provider as ThemeProvider } from 'rebass'
 import Icon from 'react-simple-icons'
 import Routes from 'react-static-routes'
 import theme from './theme'
@@ -26,21 +26,22 @@ const AppStyles = styled.div`
   max-width:1200px;
   margin: 0 auto;
 
-
   img {
     max-width: 100%;
   }
 `
-const FileLink = styled.a`
-   color: white;
-   text-decoration: none;
-   cursor: pointer;
+
+const Navigation = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 `
 
 const AppHeader = styled.div`
   display: flex;
   align-items: center;
-  justify-content: Center;
+  justify-content: space-between;
   flex-wrap: wrap;
   padding: 10px;
   border-bottom: 1px solid #174899;
@@ -70,6 +71,11 @@ const App = () => (
       <AppStyles>
         <AppHeader>
           <Image py={5} my={5} mx={[1, 2, 3, 4]} src={logo} onClick={() => { window.location = '/' }} alt="Connectaha Logo" width={[2, 1, 0.5]} />
+          <Navigation>
+            <NavLink py={4} to="https://www.eventbrite.com/e/connectaha-technology-conference-tickets-71091044227?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing" is={Link}>
+              <Button bg="action" color="white" border="none">Buy Tickets</Button>
+            </NavLink>
+          </Navigation>
         </AppHeader>
         <div>
           <Routes />
