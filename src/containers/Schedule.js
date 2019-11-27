@@ -12,7 +12,7 @@ const click = id => { window.location = `/speakers/${id}` }
 export default withRouteData(() => (
   <div>
     <Head>
-      <meta property="og:title" content="2019 Connectaha Schedule" />
+      <meta property="og:title" content="2020 Connectaha Schedule" />
       <meta property="og:url" content="https://www.connectaha.com/schedule" />
       <meta property="og:description" content="March 27, 2020 Walter Scott Conference Center" />
       <meta property="og:image" content="https://connectaha.com/static/presenter.1286b8ef.jpg" />
