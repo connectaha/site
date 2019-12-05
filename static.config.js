@@ -20,6 +20,10 @@ export default {
       component: 'src/containers/Home',
     },
     {
+      path: '/contact',
+      component: 'src/containers/Contact',
+    },
+    {
       path: '/details',
       component: 'src/containers/Details',
     },
