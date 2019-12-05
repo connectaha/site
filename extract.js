@@ -4,8 +4,7 @@ const {
 const { writeFileSync } = require('fs')
 const Json2csvParser = require('json2csv').Parser
 
-const papercall = require('./Connectaha Submissions.json')
-const keynotes = require('./keynotes.json')
+const papercall = require('./Connectaha2020Submissions.json')
 
 function email () {
   const speakers = pipe(
@@ -35,7 +34,7 @@ function email () {
 
 function extract () {
   const speakers = pipe(
-    filter(_ => _.state === 'accepted'),
+    filter(_ => _.state === 'accepted' && _.confirmed),
     map(_ => {
       const names = split(' ', _.name)
       const [last, ...rest] = reverse(names)
@@ -46,16 +45,13 @@ function extract () {
         lastName: last,
         bio: _.bio,
         title: _.title,
-        description: _.description,
+        description: _.description || _.abstract,
         organization: _.organization,
-        photo: '/photos/',
+        photo: _.avatar,
       }
     })
   )(papercall)
 
-  keynotes.forEach(speaker => {
-    speakers.push(speaker)
-  })
 
   writeFileSync('./speakers.json', JSON.stringify(speakers))
 }
