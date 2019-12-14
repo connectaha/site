@@ -11,13 +11,13 @@ export default withRouteData(({ speakers }) =>
   (
     <div>
       <Head>
-        <meta property="og:title" content="2019 Connectaha Speakers" />
+        <meta property="og:title" content="2020 Connectaha Speakers" />
         <meta property="og:image" content="https://connectaha.com/static/presenter.1286b8ef.jpg" />
         <meta property="og:url" content="https://www.connectaha.com/speakers" />
-        <meta property="og:description" content="March 8, 2019 Walter Scott Conference Center" />
+        <meta property="og:description" content="March 27, 2020 Walter Scott Conference Center" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="og:site_name" content="2019 Connectaha Conference" />
-        <meta name="twitter:image:alt" content="March 8, 2019 Walter Scott Conference Center" />
+        <meta property="og:site_name" content="2020 Connectaha Conference" />
+        <meta name="twitter:image:alt" content="March 27, 2020 Walter Scott Conference Center" />
       </Head>
       <Heading pl={4} pt={6} pb={4} color="white">Speakers</Heading>
       <Flex flexWrap="wrap" alignItems="center" justifyContent="center">

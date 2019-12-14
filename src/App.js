@@ -73,6 +73,7 @@ const App = () => (
           <Image py={5} my={5} mx={[1, 2, 3, 4]} src={logo} onClick={() => { window.location = '/' }} alt="Connectaha Logo" width={[2, 1, 0.5]} />
           <Navigation>
             <NavLink p={4} to="/speakers" is={Link}>Speakers</NavLink>
+            <NavLink p={4} to="/sponsors" is={Link}>Sponsors</NavLink>
             <NavLink py={4} to="https://www.eventbrite.com/e/connectaha-technology-conference-tickets-71091044227?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing" is={Link}>
               <Button bg="action" color="white" border="none">Buy Tickets</Button>
             </NavLink>
@@ -83,7 +84,7 @@ const App = () => (
         </div>
         <AppFooter>
           <div>
-            <p>Copyright © Connectaha, LLC. All rights reserved.</p>
+            <p>Copyright 2018-2020 © Connectaha, LLC. All rights reserved.</p>
           </div>
           <div>
             <NavLink to="https://twitter.com/connectaha" is={Link}>
