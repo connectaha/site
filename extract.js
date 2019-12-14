@@ -80,7 +80,7 @@ function downloadPhotos () {
   const speakers = require('./speakers.json')
   const photoSpeakers = speakers.map(speaker => {
     const location = `./public/photos/speakers/${speaker.id}.png`
-    speaker.photo = `photos/speakers/${speaker.id}.png`
+    speaker.photo = `/photos/speakers/${speaker.id}.png`
     const photo = createWriteStream(location)
     https.get(speaker.photoUrl, response => {
       response.pipe(photo)
