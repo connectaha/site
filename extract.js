@@ -74,7 +74,6 @@ function extract () {
   )(papercall)
 
   writeFileSync('./speakers.json', JSON.stringify(speakers))
-  downloadPhotos()
 }
 
 function downloadPhotos () {
