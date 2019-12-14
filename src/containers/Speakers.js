@@ -20,7 +20,7 @@ export default withRouteData(({ speakers }) =>
         <meta name="twitter:image:alt" content="March 27, 2020 Walter Scott Conference Center" />
       </Head>
       <Heading pl={4} pt={6} pb={4} color="white">Speakers</Heading>
-      <Flex flexWrap="wrap" p={32}>
+      <Flex flexWrap="wrap" alignItems="center" justifyContent="center">
         {
           speakers.map(speaker => (
             <Clickable key={speaker.id}>
@@ -34,10 +34,10 @@ export default withRouteData(({ speakers }) =>
                   onClick={() => { window.location = `/speakers/${speaker.id}` }}>
                   <Image src={speaker.photo} />
                   <Box px={2}>
-                    <Text color="black" fontSize={4}>
+                    <Text color="darkblue" fontSize={4}>
                       {speaker.firstName}
                     </Text>
-                    <Text color="black" fontSize={4}>
+                    <Text color="darkblue" fontSize={4}>
                       {speaker.lastName}
                     </Text>
                   </Box>

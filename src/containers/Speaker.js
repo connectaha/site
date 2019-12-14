@@ -6,7 +6,7 @@ import NavigateNext from 'rmdi/lib/NavigateNext'
 import NavigateBefore from 'rmdi/lib/NavigateBefore'
 
 const RoundedImage = styled(Image)`
-  border-radius: 50%;
+  border-radius: 16px;
 `
 
 const RoundedButton = styled(Button)`
