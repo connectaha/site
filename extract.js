@@ -1,7 +1,8 @@
 const {
   concat, filter, join, map, pipe, replace, reverse, split, toLower,
 } = require('ramda')
-const { writeFileSync } = require('fs')
+const { createWriteStream, writeFileSync } = require('fs')
+const https = require('https')
 const Json2csvParser = require('json2csv').Parser
 
 const papercall = require('./Connectaha2020Submissions.json')
@@ -34,7 +35,7 @@ function email () {
 
 function extract () {
   const secondSpeakers = pipe(
-    filter(_ => _.confirmed && _.name_2),
+    filter(_ => _.state === 'accepted' && _.confirmed && _.name_2),
     map(_ => {
       const names = split(' ', _.name_2)
       const [last, ...rest] = reverse(names)
@@ -47,13 +48,13 @@ function extract () {
         title: _.title,
         description: _.description || _.abstract,
         organization: _.organization_2,
-        photo: _.avatar_2,
+        photoUrl: _.avatar_2,
       }
     })
   )(papercall)
 
   const speakers = pipe(
-    filter(_ => _.confirmed),
+    filter(_ => _.state === 'accepted' && _.confirmed),
     map(_ => {
       const names = split(' ', _.name)
       const [last, ...rest] = reverse(names)
@@ -66,16 +67,36 @@ function extract () {
         title: _.title,
         description: _.description || _.abstract,
         organization: _.organization,
-        photo: _.avatar,
+        photoUrl: _.avatar,
       }
     }),
     concat(secondSpeakers)
   )(papercall)
 
   writeFileSync('./speakers.json', JSON.stringify(speakers))
+  downloadPhotos()
+}
+
+function downloadPhotos () {
+  const speakers = require('./speakers.json')
+  const photoSpeakers = speakers.map(speaker => {
+    const location = `./public/photos/speakers/${speaker.id}.png`
+    speaker.photo = `photos/speakers/${speaker.id}.png`
+    const photo = createWriteStream(location)
+    https.get(speaker.photoUrl, response => {
+      response.pipe(photo)
+      photo.on('finish', () => {
+        photo.close(() => {}) // close() is async, call cb after close completes.
+      })
+    })
+    return speaker
+  })
+
+  writeFileSync('./speakers.json', JSON.stringify(photoSpeakers))
 }
 
 module.exports = {
   email,
   extract,
+  downloadPhotos,
 }
