@@ -130,7 +130,7 @@ export default class Home extends Component {
           <Row width={[1, 0.75, 0.65]}>
             <Text fontSize={3} fontWeight={300} >
               Connectaha is a technical conference that is about connecting tech people in and around Nebraska.
-              From the outset, Connectaha has been about connecting tech people in and around Nebraska. We believe that we have a lot of good companies and interesting work right here in our own backyard, and we want to expose what’s going on.
+              We believe that we have a lot of good companies and interesting work right here in our own backyard, and we want to expose what’s going on.
             </Text>
           </Row>
         </Center>
