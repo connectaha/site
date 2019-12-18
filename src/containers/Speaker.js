@@ -20,7 +20,7 @@ const TextBlock = styled(Text)`
 
 export default withRouteData(({ speaker, nextId, previousId }) => {
   const org = speaker.organization ? `/ ${speaker.organization}` : ''
-  const title = `${speaker.title} - ${speaker.firstName} ${speaker.lastName} #connectaha19`
+  const title = `${speaker.title} - ${speaker.firstName} ${speaker.lastName} #connectaha2020`
   return (
     <div>
       <Head>

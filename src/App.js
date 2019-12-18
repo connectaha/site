@@ -10,9 +10,6 @@ import logo from './connectahaLogo.svg'
 
 injectGlobal`
   body {
-    font-family: 'Barlow', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
     margin: 0;
     padding: 0;
     background-color: #0d1d42;
@@ -20,6 +17,9 @@ injectGlobal`
   }
 `
 const AppStyles = styled.div`
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -69,13 +69,13 @@ const App = () => (
   <ThemeProvider theme={theme}>
     <Router>
       <AppStyles>
-        <AppHeader>
+        <AppHeader px={2}>
           <Image py={5} my={5} mx={[1, 2, 3, 4]} src={logo} onClick={() => { window.location = '/' }} alt="Connectaha Logo" width={[2, 1, 0.5]} />
           <Navigation>
-            <NavLink p={4} to="/speakers" is={Link}>Speakers</NavLink>
-            <NavLink p={4} to="/sponsors" is={Link}>Sponsors</NavLink>
-            <NavLink py={4} to="https://www.eventbrite.com/e/connectaha-technology-conference-tickets-71091044227?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing" is={Link}>
-              <Button bg="action" color="white" border="none">Buy Tickets</Button>
+            <NavLink fontFamily="Barlow-Regular" fontSize={[2, 3]} p={4} to="/speakers" is={Link}>Speakers</NavLink>
+            <NavLink fontFamily="Barlow-Regular" fontSize={[2, 3]}p={4} to="/sponsors" is={Link}>Sponsors</NavLink>
+            <NavLink fontFamily="Barlow-Regular" fontSize={[2, 3]} py={4} to="https://www.eventbrite.com/e/connectaha-technology-conference-tickets-71091044227?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing" is={Link}>
+              <Button fontFamily="Barlow-Regular" fontSize={[1, 2]} bg="action" color="white" border="none">Buy Tickets</Button>
             </NavLink>
           </Navigation>
         </AppHeader>

@@ -8,6 +8,7 @@
     "stage": "react-static build --staging",
     "build": "react-static build",
     "photos": "node -e 'require(\"./extract\").downloadPhotos()'",
+    "photos:update": "node -e 'require(\"./extract\").updatePhotos()'",
     "serve": "serve dist -p 3000",
     "speakers": "node -e 'require(\"./extract\").extract()'"
   },

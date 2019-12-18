@@ -78,7 +78,7 @@ export default {
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <meta property="og:type" content="website" />
 
-            <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500,500i,700|Barlow:400,700,900&display=swap" rel="stylesheet"></link>
             <title>Connectaha</title>
 
             {renderMeta.styleTags}
