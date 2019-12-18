@@ -6,7 +6,7 @@ import NavigateNext from 'rmdi/lib/NavigateNext'
 import NavigateBefore from 'rmdi/lib/NavigateBefore'
 
 const RoundedImage = styled(Image)`
-  border-radius: 50%;
+  border-radius: 16px;
 `
 
 const RoundedButton = styled(Button)`
@@ -20,7 +20,7 @@ const TextBlock = styled(Text)`
 
 export default withRouteData(({ speaker, nextId, previousId }) => {
   const org = speaker.organization ? `/ ${speaker.organization}` : ''
-  const title = `${speaker.title} - ${speaker.firstName} ${speaker.lastName} #connectaha19`
+  const title = `${speaker.title} - ${speaker.firstName} ${speaker.lastName} #connectaha2020`
   return (
     <div>
       <Head>
@@ -28,9 +28,9 @@ export default withRouteData(({ speaker, nextId, previousId }) => {
         <meta property="og:image" content={`https://connectaha.com${speaker.photo}`} />
         <meta property="og:url" content={`https://www.connectaha.com/speakers/${speaker.id}`} />
         <meta name="twitter:image:alt" content={`${speaker.firstName} ${speaker.lastName}`} />
-        <meta property="og:description" content="March 8, 2019 Walter Scott Conference Center" />
+        <meta property="og:description" content="March 27, 2020 Walter Scott Conference Center" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="og:site_name" content="2019 Connectaha Conference" />
+        <meta property="og:site_name" content="2020 Connectaha Conference" />
       </Head>
 
       <Flex mx={[3, 4, 5]} flexWrap="wrap">
