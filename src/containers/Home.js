@@ -124,7 +124,7 @@ export default class Home extends Component {
           <Row width={[1, 0.95, 0.85]}>
             <Text fontSize={[2, 3, 4]} fontWeight={300} >
               From the outset, Connectaha was designed to connect tech people in and around Nebraska.
-              We believe that we have a lot of good companies and interesting work right here in our own backyard, and we want to expose what’s going on.
+              We believe that we have a lot of interesting work right here in our own backyard, and we want to expose what’s going on.
             </Text>
           </Row>
         </Center>
