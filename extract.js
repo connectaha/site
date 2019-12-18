@@ -1,7 +1,7 @@
 const {
   concat, filter, join, map, pipe, replace, reverse, split, toLower,
 } = require('ramda')
-const { createWriteStream, writeFileSync } = require('fs')
+const { createWriteStream, existsSync, writeFileSync } = require('fs')
 const https = require('https')
 const Json2csvParser = require('json2csv').Parser
 
@@ -94,8 +94,30 @@ function downloadPhotos () {
   writeFileSync('./speakers.json', JSON.stringify(photoSpeakers))
 }
 
+function updatePhotos () {
+  const speakers = require('./speakers.json')
+  const photoSpeakers = speakers.map(speaker => {
+    const location = `./public/photos/speakers/${speaker.id}.png`
+    speaker.photo = `/photos/speakers/${speaker.id}.png`
+    if (!existsSync(location)) {
+      const photo = createWriteStream(location)
+      https.get(speaker.photoUrl, response => {
+        response.pipe(photo)
+        photo.on('finish', () => {
+          photo.close(() => {}) // close() is async, call cb after close completes.
+        })
+      })
+    }
+    return speaker
+  })
+
+  writeFileSync('./speakers.json', JSON.stringify(photoSpeakers))
+}
+
+
 module.exports = {
   email,
   extract,
   downloadPhotos,
+  updatePhotos,
 }
