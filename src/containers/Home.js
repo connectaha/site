@@ -1,5 +1,6 @@
+/* eslint-disable max-len */
 import React, { Component } from 'react'
-import { Head, Link } from 'react-static'
+import { Head } from 'react-static'
 import { post } from 'axios'
 import styled from 'styled-components'
 import { fontSize, space, width } from 'styled-system'
@@ -47,13 +48,6 @@ BigButton.defaultProps = {
   bg: 'light',
   color: 'primary',
 }
-
-const SpeakerLink = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-`
 
 export default class Home extends Component {
   constructor () {
@@ -112,25 +106,25 @@ export default class Home extends Component {
           <meta name="twitter:image:alt" content="March 27, 2020 Walter Scott Conference Center" />
         </Head>
 
-        <Center mt={3} mb={3} mx={[7, 6, 5, 4]}>
-          <Row>
-            <Text fontSize={[3, 4]} fontWeight={500} >
+        <Center mt={3} mb={3} mx={4} px={3}>
+          <Row width={[1, 0.95, 0.85]}>
+            <Text fontFamily="BarlowCondensed-lightItalic" fontSize={[4, 5, 6]}>
                 A technical conference that believes there is power when people talk.
             </Text>
           </Row>
         </Center>
 
         <Banner mt={5} mb={5} color="white" minHeight="40vh" borderRadius={8} backgroundImage={BannerImage}>
-          <Heading fontSize={4}>SAVE THE DATE</Heading>
+          <Heading fontSize={3}>SAVE THE DATE</Heading>
           <Heading fontSize={5}>March 27, 2020</Heading>
-          <Heading fontSize={4}>Walter Scott Conference Center</Heading>
+          <Heading fontSize={3}>Walter Scott Conference Center</Heading>
         </Banner>
 
         <Center mt={3} mb={3} mx={[7, 6, 5, 4]}>
-          <Row width={[1, 0.75, 0.65]}>
-            <Text fontSize={3} fontWeight={300} >
-              Connectaha is a technical conference that is about connecting tech people in and around Nebraska.
-              From the outset, Connectaha has been about connecting tech people in and around Nebraska. We believe that we have a lot of good companies and interesting work right here in our own backyard, and we want to expose what’s going on.
+          <Row width={[1, 0.95, 0.85]}>
+            <Text fontSize={[2, 3, 4]} fontWeight={300} >
+              From the outset, Connectaha was designed to connect tech people in and around Nebraska.
+              We believe that we have a lot of interesting work right here in our own backyard, and we want to expose what’s going on.
             </Text>
           </Row>
         </Center>
