@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "email": "node -e 'require(\"./extract\").email()'",
     "start": "react-static start",
     "stage": "react-static build --staging",
     "build": "react-static build",
