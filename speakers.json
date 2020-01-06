@@ -99,17 +99,6 @@
     "photo": "/photos/speakers/cameron-presley.png"
   },
   {
-    "id": "arthur-doler",
-    "firstName": "Arthur",
-    "lastName": "Doler",
-    "bio": "Arthur (or Art, take your pick) has been a software engineer for 16 years and has worked on things as exciting as analysis software for casinos and things as boring as banking websites. He is an advocate for talking openly about psychology and mental health in the technical world, and he spends a lot of time thinking about how we program and why we program, and about the tools, structures, cultures, and mental processes that help and hinder us from our ultimate goal of writing amazing things. His hair is brown and his thorax is a shiny blue color.",
-    "title": "An AI with an Agenda: How Our Biases Leak Into Machine Learning",
-    "description": "In the glorious AI-assisted future, all decisions are objective and perfect, and there’s no such thing as biases. That’s why we created AI and machine learning, right? Because humans can make mistakes, and computers are perfect. Well, there’s some bad news: humans make those AIs and machine learning models, and as a result humanity’s biases and missteps can subtly work their way into our AI and models.\r\n\r\nAll hope isn’t lost, though! In this talk you’ll learn how science and statistics have already solved some of these problems and how a robust awareness of cognitive biases can help with many of the rest. Come learn what else we can do to protect ourselves from these old mistakes, because we owe it to the people who’ll rely on our algorithms to deliver the best possible intelligence!",
-    "organization": "Aviture",
-    "photoUrl": "https://secure.gravatar.com/avatar/6f6662ecab8176c54c3ad89ec158842c?s=500",
-    "photo": "/photos/speakers/arthur-doler.png"
-  },
-  {
     "id": "allen-wu",
     "firstName": "Allen",
     "lastName": "Wu",
