@@ -126,5 +126,5 @@ module.exports = {
   email,
   extract,
   downloadPhotos,
-  updatePhotos
+  updatePhotos,
 };
