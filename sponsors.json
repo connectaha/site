@@ -3,28 +3,56 @@
         "id": "farm-credit",
         "name": "Farm Credit Services of America",
         "tier": "1",
-        "photo": "/photos/fca.jpg",
+        "photo": "/photos/fca.png",
         "url": "https://www.fcsamerica.com/"
+    },
+    {
+        "id": "techtonic",
+        "name": "Techtonic",
+        "tier": "1",
+        "photo": "/photos/techtonic.png",
+        "url": "https://www.techtonic.com/"
+    },
+    {
+        "id": "aviture",
+        "name": "Aviture, Inc.",
+        "tier": "1",
+        "photo": "/photos/aviture.png",
+        "url": "https://www.aviture.us.com/"
     },
     {
         "id": "advantagetech",
         "name": "Advantage Tech",
         "tier": "2",
-        "photo": "/photos/advantagetech.jpg",
+        "photo": "/photos/advantagetech.png",
         "url": "https://advantagetech.net/"
     },
     {
         "id": "cri",
         "name": "Client Resources Incorporated",
         "tier": "2",
-        "photo": "/photos/cri.jpg",
+        "photo": "/photos/cri.png",
         "url": "https://www.clientresourcesinc.com/"
+    },
+    {
+        "id": "medical-solutions",
+        "name": "Medical Solutions",
+        "tier": "2",
+        "photo": "/photos/medicalsolutions.png",
+        "url": "https://www.medicalsolutions.com/"
+    },
+    {
+        "id": "object-partners",
+        "name": "Object Partners",
+        "tier": "2",
+        "photo": "/photos/opi.png",
+        "url": "https://www.objectpartners.com/"
     },
     {
         "id": "teamsoftware",
         "name": "Team Software",
         "tier": "2",
-        "photo": "/photos/teamsoftware.jpg",
+        "photo": "/photos/teamsoftware.png",
         "url": "https://teamsoftware.com/"
     }
 ]
