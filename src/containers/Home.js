@@ -108,6 +108,7 @@ export default class Home extends Component {
 
         <Center mt={3} mb={3} mx={4} px={3}>
           <Row width={[1, 0.95, 0.85]}>
+            <Text fontSize={[3, 4, 5]}>
             <Text fontWeight={200} fontSize={[3, 4, 5]}>
                 A technical conference that believes there is power when people talk.
             </Text>
