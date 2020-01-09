@@ -30,7 +30,7 @@ export default withRouteData(({ sponsors }) => {
       </Text>
       <Text fontSize="32px" pl={4} pt={4} pb={2} color="white">Sponsors</Text>
       <Text fontSize="20px" pl={4} pt={2} color="white">Tier 1</Text>
-      <Flex flexWrap="wrap" p={32}>
+      <Flex flexWrap="wrap" p={32} alignItems="center" justifyContent="center">
         {
           tier1.map(sponsor => (
             <Clickable key={sponsor.id}>
@@ -50,7 +50,7 @@ export default withRouteData(({ sponsors }) => {
         }
       </Flex>
       <Text fontSize="20px" pl={4} pt={2} color="white">Tier 2</Text>
-      <Flex flexWrap="wrap" p={32}>
+      <Flex flexWrap="wrap" p={32} alignItems="center" justifyContent="center">
         {
           tier2.map(sponsor => (
             <Clickable key={sponsor.id}>
