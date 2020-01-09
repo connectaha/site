@@ -23,111 +23,43 @@ export default withRouteData(() => (
     <Heading pl={4} pt={6} pb={4} color="white">Schedule</Heading>
 
     <Flex flexWrap="wrap" px={4} py={5} my={4} color="darkblue" bg="white">
-      <Box
-        width={[1, 1 / 4]} />
-      <Box width={[1, 1 / 8]}>
-        Center<br />
-        Stage
-      </Box>
-      <Box width={[1, 1 / 8]} />
-      <Box width={[1, 1 / 8]} />
-      <Box width={[1, 1 / 8]} />
-      <Box width={[1, 1 / 8]} />
-      <Box width={[1, 1 / 8]} />
-      <Box
-        width={[1, 1 / 8]}>
-        Opening Keynote
-      </Box>
-      <Box
-        width={[1, 1 / 8]} >
-        8:00a - 8:25a
-      </Box>
-      <Box width={[1, 1 / 8]} p={1}>
+      <Box width={[1, 1 / 1]}>Session 1 | 8:30a- 9:30a</Box>
+      <Box width={[1, 1 / 5]}>
+         Southwest Room<br />
         <Divider w={1} borderColor="darkblue" />
-        Jonathan<br />
-        Mills<br />
+         Speaker First Name<br />
+         Speaker Last Name<br />
         <br />
+         Speaker Talk Name
       </Box>
-      <Box width={[1, 1 / 8]} />
-      <Box width={[1, 1 / 8]} />
-      <Box width={[1, 1 / 8]} />
-      <Box width={[1, 1 / 8]} />
-      <Box width={[1, 1 / 8]} />
-    </Flex>
-
-    <Flex flexWrap="wrap" p={4} my={4} color="darkblue" bg="white">
-      <Box width={[1, 1 / 4]} />
-      <Box width={[1, 1 / 8]}>
-        Center<br />
-        Stage
-      </Box>
-      <Box width={[1, 1 / 8]} p={1}>
-        Southwest<br />
-        Room
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        Northwest<br />
-        Room
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        Executive<br />
-        Boardroom
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        Northeast<br />
-        Room
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        Southeast<br />
-        Room
-      </Box>
-      <Box
-        width={[1, 1 / 8]} >
-        Session 1
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        8:30a - 9:30a
-      </Box>
-      <Box width={[1, 1 / 8]} p={1}>
+      <Box width={[1, 1 / 5]}>
+        Northwest Room <br />
         <Divider w={1} borderColor="darkblue" />
+        Speaker First Name<br />
+        Speaker Last Name<br />
+        <br />
+        Speaker Talk Name
       </Box>
-      <Box width={[1, 1 / 8]} p={1} onClick={() => click('courtney-heitman')}>
+      <Box width={[1, 1 / 5]}> Executive Boardroom<br />
         <Divider w={1} borderColor="darkblue" />
-        Courtney<br />
-        Heitman<br />
+      Speaker First Name<br />
+      Speaker Last Name<br />
         <br />
-        Mapping the User's Journey<br />
+      Speaker Talk Name
       </Box>
-      <Box width={[1, 1 / 8]} p={1} onClick={() => click('jason-swett')}>
+      <Box width={[1, 1 / 5]}> Southeast Room<br />
         <Divider w={1} borderColor="darkblue" />
-        Jason<br />
-        Swett<br />
+      Speaker First Name<br />
+      Speaker Last Name<br />
         <br />
-        Using Tests as a Tool to Wrangle Legacy Projects<br />
+      Speaker Talk Name
       </Box>
-      <Box width={[1, 1 / 8]} p={1} onClick={() => click('michael-mcgee')}>
+      <Box width={[1, 1 / 5]}> Southeast Room<br />
         <Divider w={1} borderColor="darkblue" />
-        Herb<br />
-        Scrugs<br />
+      Speaker First Name<br />
+      Speaker Last Name<br />
         <br />
-        Michael <br />
-        McGee <br />
-        <br />
-        Lean Quality Delivery
-      </Box>
-      <Box width={[1, 1 / 8]} p={1} onClick={() => click('mat-warger')}>
-        <Divider w={1} borderColor="darkblue" />
-        Mat<br />
-        Warger<br />
-        <br />
-        Bootstrap Your App with AWS Amplify!
-      </Box>
-      <Box width={[1, 1 / 8]} p={1} onClick={() => click('paul-gower')}>
-        <Divider w={1} borderColor="darkblue" />
-        Paul<br />
-        Gower<br />
-        <br />
-        Overcoming Delay: How The Best Developers Increase Productivity <br />
+      Speaker Talk Name
       </Box>
     </Flex>
 

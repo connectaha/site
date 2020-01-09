@@ -35,6 +35,13 @@
         "url": "https://www.clientresourcesinc.com/"
     },
     {
+        "id": "Kiewit",
+        "name": "Kiewit",
+        "tier": "2",
+        "photo": "/photos/kiewit.png",
+        "url": "https://www.kiewit.com/"
+    },
+    {
         "id": "medical-solutions",
         "name": "Medical Solutions",
         "tier": "2",
@@ -47,6 +54,13 @@
         "tier": "2",
         "photo": "/photos/opi.png",
         "url": "https://www.objectpartners.com/"
+    },
+    {
+        "id": "shyft-solutions",
+        "name": "Shyft Solutions",
+        "tier": "2",
+        "photo": "/photos/shyft.png",
+        "url": "https://shyftsolutions.io/"
     },
     {
         "id": "teamsoftware",
