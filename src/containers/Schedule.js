@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Head, withRouteData } from 'react-static'
-import { Box as BaseBox, Flex, Divider, Heading } from 'rebass'
+import { Box as BaseBox, Flex, Divider, Heading, Text } from 'rebass'
 
 const Box = styled(BaseBox)`
   cursor: pointer;
@@ -23,544 +23,291 @@ export default withRouteData(() => (
     <Heading pl={4} pt={6} pb={4} color="white">Schedule</Heading>
 
     <Flex flexWrap="wrap" px={4} py={5} my={4} color="darkblue" bg="white">
-      <Box width={[1, 1 / 1]}>Session 1 | 8:30a- 9:30a</Box>
-      <Box width={[1, 1 / 5]}>
-         Southwest Room<br />
+      <Box fontSize={3} pb={4} width={[1, 1 / 1]}>Session 1   |   9:00a- 10:00a</Box>
+      <Box p={2} pb={5} width={[1, 1 / 5]}>
+        <Heading fontSize={2}>Northwest Room<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
-         Speaker First Name<br />
-         Speaker Last Name<br />
+         Joel<br />
+         Tosi<br />
         <br />
-         Speaker Talk Name
+         Growing a Learning Organization
       </Box>
-      <Box width={[1, 1 / 5]}>
-        Northwest Room <br />
+      <Box p={2} width={[1, 1 / 5]}>
+      <Heading fontSize={2}>Southwest Room<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
-        Speaker First Name<br />
-        Speaker Last Name<br />
+        Chris<br />
+        DeMars<br />
         <br />
-        Speaker Talk Name
+        Believe in the Power of CSS
       </Box>
-      <Box width={[1, 1 / 5]}> Executive Boardroom<br />
+      <Box p={2} width={[1, 1 / 5]}> 
+      <Heading fontSize={2}>Executive Boardroom<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
-      Speaker First Name<br />
-      Speaker Last Name<br />
+      Sponsor<br />
+      Talk<br />
         <br />
-      Speaker Talk Name
+      Techtonic
       </Box>
-      <Box width={[1, 1 / 5]}> Southeast Room<br />
+      <Box p={2} width={[1, 1 / 5]}>
+      <Heading fontSize={2}>Northeast Room<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
-      Speaker First Name<br />
-      Speaker Last Name<br />
+      Jeff<br />
+      Strauss<br />
         <br />
-      Speaker Talk Name
+        What you need to know about open source - Trust me I'm a lawyer.
       </Box>
-      <Box width={[1, 1 / 5]}> Southeast Room<br />
+      <Box p={2} width={[1, 1 / 5]}>
+      <Heading fontSize={2}>Southeast Room<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
-      Speaker First Name<br />
-      Speaker Last Name<br />
+      Scott<br />
+      Connerly<br />
         <br />
-      Speaker Talk Name
+      Everything's an Experiment: the Try/Catch for Teams
       </Box>
     </Flex>
 
     <Flex flexWrap="wrap" py={1} px={4} my={4} color="white">
-      <Box width={[1, 1 / 8]}>
-        Break
-      </Box>
-      <Box width={[1, 7 / 8]}>
-        9:30a - 9:45a
-      </Box>
+      <Box fontSize={3} pb={3} width={[1, 1 / 1]}>Break   |   10:00a- 10:15a</Box>
     </Flex>
 
-    <Flex flexWrap="wrap" p={4} my={4} color="darkblue" bg="white">
-      <Box width={[1, 1 / 4]} />
-      <Box width={[1, 1 / 8]}>
-        Center<br />
-        Stage
-      </Box>
-      <Box width={[1, 1 / 8]} p={1}>
-        Southwest<br />
-        Room
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        Northwest<br />
-        Room
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        Executive<br />
-        Boardroom
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        Northeast<br />
-        Room
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        Southeast<br />
-        Room
-      </Box>
-      <Box width={[1, 1 / 8]} >
-        Session 2
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        9:45a - 10:45a
-      </Box>
-      <Box width={[1, 1 / 8]} p={1}>
+    <Flex flexWrap="wrap" px={4} py={5} my={4} color="darkblue" bg="white">
+      <Box fontSize={3} pb={4} width={[1, 1 / 1]}>Session 2   |   10:15a- 11:15a</Box>
+      <Box p={2} width={[1, 1 / 5]}>
+        <Heading fontSize={2}>Northwest Room<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
-        Jonathan Mills<br />
-        Jeff Strauss<br />
+        Christiana<br />
+        Unaeze<br />
         <br />
-        AHA Sessions
+        Guidelines on Designing and Testing for Accessibility
       </Box>
-      <Box width={[1, 1 / 8]} p={1} onClick={() => click('cameron-presley')}>
+      <Box p={2} width={[1, 1 / 5]}>
+      <Heading fontSize={2}>Southwest Room<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
-        Cameron<br />
-        Presley<br />
+        Jonathan<br />
+        Mills<br />
         <br />
-        How Functional Programming Made Me A Better Developer
-
+        A Skeptics guide to functional style javascript
       </Box>
-      <Box width={[1, 1 / 8]} p={1} onClick={() => click('beth-laing')}>
+      <Box p={2} width={[1, 1 / 5]}> 
+      <Heading fontSize={2}>Executive Boardroom<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
-        Beth<br />
-        Laing<br />
+      Sponsor<br />
+      Talk<br />
         <br />
-        You're Hired! Avoiding missteps and false starts in your new job
+      Techtonic
       </Box>
-      <Box width={[1, 1 / 8]} p={1}>
+      <Box p={2} width={[1, 1 / 5]}>
+      <Heading fontSize={2}>Northeast Room<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
-        Andy Liakos &<br />
-        Levi Liester<br />
-        <br />
-        You’ve Lost That Loving Feeling. Leverage a DevOps mindset to scale your start-up culture.
+      Allen<br />
+      Wu<br />
+      <br />
+      Airbnb and Luxury Retreats, a post acquisition technical migration
       </Box>
-      <Box
-        width={[1, 1 / 8]} p={1} onClick={() => click('jeremy-clark')}>
+      <Box p={2} width={[1, 1 / 5]}>
+      <Heading fontSize={2}>Southeast Room<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
-        Jeremy<br />
-        Clark<br />
+      Ash<br />
+      Banaszek<br />
         <br />
-        Becoming a Social Developer: A Guide for Introverts
-      </Box>
-      <Box
-        width={[1, 1 / 8]} p={1} onClick={() => click('mike-douglas')}>
-        <Divider w={1} borderColor="darkblue" />
-        Mike<br />
-        Douglas<br />
-        <br />
-        Securing Your CI/CD Pipeline
+        Fail Faster: Quick UX Design Techniques to Drive Toward Success
       </Box>
     </Flex>
 
     <Flex flexWrap="wrap" py={1} px={4} my={4} color="white">
-      <Box
-        width={[1, 1 / 8]}>
-        Break
-      </Box>
-      <Box
-        width={[1, 7 / 8]} >
-        10:45a - 11:00a
-      </Box>
+      <Box fontSize={3} pb={3} width={[1, 1 / 1]}>Break   |   11:15a- 11:30a</Box>
     </Flex>
 
-    <Flex flexWrap="wrap" p={4} my={4} color="darkblue" bg="white">
-      <Box width={[1, 1 / 4]} />
-      <Box width={[1, 1 / 8]}>
-        Center<br />
-        Stage
-      </Box>
-      <Box width={[1, 1 / 8]} p={1}>
-        Southwest<br />
-        Room
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        Northwest<br />
-        Room
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        Executive<br />
-        Boardroom
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        Northeast<br />
-        Room
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        Southeast<br />
-        Room
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        Session 3
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        11:00a - 12:00p
-      </Box>
-      <Box width={[1, 1 / 8]} p={1}>
+    <Flex flexWrap="wrap" px={4} py={5} my={4} color="darkblue" bg="white">
+      <Box fontSize={3} pb={4} width={[1, 1 / 1]}>Session 3   |   11:30a- 12:30a</Box>
+      <Box p={2} width={[1, 1 / 5]}>
+        <Heading fontSize={2}>Northwest Room<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
-        Beth Laing<br />
+        Cory<br />
+        House<br />
         <br />
-        AHA Sessions
+        Software (and Life): You Can’t Change Just One Thing
       </Box>
-      <Box width={[1, 1 / 8]} p={1} onClick={() => click('jeff-fritz')}>
-        <Divider w={1} borderColor="darkblue" />
-        Jeff<br />
-        Fritz<br />
-        <br />
-        Zero to Community Hero - Start Live Coding on Twitch
-      </Box>
-      <Box width={[1, 1 / 8]} p={1} onClick={() => click('matt-busche')}>
-        <Divider w={1} borderColor="darkblue" />
-        Matt <br />
-        Busche <br />
-        <br />
-        Secure by Design
-      </Box>
-      <Box width={[1, 1 / 8]} p={1} onClick={() => click('alison-hawke')}>
+      <Box p={2} width={[1, 1 / 5]}>
+      <Heading fontSize={2}>Southwest Room<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
         Alison<br />
         Hawke<br />
         <br />
-        A Hero's Journey: Manual Tester to Automation QA
+        Building a QA practice from scratch
       </Box>
-      <Box width={[1, 1 / 8]} p={1} onClick={() => click('simon-yost')}>
+      <Box p={2} width={[1, 1 / 5]}> 
+      <Heading fontSize={2}>Executive Boardroom<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
-        Simon<br />
-        Yost<br />
+      Sponsor<br />
+      Talk<br />
         <br />
-        Closing the Fidelity Gap with UI Engineering
+      Farm Credit Services of America
       </Box>
-      <Box width={[1, 1 / 8]} p={1} onClick={() => click('michael-eaton')}>
+      <Box p={2} width={[1, 1 / 5]}>
+      <Heading fontSize={2}>Northeast Room<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
-        Michael<br />
-        Eaton<br />
+      Sandi<br />
+      Barr<br />
+      <br />
+      Design Thinking for Inclusive Collaboration
+      </Box>
+      <Box p={2} width={[1, 1 / 5]}>
+      <Heading fontSize={2}>Southeast Room<br /></Heading>
+        <Divider w={1} borderColor="darkblue" />
+      Christine Seeman<br />
+      Ryan Hochstetler<br />
         <br />
-        Leadership Journey: From Software Developer to Leader
+      You don’t know ML and neither do we
       </Box>
     </Flex>
 
-    <Flex flexWrap="wrap" py={6} px={4} my={4} color="white">
-      <Box width={[1, 1 / 8]}>
-        Lunch
-      </Box>
-      <Box width={[1, 7 / 8]}>
-        12:00P - 12:30P
-      </Box>
+    <Flex flexWrap="wrap" py={1} px={4} my={4} color="white">
+      <Box fontSize={3} pb={3} width={[1, 1 / 1]}>Lunch   |   12:30a- 1:30p</Box>
     </Flex>
 
     <Flex flexWrap="wrap" px={4} py={5} my={4} color="darkblue" bg="white">
-      <Box width={[1, 1 / 4]} />
-      <Box width={[1, 1 / 8]}>
-        Center<br />
-        Stage
-      </Box>
-      <Box width={[1, 1 / 8]} />
-      <Box width={[1, 1 / 8]} />
-      <Box width={[1, 1 / 8]} />
-      <Box width={[1, 1 / 8]} />
-      <Box width={[1, 1 / 8]} />
-      <Box width={[1, 1 / 8]} >
-        Afternoon Keynote
-      </Box>
-      <Box
-        width={[1, 1 / 8]}>
-        12:30p - 1:15p
-      </Box>
-      <Box
-        width={[1, 1 / 8]} p={1}>
+      <Box fontSize={3} pb={4} width={[1, 1 / 1]}>Session 4   |   1:30p- 2:30p</Box>
+      <Box p={2} width={[1, 1 / 5]}>
+        <Heading fontSize={2}>Northwest Room<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
-        Jeff<br />
-        Strauss<br />
+        Adrienne<br />
+        Tacke<br />
         <br />
-        Starting Over
+        Testing the Functional Waters: Functional Programming Principles and Patterns in C#
       </Box>
-      <Box width={[1, 1 / 8]} />
-      <Box width={[1, 1 / 8]} />
-      <Box width={[1, 1 / 8]} />
-      <Box width={[1, 1 / 8]} />
-      <Box width={[1, 1 / 8]} />
-    </Flex>
-
-    <Flex flexWrap="wrap" py={1} px={4} my={4} color="white">
-      <Box width={[1, 1 / 8]}>
-        Break
-      </Box>
-      <Box
-        width={[1, 7 / 8]}>
-        1:15p - 1:30p
-      </Box>
-    </Flex>
-
-    <Flex flexWrap="wrap" p={4} my={4} color="darkblue" bg="white" >
-      <Box width={[1, 1 / 4]} />
-      <Box width={[1, 1 / 8]}>
-        Center<br />
-        Stage
-      </Box>
-      <Box width={[1, 1 / 8]} p={1}>
-        Southwest<br />
-        Room
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        Northwest<br />
-        Room
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        Executive<br />
-        Boardroom
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        Northeast<br />
-        Room
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        Southeast<br />
-        Room
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        Session 4
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        1:30p - 2:30p
-      </Box>
-      <Box width={[1, 1 / 8]} p={1}>
+      <Box p={2} width={[1, 1 / 5]}>
+      <Heading fontSize={2}>Southwest Room<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
-        Jeff Fritz<br />
-        Scot Ringenberg<br />
+        Cameron<br />
+        Presley<br />
         <br />
-        AHA Sessions
+        How To Have Code Reviews Developers Actually Want
       </Box>
-      <Box width={[1, 1 / 8]} p={1} onClick={() => click('john-henry-muller')}>
+      <Box p={2} width={[1, 1 / 5]}> 
+      <Heading fontSize={2}>Executive Boardroom<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
-        John Henry<br />
-        Müller<br />
+      Courtney<br />
+      Heitman<br />
         <br />
-        From Color Palette to Color System
+      Dark Side of UX
       </Box>
-      <Box width={[1, 1 / 8]} p={1} onClick={() => click('cassandra-faris')}>
+      <Box p={2} width={[1, 1 / 5]}>
+      <Heading fontSize={2}>Northeast Room<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
-        Cassandra<br />
-        Faris<br />
-        <br />
-        Health: The Most Important Dev Tool
+      Amanda<br />
+      Perkins<br />
+      <br />
+      Travels through the Looking Glass: My journey from Customer Service rep to Automation Test Engineer
       </Box>
-      <Box width={[1, 1 / 8]} p={1} onClick={() => click('jerry-koske')}>
+      <Box p={2} width={[1, 1 / 5]}>
+      <Heading fontSize={2}>Southeast Room<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
-        Jerry<br />
-        Koske<br />
+      Kathy I.<br />
+      Andersen<br />
         <br />
-        Winning the War on Bureaucracy
-      </Box>
-      <Box width={[1, 1 / 8]} p={1}>
-        <Divider w={1} borderColor="darkblue" />
-        Michelle<br />
-        Mras<br />
-        <br />
-        Why Do They Do That?
-      </Box>
-      <Box width={[1, 1 / 8]} p={1} onClick={() => click('charlie-koster')}>
-        <Divider w={1} borderColor="darkblue" />
-        Charlie<br />
-        Koster<br />
-        <br />
-        AI Doesn't Have to Be Hard
+        Diamonds in Our Own Backyard: Building Great Development Teams at Hudl
       </Box>
     </Flex>
 
     <Flex flexWrap="wrap" py={1} px={4} my={4} color="white">
-      <Box
-        width={[1, 1 / 8]}>
-        Break
-      </Box>
-      <Box
-        width={[1, 7 / 8]}>
-        2:30p - 2:45p
-      </Box>
+      <Box fontSize={3} pb={3} width={[1, 1 / 1]}>Break   |   2:30p- 2:45p</Box>
     </Flex>
-
-    <Flex flexWrap="wrap" p={4} my={4} color="darkblue" bg="white">
-      <Box width={[1, 1 / 4]} />
-      <Box width={[1, 1 / 8]}>
-        Center<br />
-        Stage
-      </Box>
-      <Box width={[1, 1 / 8]} p={1}>
-        Southwest<br />
-        Room
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        Northwest<br />
-        Room
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        Executive<br />
-        Boardroom
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        Northeast<br />
-        Room
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        Southeast<br />
-        Room
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        Session 5
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        2:45p - 3:45p
-      </Box>
-      <Box width={[1, 1 / 8]} p={1}>
+    
+    <Flex flexWrap="wrap" px={4} py={5} my={4} color="darkblue" bg="white">
+      <Box fontSize={3} pb={4} width={[1, 1 / 1]}>Session 5   |   2:45p- 3:45p</Box>
+      <Box p={2} width={[1, 1 / 5]}>
+        <Heading fontSize={2}>Northwest Room<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
-        John Henry Müller<br />
-        Michelle Mras<br />
+        Andrew<br />
+        Wirick<br />
         <br />
-        AHA Sessions
+        Design systems from the other side: understanding the value for non-designer roles.
       </Box>
-      <Box width={[1, 1 / 8]} p={1} onClick={() => click('arthur-doler')}>
+      <Box p={2} width={[1, 1 / 5]}>
+      <Heading fontSize={2}>Southwest Room<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
-        Arthur<br />
-        Doler<br />
+        Hilary<br />
+        Stohs-Krause<br />
         <br />
-        How to Work with People: A Guide to Playing Nicely with Others
+        Using our powers for good: Tech and social impact
       </Box>
-      <Box width={[1, 1 / 8]} p={1} onClick={() => click('patrick-wolff')}>
+      <Box p={2} width={[1, 1 / 5]}> 
+      <Heading fontSize={2}>Executive Boardroom<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
-        Patrick<br />
-        Wolff<br />
+      Cassandra<br />
+      Faris<br />
         <br />
-        Grow The Future With Internship 2.0
+      Get Out of Your Lane!
       </Box>
-      <Box width={[1, 1 / 8]} p={1}>
+      <Box p={2} width={[1, 1 / 5]}>
+      <Heading fontSize={2}>Northeast Room<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
-        <br />
-        <br />
-        <br />
-        <br />
+      Duane<br />
+      Newman<br />
+      <br />
+      Unit Testing with Ease
       </Box>
-      <Box width={[1, 1 / 8]} p={1} onClick={() => click('javier-lozano')}>
+      <Box p={2} width={[1, 1 / 5]}>
+      <Heading fontSize={2}>Southeast Room<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
-        Javier<br />
-        Lozano<br />
+      Bill<br />
+      Dinger<br />
         <br />
-        .NET Yesterday, Today, and Tomorrow<br />
-      </Box>
-      <Box width={[1, 1 / 8]} p={1} onClick={() => click('katia-wheeler')}>
-        <Divider w={1} borderColor="darkblue" />
-        Katia<br />
-        Wheeler<br />
-        <br />
-        Thinking About React, Atomically
+        The Dungeon Master's Guide to DevOps
       </Box>
     </Flex>
 
     <Flex flexWrap="wrap" py={1} px={4} my={4} color="white">
-      <Box width={[1, 1 / 8]} >
-        Break
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        3:45p - 4:00p
-      </Box>
-      <Box width={[1, 3 / 4]} />
-    </Flex>
-
-    <Flex flexWrap="wrap" p={4} my={4} color="darkblue" bg="white">
-      <Box width={[1, 1 / 4]} />
-      <Box width={[1, 1 / 8]}>
-        Center<br />
-        Stage
-      </Box>
-      <Box width={[1, 1 / 8]} p={1}>
-        Southwest<br />
-        Room
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        Northwest<br />
-        Room
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        Executive<br />
-        Boardroom
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        Northeast<br />
-        Room
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        Southeast<br />
-        Room
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        Session 6
-      </Box>
-      <Box width={[1, 1 / 8]}>
-        4:00p - 5:00p
-      </Box>
-      <Box width={[1, 1 / 8]} p={1}>
-        <Divider w={1} borderColor="darkblue" />
-      </Box>
-      <Box width={[1, 1 / 8]} p={1} onClick={() => click('sandi-barr')}>
-        <Divider w={1} borderColor="darkblue" />
-        Sandi<br />
-        Barr<br />
-        <br />
-        NgRx: Redux-style State Management in Angular
-      </Box>
-      <Box width={[1, 1 / 8]} p={1} onClick={() => click('ash-banaszek')}>
-        <Divider w={1} borderColor="darkblue" />
-        Ash<br />
-        Banaszek<br />
-        <br />
-        Fear, Pain, and Loathing: Empathizing with your Users' Plight
-      </Box>
-      <Box width={[1, 1 / 8]} p={1} onClick={() => click('greg-dick')}>
-        <Divider w={1} borderColor="darkblue" />
-        Greg<br />
-        Dick<br />
-        <br />
-        Inverting the Management Relationship
-      </Box>
-      <Box width={[1, 1 / 8]} p={1} onClick={() => click('thomas-cleberg')}>
-        <Divider w={1} borderColor="darkblue" />
-        Thomas<br />
-        Cleberg<br />
-        <br />
-        Model Management: The Least You Can Do
-      </Box>
-      <Box width={[1, 1 / 8]} p={1} onClick={() => click('kathy-i-andersen')}>
-        <Divider w={1} borderColor="darkblue" />
-        Kathy I Andersen<br />
-        Nicholas Tuck<br />
-        <br />
-        Something's Rotten in the State of Quality
-      </Box>
+      <Box fontSize={3} pb={3} width={[1, 1 / 1]}>Break   |   3:45p- 4:00p</Box>
     </Flex>
 
     <Flex flexWrap="wrap" px={4} py={5} my={4} color="darkblue" bg="white">
-      <Box width={[1, 1 / 4]} />
-      <Box width={[1, 1 / 8]}>
-        Foyer
-      </Box>
-      <Box width={[1, 1 / 8]} />
-      <Box width={[1, 1 / 8]} />
-      <Box width={[1, 1 / 8]} />
-      <Box width={[1, 1 / 8]} />
-      <Box width={[1, 1 / 8]} />
-      <Box width={[1, 1 / 8]} >
-        Connectaha Social
-      </Box>
-      <Box
-        width={[1, 1 / 8]}>
-         5:00p - 7:00p
-      </Box>
-      <Box
-        width={[1, 1 / 8]} p={1}>
+      <Box fontSize={3} pb={4} width={[1, 1 / 1]}>Session 5   |   2:45p- 3:45p</Box>
+      <Box p={2} width={[1, 1 / 5]}>
+        <Heading fontSize={2}>Northwest Room<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
-        Join us in the Foyer for drinks and socialization.
+        Jennifer<br />
+        Blatz<br />
+        <br />
+        What the “F” is UX and how does it fit in to the agile world?
       </Box>
-      <Box width={[1, 1 / 8]} />
-      <Box width={[1, 1 / 8]} />
-      <Box width={[1, 1 / 8]} />
-      <Box width={[1, 1 / 8]} />
-      <Box width={[1, 1 / 8]} />
+      <Box p={2} width={[1, 1 / 5]}>
+      <Heading fontSize={2}>Southwest Room<br /></Heading>
+        <Divider w={1} borderColor="darkblue" />
+        Jake<br />
+        Partusch<br />
+        <br />
+        JavaScript and Accessibility: Building Thoughtful Interactions
+      </Box>
+      <Box p={2} width={[1, 1 / 5]}> 
+      <Heading fontSize={2}>Executive Boardroom<br /></Heading>
+        <Divider w={1} borderColor="darkblue" />
+      Matt<br />
+      Steele<br />
+        <br />
+      Automate Everything with GitHub Actions
+      </Box>
+      <Box p={2} width={[1, 1 / 5]}>
+      <Heading fontSize={2}>Northeast Room<br /></Heading>
+        <Divider w={1} borderColor="darkblue" />
+      Chris<br />
+      Chung<br />
+      <br />
+      Secret Backlogs
+      </Box>
+      <Box p={2} width={[1, 1 / 5]}>
+      <Heading fontSize={2}>Southeast Room<br /></Heading>
+        <Divider w={1} borderColor="darkblue" />
+      Charlie<br />
+      Koster<br />
+        <br />
+      The Side Project Survival Guide
+      </Box>
+    </Flex>
+
+    <Flex flexWrap="wrap" py={1} px={4} my={4} color="white">
+      <Box fontSize={3} pb={7} width={[1, 1 / 1]}>Connectaha Social   |   5:00p- 7:00p</Box>
     </Flex>
 
   </div>))
