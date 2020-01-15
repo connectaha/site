@@ -263,7 +263,7 @@ export default withRouteData(() => (
     </Flex>
 
     <Flex flexWrap="wrap" px={4} py={5} my={4} color="darkblue" bg="white">
-      <Box fontSize={3} pb={4} width={[1, 1 / 1]}>Session 5   |   2:45p- 3:45p</Box>
+      <Box fontSize={3} pb={4} width={[1, 1 / 1]}>Session 6   |   4:00p- 5:00p</Box>
       <Box p={2} width={[1, 1 / 5]}>
         <Heading fontSize={2}>Northwest Room<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
