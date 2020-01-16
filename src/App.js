@@ -72,9 +72,10 @@ const App = () => (
         <AppHeader px={2}>
           <Image py={5} my={5} mx={[1, 2, 3, 4]} src={logo} onClick={() => { window.location = '/' }} alt="Connectaha Logo" width={[2, 1, 0.5]} />
           <Navigation>
+            <NavLink fontFamily="Barlow-Regular" fontSize={[2, 3]} p={4} to="/sessions" is={Link}>Sessions</NavLink>
             <NavLink fontFamily="Barlow-Regular" fontSize={[2, 3]}p={4} to="/schedule" is={Link}>Schedule</NavLink>
             <NavLink fontFamily="Barlow-Regular" fontSize={[2, 3]} p={4} to="/speakers" is={Link}>Speakers</NavLink>
-            <NavLink fontFamily="Barlow-Regular" fontSize={[2, 3]}p={4} to="/sponsors" is={Link}>Sponsors</NavLink>
+            <NavLink fontFamily="Barlow-Regular" fontSize={[2, 3]} p={4} to="/sponsors" is={Link}>Sponsors</NavLink>
             <NavLink fontFamily="Barlow-Regular" fontSize={[2, 3]} py={4} to="https://www.eventbrite.com/e/connectaha-technology-conference-tickets-71091044227?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing" is={Link}>
               <Button fontFamily="Barlow-Regular" fontSize={[1, 2]} bg="action" color="white" border="none">Buy Tickets</Button>
             </NavLink>
