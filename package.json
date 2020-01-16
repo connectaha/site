@@ -24,6 +24,7 @@
     "react-simple-icons": "^1.0.0-beta.5",
     "react-static": "^5.9.12",
     "react-static-plugin-google-analytics": "0.0.0",
+    "react-truncate": "^2.4.0",
     "rebass": "^2.1.0",
     "rmdi": "^1.0.1",
     "shuffle-array": "^1.0.1",
