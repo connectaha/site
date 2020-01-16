@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { width } from "styled-system";
 import { Head, withRouteData } from "react-static";
 import { Box, Card, Flex, Image, Text, Heading } from "rebass";
 import { sortBy } from "ramda";
@@ -7,6 +8,7 @@ import Truncate from "react-truncate";
 
 const Clickable = styled.div`
   cursor: pointer;
+  ${width};
 `;
 
 export default withRouteData(({ speakers }) => (
@@ -32,19 +34,13 @@ export default withRouteData(({ speakers }) => (
     <Heading pl={4} pt={6} pb={4} color="white">
       Sessions
     </Heading>
-    <Flex
-      flexDirection="column"
-      flexWrap="wrap"
-      alignItems="center"
-      justifyContent="center"
-    >
+    <Flex flexWrap="wrap" alignItems="center" justifyContent="center">
       {sortBy(session => session.title, speakers).map(session => (
-        <Clickable key={session.id}>
-          <Box>
+        <Clickable key={session.id} width={[1, "425px", "850px"]}>
+          <Box width={1}>
             <Card
               m={16}
               p={2}
-              width={[1, 1, 1 / 2]}
               borderRadius={8}
               boxShadow="0 0 16px rgba(0, 0, 0, .25)"
               onClick={() => {
@@ -52,20 +48,15 @@ export default withRouteData(({ speakers }) => (
               }}
             >
               <Box p={5}>
-                <Flex alignItems="center" justifyContent="space-between" pb={5}>
-                  <Flex flexDirection="column">
-                    <Text color="darkblue" fontSize={4} pb={2}>
-                      {session.title}
-                    </Text>
-                    <Text color="dark" fontSize={2} pb={3}>
-                      {session.firstName} {session.lastName}
-                    </Text>
-                  </Flex>
-                  <Box width={140} height={220}>
-                    <Image src={session.photo} />
-                  </Box>
+                <Flex flexDirection="column" pb={5}>
+                  <Text color="darkblue" fontSize={[4, 3]} pb={2}>
+                    {session.title}
+                  </Text>
+                  <Text color="dark" fontSize={[2, 1]} pb={3}>
+                    {session.firstName} {session.lastName}
+                  </Text>
                 </Flex>
-                <Text color="darkblue" fontSize={3}>
+                <Text color="darkblue" fontSize={[3, 2]}>
                   <Truncate lines={4}>{session.description}</Truncate>
                 </Text>
                 />
