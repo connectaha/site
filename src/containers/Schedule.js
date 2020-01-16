@@ -306,8 +306,15 @@ export default withRouteData(() => (
       </Box>
     </Flex>
 
-    <Flex flexWrap="wrap" py={1} px={4} my={4} color="white">
-      <Box fontSize={3} pb={7} width={[1, 1 / 1]}>Connectaha Social   |   5:00p- 7:00p</Box>
+    <Flex flexWrap="wrap" py={5} px={4} my={4} color="darkblue" bg="white">
+      <Box fontSize={3} pb={2} width={[1, 1 / 1]}>Connectaha Social   |   5:00p- 7:00p</Box>
+      <Box p={2} width={[1, 2 / 5]}>
+        <Heading fontSize={2}>Center Room<br /></Heading>
+        <Divider w={1} borderColor="darkblue"/>
+        Join us for a post conference reception. Connect with other conference attendees and speakers.  Stick around to win raffle prizes. Must be present to win.
+        <br />
+        <br />
+      </Box>
     </Flex>
 
   </div>))
