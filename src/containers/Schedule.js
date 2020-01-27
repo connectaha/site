@@ -46,7 +46,7 @@ export default withRouteData(() => (
       Sponsor<br />
       Talk<br />
         <br />
-      Techtonic
+      Aviture
       </Box>
       <Box p={2} width={[1, 1 / 5]}>
       <Heading fontSize={2}>Northeast Room<br /></Heading>
