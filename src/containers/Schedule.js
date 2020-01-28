@@ -126,7 +126,7 @@ export default withRouteData(() => (
         Cory<br />
         House<br />
         <br />
-        Software (and Life): You Can’t Change Just One Thing
+        The Immutable Laws of Software and Life: Exploring Tradeoffs
       </Box>
       <Box p={2} width={[1, 1 / 5]}>
       <Heading fontSize={2}>Southwest Room<br /></Heading>
