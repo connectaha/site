@@ -82,5 +82,12 @@
         "tier": "2",
         "photo": "/photos/teksystems.png",
         "url": "https://www.teksystems.com/"
+    },
+    {
+        "id": "bcbs",
+        "name": "Blue Cross Blue Shield",
+        "tier": "2",
+        "photo": "/photos/bcbs.png",
+        "url": "https://www.nebraskablue.com/"
     }
 ]
