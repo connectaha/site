@@ -40,7 +40,7 @@ export default withRouteData(() => (
         <br />
         Believe in the Power of CSS
       </Box>
-      <Box p={2} width={[1, 1 / 5]}> 
+      <Box p={2} width={[1, 1 / 5]}>
       <Heading fontSize={2}>Executive Boardroom<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
       Sponsor<br />
@@ -75,10 +75,9 @@ export default withRouteData(() => (
       <Box p={2} width={[1, 1 / 5]}>
         <Heading fontSize={2}>Northwest Room<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
-        Christiana<br />
-        Unaeze<br />
         <br />
-        Guidelines on Designing and Testing for Accessibility
+        <br />
+        <br />
       </Box>
       <Box p={2} width={[1, 1 / 5]}>
       <Heading fontSize={2}>Southwest Room<br /></Heading>
@@ -88,7 +87,7 @@ export default withRouteData(() => (
         <br />
         A Skeptics guide to functional style javascript
       </Box>
-      <Box p={2} width={[1, 1 / 5]}> 
+      <Box p={2} width={[1, 1 / 5]}>
       <Heading fontSize={2}>Executive Boardroom<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
       Heather Terenzio<br />
@@ -136,7 +135,7 @@ export default withRouteData(() => (
         <br />
         Building a QA practice from scratch
       </Box>
-      <Box p={2} width={[1, 1 / 5]}> 
+      <Box p={2} width={[1, 1 / 5]}>
       <Heading fontSize={2}>Executive Boardroom<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
       Sponsor<br />
@@ -184,7 +183,7 @@ export default withRouteData(() => (
         <br />
         How To Have Code Reviews Developers Actually Want
       </Box>
-      <Box p={2} width={[1, 1 / 5]}> 
+      <Box p={2} width={[1, 1 / 5]}>
       <Heading fontSize={2}>Executive Boardroom<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
       Courtney<br />
@@ -213,7 +212,7 @@ export default withRouteData(() => (
     <Flex flexWrap="wrap" py={1} px={4} my={4} color="white">
       <Box fontSize={3} pb={3} width={[1, 1 / 1]}>Break   |   2:30p- 2:45p</Box>
     </Flex>
-    
+
     <Flex flexWrap="wrap" px={4} py={5} my={4} color="darkblue" bg="white">
       <Box fontSize={3} pb={4} width={[1, 1 / 1]}>Session 5   |   2:45p- 3:45p</Box>
       <Box p={2} width={[1, 1 / 5]}>
@@ -232,7 +231,7 @@ export default withRouteData(() => (
         <br />
         Using our powers for good: Tech and social impact
       </Box>
-      <Box p={2} width={[1, 1 / 5]}> 
+      <Box p={2} width={[1, 1 / 5]}>
       <Heading fontSize={2}>Executive Boardroom<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
       Cassandra<br />
@@ -280,7 +279,7 @@ export default withRouteData(() => (
         <br />
         JavaScript and Accessibility: Building Thoughtful Interactions
       </Box>
-      <Box p={2} width={[1, 1 / 5]}> 
+      <Box p={2} width={[1, 1 / 5]}>
       <Heading fontSize={2}>Executive Boardroom<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
       Matt<br />

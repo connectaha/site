@@ -44,17 +44,6 @@
     "photo": "/photos/speakers/cassandra-faris.png"
   },
   {
-    "id": "christiana-unaeze",
-    "firstName": "Christiana",
-    "lastName": "Unaeze",
-    "bio": "Christiana Unaeze is a User Experience Designer, Entrepreneur and Visual Design Strategist. She has over a decade of combined experience in visual and user experience design, project management and design consulting. Currently, Christiana is a consultant with a federal agency where she leads and supports design and accessibility efforts on multiple projects. She is on a mission to help design products that are engaging, creative and accessible to all. She is also a runner, an avid reader, a Game of Thrones fan, an aficionado of statement jewelry, and a fervent DIYer.",
-    "title": "Guidelines on Designing and Testing for Accessibility",
-    "description": "One main goal of great user experience is creating digital products that ANYONE can use. If you are not thinking about accessibility, then you’re not thinking about the full user experience. Ideally, the user experience for everyone should be the same regardless of physical or cognitive limitations. This means addressing user accessibility scenarios from the onset. Accessibility makes it possible for people with disabilities to understand and navigate well designed digital products. However, accessibility is often one of the last things addressed in product and software design. These guidelines will cover some of the major factors to address and test for in order to meet the accessibility standards in the Web Content Accessibility Guidelines (WCAG). ",
-    "organization": "",
-    "photoUrl": "https://papercallio-production.s3.amazonaws.com/uploads/user/avatar/44361/ChristianaUnaeze_ProfilePic.jpg",
-    "photo": "/photos/speakers/christiana-unaeze.png"
-  },
-  {
     "id": "adrienne-tacke",
     "firstName": "Adrienne",
     "lastName": "Tacke",
