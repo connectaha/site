@@ -75,9 +75,10 @@ export default withRouteData(() => (
       <Box p={2} width={[1, 1 / 5]}>
         <Heading fontSize={2}>Northwest Room<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
+        Hilary<br />
+        Stohs-Krause<br />
         <br />
-        <br />
-        <br />
+        Using our powers for good: Tech and social impact
       </Box>
       <Box p={2} width={[1, 1 / 5]}>
       <Heading fontSize={2}>Southwest Room<br /></Heading>
@@ -118,7 +119,7 @@ export default withRouteData(() => (
     </Flex>
 
     <Flex flexWrap="wrap" px={4} py={5} my={4} color="darkblue" bg="white">
-      <Box fontSize={3} pb={4} width={[1, 1 / 1]}>Session 3   |   11:30a- 12:30a</Box>
+      <Box fontSize={3} pb={4} width={[1, 1 / 1]}>Session 3   |   11:30a- 12:30p</Box>
       <Box p={2} width={[1, 1 / 5]}>
         <Heading fontSize={2}>Northwest Room<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
@@ -226,10 +227,10 @@ export default withRouteData(() => (
       <Box p={2} width={[1, 1 / 5]}>
       <Heading fontSize={2}>Southwest Room<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
-        Hilary<br />
-        Stohs-Krause<br />
+        Charlie<br />
+        Koster<br />
         <br />
-        Using our powers for good: Tech and social impact
+        The Side Project Survival Guide
       </Box>
       <Box p={2} width={[1, 1 / 5]}>
       <Heading fontSize={2}>Executive Boardroom<br /></Heading>
@@ -282,10 +283,9 @@ export default withRouteData(() => (
       <Box p={2} width={[1, 1 / 5]}>
       <Heading fontSize={2}>Executive Boardroom<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
-      Matt<br />
-      Steele<br />
+      <br />
+      <br />
         <br />
-      Automate Everything with GitHub Actions
       </Box>
       <Box p={2} width={[1, 1 / 5]}>
       <Heading fontSize={2}>Northeast Room<br /></Heading>
@@ -296,12 +296,12 @@ export default withRouteData(() => (
       Secret Backlogs
       </Box>
       <Box p={2} width={[1, 1 / 5]}>
-      <Heading fontSize={2}>Southeast Room<br /></Heading>
+      <Heading fontSize={2}>Executive Boardroom<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
-      Charlie<br />
-      Koster<br />
+      Matt<br />
+      Steele<br />
         <br />
-      The Side Project Survival Guide
+      Automate Everything with GitHub Actions
       </Box>
     </Flex>
 
