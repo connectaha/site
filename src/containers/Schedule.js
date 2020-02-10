@@ -21,7 +21,10 @@ export default withRouteData(() => (
       <meta name="twitter:image:alt" content="March 27, 2020 Walter Scott Conference Center" />
     </Head>
     <Heading pl={4} pt={6} pb={4} color="white">Schedule</Heading>
-
+    
+    <Flex flexWrap="wrap" py={1} px={4} my={4} color="white">
+      <Box fontSize={3} pb={3} width={[1, 1 / 1]}>Registration & Breakfast   |   8:00a- 8:45a</Box>
+    </Flex>
     <Flex flexWrap="wrap" px={4} py={5} my={4} color="darkblue" bg="white">
       <Box fontSize={3} pb={4} width={[1, 1 / 1]}>Session 1   |   9:00a- 10:00a</Box>
       <Box p={2} pb={5} width={[1, 1 / 5]}>
