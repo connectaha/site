@@ -43,10 +43,10 @@ export default withRouteData(() => (
       <Box p={2} width={[1, 1 / 5]}>
       <Heading fontSize={2}>Executive Boardroom<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
-      Sponsor<br />
-      Talk<br />
+        Jerry Koske<br />
+      Aviture CTO<br />
         <br />
-      Aviture
+        Disciplined Development: What is dead may never die
       </Box>
       <Box p={2} width={[1, 1 / 5]}>
       <Heading fontSize={2}>Northeast Room<br /></Heading>
