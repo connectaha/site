@@ -104,6 +104,12 @@ export default withRouteData(({ speakers }) => {
         Schedule
       </Heading>
 
+      <Flex flexWrap="wrap" py={1} px={4} my={4} color="white">
+        <Box fontSize={3} pb={3} width={[1, 1 / 1]}>
+          Registration &amp; Breakfast   |   8:00a- 8:45a
+        </Box>
+      </Flex>
+
       {session(speakers.filter(s => s.time === '9:00'), 'Session 1   |   9:00a- 10:00a')}
 
       <Flex flexWrap="wrap" py={1} px={4} my={4} color="white">
