@@ -124,7 +124,7 @@ export default withRouteData(({ speakers }) => {
 
       <Flex flexWrap="wrap" py={1} px={4} my={4} color="white">
         <Box fontSize={3} pb={3} width={[1, 1 / 1]}>
-          Lunch   |   12:30a- 1:30p
+          Lunch   |   12:30p- 1:30p
         </Box>
       </Flex>
 
