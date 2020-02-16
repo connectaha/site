@@ -251,10 +251,10 @@ export default withRouteData(() => (
       <Box p={2} width={[1, 1 / 5]}>
       <Heading fontSize={2}>Southeast Room<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
-      Bill<br />
-      Dinger<br />
+      Matt<br />
+      Steele<br />
         <br />
-        The Dungeon Master's Guide to DevOps
+        Automate Everything with GitHub Actions
       </Box>
     </Flex>
 
@@ -296,12 +296,13 @@ export default withRouteData(() => (
       Secret Backlogs
       </Box>
       <Box p={2} width={[1, 1 / 5]}>
-      <Heading fontSize={2}>Executive Boardroom<br /></Heading>
+      <Heading fontSize={2}>Southeast Room<br /></Heading>
         <Divider w={1} borderColor="darkblue" />
-      Matt<br />
-      Steele<br />
+      Bill<br />
+      Dinger<br />
         <br />
-      Automate Everything with GitHub Actions
+        The Dungeon Master's Guide to DevOps
+
       </Box>
     </Flex>
 
