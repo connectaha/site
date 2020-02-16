@@ -30,6 +30,9 @@ export default {
     {
       path: '/schedule',
       component: 'src/containers/Schedule',
+      getData: () => ({
+        speakers
+      })
     },
     {
       path: '/sessions',
