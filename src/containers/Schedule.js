@@ -17,12 +17,17 @@ const session = (speakers, time) => {
 
   const getDetails = room => {
     const details = byRoom[room] || [{}]
+    const info = details.length === 1 ? details[0] : {
+      firstName: `${details[0].firstName} ${details[0].lastName}`,
+      lastName: `${details[1].firstName} ${details[1].lastName}`,
+      title: details[0].title
+    }
 
     return (<Fragment>
-      {details[0].firstName} <br />
-      {details[0].lastName} <br />
+      {info.firstName} <br />
+      {info.lastName} <br />
       <br />
-      {details[0].title}
+      {info.title}
     </Fragment>
   )
 }
