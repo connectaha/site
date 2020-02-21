@@ -375,5 +375,18 @@
     "photo": "/photos/speakers/jerry-koske.jpg",
     "room": "eb",
     "time": "9:00"
+  },
+  {
+    "id": "brian-wohlers",
+    "firstName": "Brian",
+    "lastName": "Wohlers",
+    "bio": "Brian leads an application development team responsible for creating customer solutions at Farm Credit Services of America.  He is an agile leader and innovator who believes in continuous adaptation to see what works well.  At the heart of any great product, project, or innovation is a team that makes collaboration the key to how they work, and he fosters a culture of enablement to create high performing teams that deliver more than ever thought possible.<br>When not at work, Brian is usually engrossed in personal experiments with a wrench or hammer in hand, but there are no better times than those he spends with family on the water.",
+    "title": "Product Discovery - How teams bring their customers into focus! ",
+    "description": "Hear about Farm Credit Services of America's journey into product management and creating a hyper focus on the customer's needs.  Brian's team has been learning about customers using product management techniques to help determine outcomes and then measure results as builds are sent into the wild.  This journey has been nothing near normal as the team has adapted their learning and practices to produce new features that are valuable to their customers and business.  The more they learn about their customers and dispel assumptions they have, the faster the team needs to react to build a product that is relevant.  Hear about how agility has changed for the team, and why practices matter differently than before.",
+    "organization": "Farm Credit Services of America",
+    "photoUrl": "",
+    "photo": "/photos/speakers/brian-wohlers.png",
+    "room": "eb",
+    "time": "11:30"
   }
 ]
