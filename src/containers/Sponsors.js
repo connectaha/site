@@ -26,8 +26,7 @@ export default withRouteData(({ sponsors }) => {
         <meta property="og:site_name" content="2020 Connectaha Conference" />
         <meta name="twitter:image:alt" content="March 27, 2020 Walter Scott Conference Center" />
       </Head>
-      <Text fontSize="20px" pl={4} pt={4}>Interested in sponsoring? We still have slots available. <Link href="Connectaha2020_Prospectus.pdf">Check out our prospectus</Link>
-      </Text>
+      <Text fontSize="20px" pl={4} pt={4}>Thanks to everyone listed below, we've SOLD OUT of sponsorship opportunities for 2020!</Text>
       <Text fontSize="32px" pl={4} pt={4} pb={2} color="white">Sponsors</Text>
       <Text fontSize="20px" pl={4} pt={2} color="white">Tier 1</Text>
       <Flex flexWrap="wrap" p={32} alignItems="center" justifyContent="center">
