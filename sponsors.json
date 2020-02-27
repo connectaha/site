@@ -89,5 +89,12 @@
         "tier": "2",
         "photo": "/photos/bcbs.png",
         "url": "https://www.nebraskablue.com/"
+    },
+    {
+        "id": "wwt",
+        "name": "World Wide Technology",
+        "tier": "2",
+        "photo": "/photos/wwt.png",
+        "url": "https://www.wwt.com/"
     }
 ]
