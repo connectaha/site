@@ -53,7 +53,7 @@ export default withRouteData(({ sponsors }) => {
         {
           tier2.map(sponsor => (
             <Clickable key={sponsor.id}>
-              <Box width={220} height={220}>
+              <Box width={260} height={260}>
                 <Card
                   m={16}
                   p={1}
