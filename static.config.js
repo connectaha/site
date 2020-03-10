@@ -17,7 +17,7 @@ export default {
   getRoutes: async () => [
     {
       path: '/',
-      component: 'src/containers/Home',
+      component: 'src/containers/Covid',
     },
     {
       path: '/contact',
@@ -40,6 +40,10 @@ export default {
       getData: () => ({
         speakers
       })
+    },
+    {
+      path: '/covid',
+      component: 'src/containers/Covid'
     },
     {
       path: '/speakers',
