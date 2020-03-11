@@ -56,7 +56,7 @@ export default class Covid extends Component {
         </Head>
 
         <Center mt={3} mb={3}>
-          <Center width={0.5}>
+          <Center width={[1, 0.5]} px={[2, 4]}>
             <Heading fontWeight={300}>Connectaha Covid Announcement</Heading>
             <Text fontSize={3} fontWeight={300} pt={4}>
               Over the past couple weeks, we've been monitoring the COVID-19
