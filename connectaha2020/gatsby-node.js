@@ -28,29 +28,29 @@ module.exports.createPages = async ({ graphql, actions }) => {
 
 }
 
-module.exports.createPages = async ({ graphql, actions }) => {
-    const { createPage } = actions
-    const sponsorTemplate = path.resolve('./src/templates/sponsors.js')
-    const res = await graphql(`
-        query {
-           allContentfulSponsors {
-               edges {
-                   node {
-                       slug
-                   }
-               }
-           }
-        }
-    `)
+// module.exports.createPages = async ({ graphql, actions }) => {
+//     const { createPage } = actions
+//     const sponsorTemplate = path.resolve('./src/templates/sponsors.js')
+//     const res = await graphql(`
+//         query {
+//            allContentfulSponsors {
+//                edges {
+//                    node {
+//                        slug
+//                    }
+//                }
+//            }
+//         }
+//     `)
 
-    res.data.allContentfulSponsors.edges.forEach((edge) => {
-        createPage({
-            component: sponsorTemplate,
-            path: `/sponsors/${edge.node.slug}`,
-            context: {
-                slug: edge.node.slug
-            }
-        })
-    })
+//     res.data.allContentfulSponsors.edges.forEach((edge) => {
+//         createPage({
+//             component: sponsorTemplate,
+//             path: `/sponsors/${edge.node.slug}`,
+//             context: {
+//                 slug: edge.node.slug
+//             }
+//         })
+//     })
 
-}
+// }

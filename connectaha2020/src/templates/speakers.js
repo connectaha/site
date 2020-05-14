@@ -21,7 +21,7 @@ export const query = graphql`
     }
 `
 
-const Speakers = (props) => {
+const Speakers = props => {
     return (
         <Layout>
             <h1>{props.data.contentfulSpeakers.name} | {props.data.contentfulSpeakers.company}</h1>
