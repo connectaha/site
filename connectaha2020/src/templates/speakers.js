@@ -22,6 +22,16 @@ export const query = graphql`
 `
 
 const Speakers = props => {
+    const options = {
+        renderNode: {
+            "embedded-asset-block": (node) => {
+                const alt = node.data.target.fields.name['en-US']
+                const url = node.data.target.fields.file['en-US'].url
+                return <img alt={alt} src={url} />
+            }
+        }
+    }
+    
     return (
         <Layout>
             <h1>{props.data.contentfulSpeakers.name} | {props.data.contentfulSpeakers.company}</h1>
