@@ -1,8 +1,10 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from 'gatsby'
-import speakersStyles from './speakers.module.scss'
-
+import Img from 'gatsby-image'
 import Layout from '../components/layout'
+import speakersStyles from './speakers.module.scss'
+import Head from '../components/head'
+
 
 const SpeakersPage = () => {
     const data = useStaticQuery(graphql`
@@ -14,6 +16,14 @@ const SpeakersPage = () => {
                         slug
                         company
                         session
+                        image {
+                            fluid(maxWidth: 300) {
+                              src
+                              srcSet
+                              aspectRatio
+                              sizes
+                            }
+                          }
                     }
                 }
             }
@@ -22,6 +32,7 @@ const SpeakersPage = () => {
 
     return (
         <Layout>
+            <Head title="Speakers" />
             <h1>Speakers</h1>
             <ol className={speakersStyles.speakers}>
                 {data.allContentfulSpeakers.edges.map((edge) => {
@@ -30,6 +41,11 @@ const SpeakersPage = () => {
                             <Link to={`/speakers/${edge.node.slug}`}>
                                 <h2>{edge.node.name} | {edge.node.company}</h2>
                                 <p>{edge.node.session}</p>
+                                <div>
+                                    {edge.node.image && (
+                                        <Img fluid={edge.node.image.fluid} /> 
+                                    )}
+                                </div>
                             </Link>
                         </li>
                     )

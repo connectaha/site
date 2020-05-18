@@ -3,6 +3,7 @@ import { Link, graphql, useStaticQuery } from 'gatsby'
 import sessionsStyles from './sessions.module.scss'
 
 import Layout from '../components/layout'
+import Head from '../components/head'
 
 const SessionsPage = () => {
     const data = useStaticQuery(graphql`
@@ -22,6 +23,7 @@ const SessionsPage = () => {
 
     return (
         <Layout>
+            <Head title="Sessions" />
             <h1>Sessions</h1>
             <ol className={sessionsStyles.sessions}>
                 {data.allContentfulSpeakers.edges.map((edge) => {

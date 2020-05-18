@@ -4,6 +4,7 @@ module.exports = {
         author: `Connectaha`
     },
     plugins: [
+        `gatsby-plugin-react-helmet`,
         {
             resolve: `gatsby-source-contentful`,
             options: {
@@ -16,10 +17,11 @@ module.exports = {
             resolve: `gatsby-source-filesystem`,
                 options: {
                     name: `src`,
-                    path: `${__dirname}/src/`,
+                    path: `${__dirname}/src/`
             },
         },
         `gatsby-plugin-sharp`,
+        `gatsby-transformer-sharp`,
         {
             resolve: `gatsby-transformer-remark`,
             options: {
