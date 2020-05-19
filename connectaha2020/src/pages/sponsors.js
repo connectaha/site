@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 import sponsorsStyles from './sponsors.module.scss'
 import Img from "gatsby-image"
 
@@ -14,6 +14,7 @@ const SponsorsPage = () => {
                     node {
                         sponsorTitle
                         slug
+                        website
                         sponsorImage {
                             fluid(maxWidth: 300) {
                               src
@@ -36,10 +37,10 @@ const SponsorsPage = () => {
                 {data.allContentfulSponsors.edges.map((edge) => {
                     return (
                         <li className={sponsorsStyles.sponsor}>
-                            <Link to={`/sponsors/${edge.node.slug}`}>
+                            <div>
                                 <h2>{edge.node.sponsorTitle}</h2>
-                                <div>{edge.node.sponsorImage && (<Img fluid={edge.node.sponsorImage.fluid} /> )}</div>
-                            </Link>
+                                <a href={edge.node.website} target="_blank">{edge.node.sponsorImage && (<Img fluid={edge.node.sponsorImage.fluid} /> )} </a>
+                            </div>
                         </li>
                     )
                 })}
