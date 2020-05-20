@@ -39,13 +39,13 @@ const SpeakersPage = () => {
                     return (
                         <li className={speakersStyles.speaker}>
                             <Link to={`/speakers/${edge.node.slug}`}>
-                                <h2>{edge.node.name} | {edge.node.company}</h2>
-                                <p>{edge.node.session}</p>
                                 <div>
                                     {edge.node.image && (
                                         <Img fluid={edge.node.image.fluid} /> 
                                     )}
                                 </div>
+                                <h2>{edge.node.name} | {edge.node.company}</h2>
+                                <p>{edge.node.session}</p>
                             </Link>
                         </li>
                     )

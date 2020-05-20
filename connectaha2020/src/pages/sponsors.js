@@ -39,7 +39,7 @@ const SponsorsPage = () => {
                         <li className={sponsorsStyles.sponsor}>
                             <div>
                                 <h2>{edge.node.sponsorTitle}</h2>
-                                <a href={edge.node.website} target="_blank">{edge.node.sponsorImage && (<Img fluid={edge.node.sponsorImage.fluid} /> )} </a>
+                                <a href={edge.node.website} target="_blank" rel="noopener noreferrer">{edge.node.sponsorImage && (<Img fluid={edge.node.sponsorImage.fluid} /> )} </a>
                             </div>
                         </li>
                     )

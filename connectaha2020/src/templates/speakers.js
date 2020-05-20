@@ -26,7 +26,7 @@ const Speakers = (props) => {
     const options = {
         renderNode: {
             "embedded-asset-block": node => {
-                const alt = node.data.target.fields.name['en-US']
+                const alt = node.data.target.fields.title['en-US']
                 const url = node.data.target.fields.file['en-US'].url
                 return <img alt={alt} src={url} />
             }
@@ -38,7 +38,7 @@ const Speakers = (props) => {
             <Head title={props.data.contentfulSpeakers.name}/>
             <h1>{props.data.contentfulSpeakers.name} | {props.data.contentfulSpeakers.company}</h1>
             <h3>{props.data.contentfulSpeakers.session}</h3>
-            {documentToReactComponents(props.data.contentfulSpeakers.abstract.json, options)}
+            <div>{documentToReactComponents(props.data.contentfulSpeakers.abstract.json, options)}</div>
             <h3>Bio</h3>
             {documentToReactComponents(props.data.contentfulSpeakers.bio.json, options)}
         </Layout>

@@ -3,7 +3,7 @@ const path = require('path')
 
 module.exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions
-    const speakerTemplate = path.resolve('./src/templates/speakers.js')
+    const speakersTemplate = path.resolve('./src/templates/speakers.js')
     const res = await graphql(`
         query {
            allContentfulSpeakers {
@@ -18,7 +18,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
 
     res.data.allContentfulSpeakers.edges.forEach((edge) => {
         createPage({
-            component: speakerTemplate,
+            component: speakersTemplate,
             path: `/speakers/${edge.node.slug}`,
             context: {
                 slug: edge.node.slug
