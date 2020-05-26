@@ -1,10 +1,19 @@
 .speakers {
-    list-style-type: none;
-    margin: 0;
-}
+        list-style-type: none;
+        margin: 0 auto;
+        max-width: 750px;
+        padding-bottom: 2rem; 
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        img {
+            border: 2px solid #eaeaea;
+        }
+    }
 
 .speaker {
-    margin: 1rem 0;
+    margin: 0rem .5rem .5rem 0rem;
+    width: 12rem;
 
     a {
         background: #f4f4f4;
@@ -12,6 +21,7 @@
         display: block;
         padding: 1rem;
         text-decoration: none;
+        height: 21rem;
     }
 
     a:hover {
@@ -19,12 +29,13 @@
     }
 
     h2 {
+        margin-top: 1rem;
         margin-bottom: 0;
     }
 
     p {
         color: #777777;
-        font-size: .8rem;
+        font-size: .75rem;
         font-style: italic;
     }
 }
