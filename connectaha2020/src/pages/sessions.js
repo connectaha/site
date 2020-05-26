@@ -24,14 +24,14 @@ const SessionsPage = () => {
     return (
         <Layout>
             <Head title="Sessions" />
-            <h1>Sessions</h1>
+            <h1>2021 Sessions</h1>
             <ol className={sessionsStyles.sessions}>
                 {data.allContentfulSpeakers.edges.map((edge) => {
                     return (
                         <li className={sessionsStyles.session}>
                             <Link to={`/speakers/${edge.node.slug}`}>
                                 <h2>{edge.node.session}</h2>
-                                <p>{edge.node.name} | {edge.node.company}</p>
+                                <h5>{edge.node.name} | {edge.node.company}</h5>
                             </Link>
                         </li>
                     )

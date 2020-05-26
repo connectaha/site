@@ -4,6 +4,14 @@ module.exports = {
         author: `Connectaha`
     },
     plugins: [
+        {
+            resolve: "gatsby-plugin-react-svg",
+            options: {
+              rule: {
+                include: /images/
+              }
+            }
+          },
         `gatsby-plugin-react-helmet`,
         {
             resolve: `gatsby-source-contentful`,
