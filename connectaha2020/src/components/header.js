@@ -16,18 +16,18 @@ const Header = () => {
                     <li>
                         <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/schedule">Schedule</Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/sessions">Sessions</Link>
-                    </li>
+                    </li> */}
                     <li>
                         <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/speakers">Speakers</Link>
                     </li>
                     <li>
                         <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/sponsors">Sponsors</Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/about">About</Link>
-                    </li>
+                    </li> */}
                 </ul>
             </nav>
         </header>

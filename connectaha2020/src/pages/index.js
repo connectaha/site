@@ -1,26 +1,22 @@
 import React from "react"
 
+import Hero from '../components/hero'
 import Layout from '../components/layout'
 import Head from '../components/head'
+import heroStyles from "../components/hero.module.scss"
 
 const IndexPage = () => {
     return (
         <Layout>
             <Head title="Home" />
-            
-            <h2>A technical conference that believes there's power when people talk</h2>
-            <p>Connectaha is a conference for people who want to grow quality connections in the technology community. Our goal is to create a diverse environment for people to exchange new ideas, knowledge and views.</p>
-            <h2>Goal</h2>
-            <p>Our vision is to grow quality connections in the Nebraska tech community.</p>
-            <h2>Vision</h2>
-            <p>For people to exchange new ideas, knowledge and views of technology.</p>
-            <h2>Principles</h2>
-            <p>Quality</p>
-            <p>Sustainable</p>
-            <p>Modern & Adaptable</p>
-            <p>Inclusive</p>
-            <p>Genuine</p>
-            <p>Supportive</p>
+            <Hero />
+            <h3 className={heroStyles.description}>Our goal is for people to grow quality connections in a diverse environment. Attendees, speakers and sponsors exchanging new ideas, knowledge and views.</h3>
+            <hr className={heroStyles.divider} />
+            <h2>What to Expect</h2>
+            <p>Our conference is a one day event hosted at the <a href="url">Walter Scott Conference Center</a> in Omaha, NE. Throughout the day we will host 6 sessions with 5 simultaneous talks. We'll have a diverse range of topics covered by 30 speakers.</p>
+            <hr className={heroStyles.divider} />
+            <h2>2021 Sponsors</h2>
+            <hr className={heroStyles.divider} />
         </Layout>
     )
 }

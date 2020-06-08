@@ -45,6 +45,7 @@ html {
   a {
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
+    color: #ff6854;
   }
   a:active,
   a:hover {
@@ -237,8 +238,8 @@ html {
     font-family: 'barlow', sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
-    font-size: 2.25rem;
-    line-height: 1.1;
+    font-size: 2.5rem;
+    line-height: 1;
   }
   h2 {
     margin-left: 0;
@@ -253,7 +254,7 @@ html {
     font-family: 'barlow', sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
-    font-size: 1.25rem;
+    font-size: 2rem;
     line-height: 1.1;
   }
   h3 {
@@ -264,7 +265,7 @@ html {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.45rem;
+    margin-bottom: 1.5rem;
     color: inherit;
     font-family: 'barlow', sans-serif;
     font-weight: bold;

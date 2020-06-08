@@ -9,13 +9,30 @@ import Head from '../components/head'
 const SponsorsPage = () => {
     const data = useStaticQuery(graphql`
         query {
-            allContentfulSponsors ( sort: { fields: sponsorTitle, order: ASC } ) {
+            allContentfulTier1 ( sort: { fields: sponsorTitle, order: ASC } ) {
                 edges {
                     node {
                         sponsorTitle
                         slug
                         website
-                        sponsorImage {
+                        image {
+                            fluid(maxWidth: 300) {
+                              src
+                              srcSet
+                              aspectRatio
+                              sizes
+                            }
+                          }
+                    }
+                }
+            }
+            allContentfulTier2 ( sort: { fields: sponsorTitle, order: ASC } ) {
+                edges {
+                    node {
+                        sponsorTitle
+                        slug
+                        website
+                        image {
                             fluid(maxWidth: 300) {
                               src
                               srcSet
@@ -32,14 +49,26 @@ const SponsorsPage = () => {
     return (
         <Layout>
             <Head title="Sponsors" />
-            <h1>Sponsors</h1>
+            <h1>2021 Sponsors</h1>
+            <h2>Tier 1</h2>
             <ol className={sponsorsStyles.sponsors}>
-                {data.allContentfulSponsors.edges.map((edge) => {
+                {data.allContentfulTier1.edges.map((edge) => {
                     return (
                         <li className={sponsorsStyles.sponsor}>
                             <div>
-                                <h2>{edge.node.sponsorTitle}</h2>
-                                <a href={edge.node.website} target="_blank" rel="noopener noreferrer">{edge.node.sponsorImage && (<Img fluid={edge.node.sponsorImage.fluid} /> )} </a>
+                                <a href={edge.node.website} target="_blank" rel="noopener noreferrer">{edge.node.image && (<Img fluid={edge.node.image.fluid} /> )} </a>
+                            </div>
+                        </li>
+                    )
+                })}
+            </ol>
+            <h2>Tier 2</h2>
+            <ol className={sponsorsStyles.sponsors}>
+                {data.allContentfulTier2.edges.map((edge) => {
+                    return (
+                        <li className={sponsorsStyles.sponsor}>
+                            <div>
+                                <a href={edge.node.website} target="_blank" rel="noopener noreferrer">{edge.node.image && (<Img fluid={edge.node.image.fluid} /> )} </a>
                             </div>
                         </li>
                     )
