@@ -1,8 +1,8 @@
 .banner {
     width: 100%;
-    height: 30vh;
-    background-size: cover;
-    background-position: right;
+    height: 20vh;
+    background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 2rem;
 }
@@ -10,7 +10,7 @@
 .blackOverlay {
     display: -webkit-flex; /*Safari */
     display: flex;
-    background-color: rgba(57,195,230,.8);
+    background-color: rgba(40,47,72,.8);
     height: 100%;
     align-items: center;
     text-align: left;
@@ -20,13 +20,19 @@
     max-width: 620px;
     margin: 0 auto;
     padding: 1rem;
+    text-transform: uppercase;
 }
 
 .description {
     margin: 0 auto;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
 }
 
 .divider {
-    border-top: 1px solid rgba(256,256,256,.4);
+    border-top: 1px solid rgba(40,47,72,.6);
 }
+
+.spacing {
+    padding-bottom: 4rem;
+}
+
