@@ -26,23 +26,6 @@ const SponsorsPage = () => {
                     }
                 }
             }
-            allContentfulTier2 ( sort: { fields: sponsorTitle, order: ASC } ) {
-                edges {
-                    node {
-                        sponsorTitle
-                        slug
-                        website
-                        image {
-                            fluid(maxWidth: 300) {
-                              src
-                              srcSet
-                              aspectRatio
-                              sizes
-                            }
-                          }
-                    }
-                }
-            }
         }
     `)
 

@@ -28,23 +28,6 @@ const IndexPage = () => {
                     }
                 }
             }
-            allContentfulTier2 ( sort: { fields: sponsorTitle, order: ASC } ) {
-                edges {
-                    node {
-                        sponsorTitle
-                        slug
-                        website
-                        image {
-                            fluid(maxWidth: 300) {
-                              src
-                              srcSet
-                              aspectRatio
-                              sizes
-                            }
-                          }
-                    }
-                }
-            }
         }
     `)
 
@@ -56,7 +39,14 @@ const IndexPage = () => {
             <hr className={heroStyles.divider} />
             <h3 className={heroStyles.description}>Our goal is for people to grow quality connections in a diverse environment. Attendees, speakers and sponsors exchanging new ideas, knowledge and views.</h3>
             <h2>What to Expect</h2>
-            <p className={heroStyles.spacing}>Our conference is a one day event hosted at the <a href="url">Walter Scott Conference Center</a> in Omaha, NE. We're coming up with some new ideas for this coming year which will take into account COVID-19.</p>
+            <ul className={heroStyles.spacing}>
+                <li>6 Speakers</li>
+                <li>30 minute sessions</li>
+                <li>Streaming for free</li>
+                <li>Sessions will be recorded</li>
+                <li>Genuine</li>
+                <li>Supportive</li>
+            </ul>
             <h2>Vision</h2>
             <p className={heroStyles.spacing}>Our vision is to grow quality connections in the Nebraska tech community.</p>
             <h2>Goal</h2>
