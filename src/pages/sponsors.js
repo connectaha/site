@@ -45,18 +45,6 @@ const SponsorsPage = () => {
                     )
                 })}
             </ol>
-            <h2>Tier 2</h2>
-            <ol className={sponsorsStyles.sponsors}>
-                {data.allContentfulTier2.edges.map((edge) => {
-                    return (
-                        <li className={sponsorsStyles.sponsor}>
-                            <div>
-                                <a href={edge.node.website} target="_blank" rel="noopener noreferrer">{edge.node.image && (<Img fluid={edge.node.image.fluid} /> )} </a>
-                            </div>
-                        </li>
-                    )
-                })}
-            </ol>
         </Layout>
     )
 }
