@@ -44,8 +44,6 @@ const IndexPage = () => {
                 <li>30 minute sessions</li>
                 <li>Streaming for free</li>
                 <li>Sessions will be recorded</li>
-                <li>Genuine</li>
-                <li>Supportive</li>
             </ul>
             <h2>Vision</h2>
             <p className={heroStyles.spacing}>Our vision is to grow quality connections in the Nebraska tech community.</p>
@@ -72,19 +70,6 @@ const IndexPage = () => {
                     )
                 })}
             </ol>
-            <h2>2021 Tier 2 Sponsors</h2>
-            <ol className={sponsorsStyles.sponsors}>
-                {data.allContentfulTier2.edges.map((edge) => {
-                    return (
-                        <li className={sponsorsStyles.sponsor}>
-                            <div>
-                                <a href={edge.node.website} target="_blank" rel="noopener noreferrer">{edge.node.image && (<Img fluid={edge.node.image.fluid} /> )} </a>
-                            </div>
-                        </li>
-                    )
-                })}
-            </ol>
-
         </Layout>
     )
 }
