@@ -45,11 +45,11 @@ const IndexPage = () => {
                 <li>Streaming for free</li>
                 <li>Sessions will be recorded</li>
             </ul>
-            <h2>Vision</h2>
+            <h2>Our Vision</h2>
             <p className={heroStyles.spacing}>Our vision is to grow quality connections in the Nebraska tech community.</p>
-            <h2>Goal</h2>
+            <h2>Our Goal</h2>
             <p className={heroStyles.spacing}>For people to exchange new ideas, knowledge and views of technology.</p>
-            <h2>Principles</h2>
+            <h2>Our Principles</h2>
             <ul className={heroStyles.spacing}>
                 <li>Quality</li>
                 <li>Sustainable</li>
@@ -58,7 +58,7 @@ const IndexPage = () => {
                 <li>Genuine</li>
                 <li>Supportive</li>
             </ul>
-            <h2>2021 Tier 1 Sponsors</h2>
+            <h2>2021 Sponsors</h2>
             <ol className={sponsorsStyles.sponsors}>
                 {data.allContentfulTier1.edges.map((edge) => {
                     return (

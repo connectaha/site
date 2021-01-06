@@ -33,7 +33,6 @@ const SponsorsPage = () => {
         <Layout>
             <Head title="Sponsors" />
             <h1>2021 Sponsors</h1>
-            <h2>Tier 1</h2>
             <ol className={sponsorsStyles.sponsors}>
                 {data.allContentfulTier1.edges.map((edge) => {
                     return (
