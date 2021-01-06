@@ -44,7 +44,8 @@ const SpeakersPage = () => {
                                         <Img fluid={edge.node.image.fluid} /> 
                                     )}
                                 </div>
-                                <h2>{edge.node.name} | {edge.node.company}</h2>
+                                <h3>{edge.node.name}</h3>
+                                <h3>{edge.node.company}</h3>
                                 <h5>{edge.node.session}</h5>
                             </Link>
                         </li>
