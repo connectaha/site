@@ -1,9 +1,9 @@
 .speakers {
         list-style-type: none;
-        margin: 0 auto;
         padding-bottom: 2rem; 
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         align-content: flex-start;
         img {
             border: 2px solid #eaeaea;
