@@ -46,7 +46,7 @@ const SpeakersPage = () => {
                                 </div>
                                 <h3>{edge.node.name}</h3>
                                 <h3>{edge.node.company}</h3>
-                                <h5>{edge.node.session}</h5>
+                                <h4>{edge.node.session}</h4>
                             </Link>
                         </li>
                     )
