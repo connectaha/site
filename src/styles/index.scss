@@ -66,7 +66,7 @@ html {
     font-style: italic;
   }
   h1 {
-    font-size: 2em;
+    font-size: 3em;
     margin: 0.67em 0;
   }
   mark {
@@ -232,13 +232,13 @@ html {
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
-    padding-top: 0;
-    margin-bottom: 1.45rem;
+    padding-top: 2rem;
+    margin-bottom: 3rem;
     color: inherit;
     font-family: 'barlow', sans-serif;
-    font-weight: bold;
+    font-weight: 400;
     text-rendering: optimizeLegibility;
-    font-size: 2.5rem;
+    font-size: 4rem;
     line-height: 1;
   }
   h2 {
@@ -254,7 +254,7 @@ html {
     font-family: 'barlow', sans-serif;
     font-weight: 400;
     text-rendering: optimizeLegibility;
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 1.1;
   }
   h3 {
@@ -286,7 +286,7 @@ html {
     font-family: barlow, sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
-    font-size: .85rem;
+    font-size: 1rem;
     line-height: 1.1;
   }
   h5 {
