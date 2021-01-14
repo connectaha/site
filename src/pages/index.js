@@ -71,7 +71,7 @@ const IndexPage = () => {
                 </li>
             </ul>
 
-            <p>So does that sound like something you'd be interested in? If so, grab your <a>free ticket</a> and we'll send out the streaming information so you can be a part of Connectaha 2021.</p>
+            <p>So does that sound like something you'd be interested in? If so, grab your <a href="https://www.eventbrite.com/e/connectaha-technical-conference-tickets-136818187883">free ticket</a> and we'll send out the streaming information so you can be a part of Connectaha 2021.</p>
 
             {/* <h2>Our Vision</h2>
             <p className={heroStyles.spacing}>Our vision is to grow quality connections in the Nebraska tech community.</p>
