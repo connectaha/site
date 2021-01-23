@@ -35,7 +35,7 @@ const Speakers = (props) => {
 
     return (
         <Layout>
-            <Head title={props.data.contentfulSpeakers.name}/>
+            <Head title={props.data.contentfulSpeakers.name} ogTitle="Testing"/>
             <h1>{props.data.contentfulSpeakers.name} | {props.data.contentfulSpeakers.company}</h1>
             <h3>{props.data.contentfulSpeakers.session}</h3>
             <div>{documentToReactComponents(props.data.contentfulSpeakers.abstract.json, options)}</div>
