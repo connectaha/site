@@ -12,6 +12,11 @@ export const query = graphql`
             name
             company
             session
+            image {
+              file {
+                url
+              }
+            }
             bio {
                 json
             }
@@ -33,11 +38,14 @@ const Speakers = (props) => {
         }
     }
 
+    console.log('Props', props);
+
     return (
         <Layout>
             <Head title={props.data.contentfulSpeakers.name}
             ogTitle={`${props.data.contentfulSpeakers.name} - ${props.data.contentfulSpeakers.session}`}
-            ogUrl={props.location.href} />
+            ogUrl={props.location.href}
+            ogImage={props.data.contentfulSpeakers.image.file.url} />
             <h1>{props.data.contentfulSpeakers.name} | {props.data.contentfulSpeakers.company}</h1>
             <h3>{props.data.contentfulSpeakers.session}</h3>
             <div>{documentToReactComponents(props.data.contentfulSpeakers.abstract.json, options)}</div>
