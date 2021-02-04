@@ -43,7 +43,7 @@ const SchedulePage = () => {
             <h4>1:00 P.M. - 1:30 P.M.</h4>
             <hr className={scheduleStyles.divider} />
             <h2>Sanjay Batra</h2>
-            <h3 className={scheduleStyles.talktitle}></h3>
+            <h3 className={scheduleStyles.talktitle}>A Case for Inclusive Design</h3>
 
             <h4>1:30 P.M. - 1:35 P.M.</h4>
             <hr className={scheduleStyles.divider} />

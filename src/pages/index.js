@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from 'gatsby'
+import { Link, Button } from 'gatsby'
 import Hero from '../components/hero'
 import Layout from '../components/layout'
 import Head from '../components/head'
@@ -37,7 +37,14 @@ const IndexPage = () => {
             <hr className={heroStyles.divider} />
             <Hero />
             <hr className={heroStyles.divider} />
+            <div align="center">
+                <a class="button" href="https://www.eventbrite.com/e/connectaha-technical-conference-tickets-136818187883" target="_blank">Reserve your free ticket today!</a>
+            </div>
+            <h1>Join us on April 9, 2021</h1>
             <h3 className={heroStyles.description}>Our goal is for people to grow quality connections in a diverse environment. Attendees, speakers and sponsors exchanging new ideas, knowledge and views.</h3>
+
+            <hr className={heroStyles.divider} />
+
             <h2>2021? Really?</h2>
             <p>Yes, we're <em>really</em> having a Connectaha in 2021. In fact, we've already got a date. It's April 9th, and we hope you'll join us.</p>
 

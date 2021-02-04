@@ -110,13 +110,14 @@ html {
     height: 0;
     overflow: visible;
   }
+
   button,
   input,
   optgroup,
   select,
   textarea {
     font: inherit;
-    margin: 0;
+    margin: 0em;
   }
   optgroup {
     font-weight: 700;
@@ -618,4 +619,17 @@ html {
     html {
       font-size: 100%;
     }
+  }
+
+  .button {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #ff6854;
+    border: none;
+    border-radius: 8px;
+    color: #353e60;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
   }
