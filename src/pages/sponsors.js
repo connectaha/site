@@ -33,6 +33,9 @@ const SponsorsPage = () => {
         <Layout>
             <Head title="Sponsors" />
             <h1>2021 Sponsors</h1>
+            <div align="center">
+                <a class="prospectus" href="https://drive.google.com/file/d/1S-NulgLtNfbFo4DPm6qB94He-VjYOLBi/view?usp=sharing" target="_blank">Open 2021 Connectaha Prospectus</a>
+            </div>
             <ol className={sponsorsStyles.sponsors}>
                 {data.allContentfulTier1.edges.map((edge) => {
                     return (
