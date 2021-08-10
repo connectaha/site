@@ -37,10 +37,6 @@ const IndexPage = () => {
             <hr className={heroStyles.divider} />
             <Hero />
             <hr className={heroStyles.divider} />
-            <div align="center">
-                <a class="button" href="https://www.eventbrite.com/e/connectaha-technical-conference-tickets-136818187883" target="_blank">Reserve your free ticket today!</a>
-            </div>
-            <h1>Join us on April 9, 2021</h1>
             <h3 className={heroStyles.description}>Our goal is for people to grow quality connections in a diverse environment. Attendees, speakers and sponsors exchanging new ideas, knowledge and views.</h3>
 
             <hr className={heroStyles.divider} />
