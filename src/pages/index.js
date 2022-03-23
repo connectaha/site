@@ -37,48 +37,10 @@ const IndexPage = () => {
             <hr className={heroStyles.divider} />
             <Hero />
             <hr className={heroStyles.divider} />
-            <div align="center">
+            {/*<div align="center">
                 <a class="button" href="https://www.eventbrite.com/e/connectaha-technical-conference-tickets-136818187883" target="_blank">Reserve your free ticket today!</a>
-            </div>
-            <h1>Join us on April 9, 2021</h1>
-            <h3 className={heroStyles.description}>Our goal is for people to grow quality connections in a diverse environment. Attendees, speakers and sponsors exchanging new ideas, knowledge and views.</h3>
-
-            <hr className={heroStyles.divider} />
-
-            <h2>2021? Really?</h2>
-            <p>Yes, we're <em>really</em> having a Connectaha in 2021. In fact, we've already got a date. It's April 9th, and we hope you'll join us.</p>
-
-            <h2>Hmmm..I'm not sure I'm ready to be in a big gathering</h2>
-            <p>We hear you, and neither are we. Or to be more accurate, we're not sure it's <strong>safe</strong> yet, and the last thing we want to do is put anyone in harm's way. So Connectaha 2021 is virtual, all online.</p>
-
-            <h2>I don't know. I've tried a couple virtual conferences and they haven't been my thing.</h2>
-            <p>We get it. Virtual conferences can be hard as an audience member. And with all of the tracts and talks we had in 2020, a virtual Connectaha would likely be taxing for everyone involved.</p>
-            <p>We have good news though. While we still want to expose people to great ideas, we know we can't do it in the same old way as in the past, so we've made some changes</p>
-
-            <ul className={heroStyles.spacing}>
-                <li>
-                    <h3>Tell me a story</h3>
-                    <p>That's the theme for 2021. We want our speakers to tell you a personal story about their time in tech, and if you check out the <Link to="/schedule">schedule</Link>, you'll see that's exactly what they're doing.</p>
-                </li>
-                <li>
-                    <h3>Focused talks</h3>
-                    <p>When we're in person, hour long talks are great. It allows people to really dive in to the topic, take questions, and even build in time for demo failures ('cause someone's demo will fail.) But virtual, that's a long time. So each of our slots are only 30 minutes.</p>
-                </li>
-                <li>
-                    <h3>Short time commitment</h3>
-                    <p>With the focused talks and limited speakers, Connectaha 2021 will be about 4 hours. Long enough to let you hear some great talks, but not too long that you're drained afterwards. And, since it's a Friday, we won't tell if you knock off a little early.</p>
-                </li>
-                <li>
-                    <h3>Various topics</h3>
-                    <p>Even with the theme of "Tell me a story" we have talks from a variety of <Link to="/speakers">roles</Link>. We have UX, QA, Product, Accessibilty and other topics. You're sure to find something that reaches you.</p>
-                </li>
-                <li>
-                    <h3>Completely <em>free</em> for you</h3>
-                    <p>It can be hard justifying paying for a conference that you watch online, and so in 2021, you don't have to! We're partnering with some <strong>GREAT</strong> <Link to="/sponsors">sponsors</Link>, and they're footing the bill so that you can enjoy great content.</p>
-                </li>
-            </ul>
-
-            <p>So does that sound like something you'd be interested in? If so, grab your <a href="https://www.eventbrite.com/e/connectaha-technical-conference-tickets-136818187883" target="_blank">free ticket</a> and we'll send out the streaming information so you can be a part of Connectaha 2021.</p>
+    </div>*/}
+            
 
             {/* <h2>Our Vision</h2>
             <p className={heroStyles.spacing}>Our vision is to grow quality connections in the Nebraska tech community.</p>
@@ -93,7 +55,24 @@ const IndexPage = () => {
                 <li>Genuine</li>
                 <li>Supportive</li>
             </ul> */}
-            <h2>2021 Sponsors</h2>
+            <h2>We're coming back.</h2>
+            <h3>In person!</h3>
+            <p>It’s true, Connectaha is coming back in person this year. We’ll be live at the Scott Conference Center on Monday, <b>July 25th.</b> And while we’re going to be back in person, we’re also going to be changing things up a bit.</p>
+            <p>The main theme of how we’re changing we stole from software development, we’re doing a <strong>Minimum Valuable Product!</strong> We know we want to be in person and also be adaptable to the ever changing pandemic. So as we started planning, we asked ourselves “How can we put on a quality conference that doesn’t take 6 months to plan?” And as we answered that question, it started to shape how we’d do things this year.</p>
+            <p>But before we get to the changes, let’s cover what isn’t changing.</p><p>As we mentioned, we’ll still be at the Scott because it’s a great facility that is centrally located, provides good food and great wifi. Additionally, our focus hasn’t changed.</p>
+            <h3>We still believe:</h3>
+                <ul>
+                    <li>Everyone can learn from anyone</li>
+                    <li>Quality only happens when the entire team is aligned</li>
+                    <li>Those with less experience provide as much value as those with more experience</li>
+                    <li>There’s power when people talk</li>
+                </ul>
+            <p>If that approach is remaining the same, then what has changed?</p>
+            <p>The most noticeable change is that for this year, we’re going to be a single track conference of keynotes. We’ll still provide you with a variety of topics, high quality speakers, and a chance to network with others from around the region!</p>
+            <p>Watch <a href="https://twitter.com/connectaha">Twitter</a> or <a href="https://www.linkedin.com/company/connectaha">LinkedIn</a> for more details like tickets, speakers and more!</p>
+            <p>If you’re interested in sponsoring email us at admin at connectaha.com</p>
+            
+            {/*<h2>2021 Sponsors</h2>
             <ol className={sponsorsStyles.sponsors}>
                 {data.allContentfulTier1.edges.map((edge) => {
                     return (
@@ -104,7 +83,7 @@ const IndexPage = () => {
                         </li>
                     )
                 })}
-            </ol>
+            </ol>*/}
         </Layout>
     )
 }

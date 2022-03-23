@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <header className={headerStyles.header}>
                 <Link><Logo className={headerStyles.logo} to="/" /></Link>
-            <nav>
+            {/* <nav>
                 <ul className={headerStyles.navList}>
                     <li>
                         <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/">Home</Link>
@@ -18,18 +18,18 @@ const Header = () => {
                     </li>
                     {/* <li>
                         <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/sessions">Sessions</Link>
-                    </li> */}
+                    </li>
                     <li>
                         <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/speakers">Speakers</Link>
                     </li>
                     <li>
                         <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/sponsors">Sponsors</Link>
                     </li>
-                    {/* <li>
+                    <li>
                         <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/about">About</Link>
-                    </li> */}
+                    </li>
                 </ul>
-            </nav>
+            </nav> */}
         </header>
     )
 }
