@@ -1,21 +1,28 @@
 .sessions {
     list-style-type: none;
-    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    img {
+        border: 2px solid #eaeaea;
+    }
 }
 
-.session {
-    margin: 1rem 0;
-
+.session {  
     a {
-        background: #f4f4f4;
-        color: #333;
+        background: #3F4248;
+        color: #ffffff;
         display: block;
-        padding: 1rem;
+        padding: 1.5rem;
         text-decoration: none;
+        width: 20.5rem;
+        height: 100%;
+        border-radius: .75rem;
     }
 
     a:hover {
-        background: #e4e4e4;
+        color: #009DDC;
     }
 
     h2 {
@@ -27,4 +34,15 @@
         font-size: .8rem;
         font-style: italic;
     }
+}
+
+.card {
+        background: #009DDC;
+        color: #ffffff;
+        display: block;
+        padding: 1.5rem;
+        text-decoration: none;
+        height: 100%;
+        border-radius: .75rem;
+        margin-bottom: 2rem;
 }

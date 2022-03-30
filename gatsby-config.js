@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: `Connectaha Tech Conference`,
+        title: `Connectaha Technical Conference`,
         author: `Connectaha`
     },
     plugins: [

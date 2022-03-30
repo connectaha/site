@@ -4,7 +4,7 @@ import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import speakersStyles from './speakers.module.scss'
 import Head from '../components/head'
-
+import scheduleStyles from './schedule.module.scss'
 
 const SpeakersPage = () => {
     const data = useStaticQuery(graphql`

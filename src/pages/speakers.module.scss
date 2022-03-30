@@ -1,47 +1,39 @@
 .speakers {
         list-style-type: none;
-        padding-bottom: 2rem; 
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        align-content: flex-start;
-        img {
-            border: 2px solid #eaeaea;
-        }
+        justify-content: space-evenly;
+        align-content: space-evenly;
     }
 
 .speaker {
-    margin: 0rem .5rem .5rem 0rem;
-    width: 13.648rem;
-
     a {
-        background: #f4f4f4;
-        color: #353e60;
+        background: #3F4248;
+        color: #ffffff;
         display: block;
-        padding: 1rem;
+        padding: 1.5rem;
         text-decoration: none;
-        height: 25rem;
+        width: 20.5rem;
+        height: 100%;
+        border-radius: 16px;
     }
 
     h3 {
-        font-size: 1.55rem;
-        font-weight: 700;
         margin-top: .25rem;
         margin-bottom: 0;
     }
 
     h4 {
-        font-size: 1.2rem;
         margin-top: .5rem;
         font-weight: 400;
     }
 
     a:hover {
-        background: #e4e4e4;
+        color: #009DDC;
     }
 
     p {
-        color: #777777;
+        color: #2A2D34;
         font-size: .75rem;
         font-style: italic;
     }

@@ -1,6 +1,6 @@
 .divider {
-    border-top: 1px solid rgba(40,47,72,.6);
-    margin-bottom: .5rem;
+    border-top: 2px solid #6761A8;
+    margin-bottom: 1rem;
 }
 
 .date {
@@ -11,10 +11,18 @@
     margin-bottom: .5rem;
 }
 
-.talktitle {
-    margin-bottom: 5.5rem;
-}
 
 .time {
     margin-bottom: .5rem;
+}
+
+.card {
+    background: #3F4248;
+    color: #ffffff;
+    display: block;
+    padding: 1.5rem;
+    text-decoration: none;
+    height: 100%;
+    border-radius: 16px;
+    margin-bottom: 1rem;
 }
