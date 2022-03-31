@@ -1,5 +1,5 @@
 import React from "react"
-{/*import { Link, Button } from 'gatsby'*/}
+import { Link, Button } from 'gatsby'
 import Hero from '../components/hero'
 import Layout from '../components/layout'
 import Head from '../components/head'
@@ -37,11 +37,6 @@ const IndexPage = () => {
         <Layout>
             <Head title="Home" />
             
-            {/*<div align="center">
-                <a class="button" href="https://www.eventbrite.com/e/connectaha-technical-conference-tickets-136818187883" target="_blank">Reserve your free ticket today!</a>
-    </div>*/}
-            
-
             {/* <h2>Our Vision</h2>
             <p className={heroStyles.spacing}>Our vision is to grow quality connections in the Nebraska tech community.</p>
             <h2>Our Goal</h2>
@@ -58,8 +53,11 @@ const IndexPage = () => {
             <h1>We're coming back.</h1>
             <h2>In-person!</h2>
             
-            <div className={sessionsStyles.card}>
+            <div className={heroStyles.card}>
                 <h3>We’ll be live at the Scott Conference Center on Monday, <b>July 25th 2022.</b></h3>
+                <div align="center">
+                    <a class="button" href="https://www.eventbrite.com/e/connectaha-technical-conference-2022-tickets-310823249707" target="_blank">Get your ticket today!</a>
+                </div>
             </div>
             
             <p>The main theme of how we’re changing we stole from software development, we’re doing a <strong>Minimum Valuable Product!</strong> We know we want to be in person and also be adaptable to the ever changing pandemic. So as we started planning, we asked ourselves “How can we put on a quality conference that doesn’t take 6 months to plan?” And as we answered that question, it started to shape how we’d do things this year.</p>
