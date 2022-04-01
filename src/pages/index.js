@@ -56,7 +56,7 @@ const IndexPage = () => {
             <div className={heroStyles.card}>
                 <h3>We’ll be live at the Scott Conference Center on Monday, <b>July 25th 2022.</b></h3>
                 <div align="center">
-                    <a class="button" href="https://www.eventbrite.com/e/connectaha-technical-conference-2022-tickets-310823249707" target="_blank">Get your ticket today!</a>
+                    <a class="button" href="https://www.eventbrite.com/e/connectaha-technical-conference-2022-tickets-310823249707" target="_blank"><h4>Get your ticket today!</h4></a>
                 </div>
             </div>
             
