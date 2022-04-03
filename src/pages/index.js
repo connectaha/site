@@ -104,7 +104,7 @@ const IndexPage = () => {
                 })}
             </ol>*/}
 
-            <h2>2021 Sponsors</h2>
+            <h2>2022 Sponsors</h2>
             <p>If you’re interested in sponsoring email us at admin at connectaha.com</p>
             <ol className={sponsorsStyles.sponsors}>
                 {data.allContentfulTier1.edges.map((edge) => {
