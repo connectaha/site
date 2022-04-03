@@ -7,6 +7,8 @@ import { graphql, useStaticQuery } from 'gatsby'
 import scheduleStyles from './schedule.module.scss'
 import heroStyles from '../components/hero.module.scss'
 import sessionsStyles from './sessions.module.scss'
+import sponsorsStyles from './sponsors.module.scss'
+import speakersStyles from './speakers.module.scss'
 {/*import sponsorsStyles from './sponsors.module.scss'*/}
 import Img from "gatsby-image"
 
@@ -30,26 +32,32 @@ const IndexPage = () => {
                     }
                 }
             }
+            allContentfulSpeakers ( sort: { fields: name, order: ASC } ) {
+                edges {
+                    node {
+                        name
+                        slug
+                        company
+                        session
+                        image {
+                            fluid(maxWidth: 300) {
+                              src
+                              srcSet
+                              aspectRatio
+                              sizes
+                            }
+                          }
+                    }
+                }
+            }
         }
     `)
+    
 
     return (
         <Layout>
             <Head title="Home" />
             
-            {/* <h2>Our Vision</h2>
-            <p className={heroStyles.spacing}>Our vision is to grow quality connections in the Nebraska tech community.</p>
-            <h2>Our Goal</h2>
-            <p className={heroStyles.spacing}>For people to exchange new ideas, knowledge and views of technology.</p>
-            <h2>Our Principles</h2>
-            <ul className={heroStyles.spacing}>
-                <li>Quality</li>
-                <li>Sustainable</li>
-                <li>Modern & Adaptable</li>
-                <li>Inclusive</li>
-                <li>Genuine</li>
-                <li>Supportive</li>
-            </ul> */}
             <h1>We're coming back.</h1>
             <h2>In-person!</h2>
             
@@ -63,7 +71,7 @@ const IndexPage = () => {
             <p>The main theme of how we’re changing we stole from software development, we’re doing a <strong>Minimum Valuable Product!</strong> We know we want to be in person and also be adaptable to the ever changing pandemic. So as we started planning, we asked ourselves “How can we put on a quality conference that doesn’t take 6 months to plan?” And as we answered that question, it started to shape how we’d do things this year.</p>
             <p>But before we get to the changes, let’s cover what isn’t changing.</p><p>As we mentioned, we’ll still be at the Scott because it’s a great facility that is centrally located, provides good food and great wifi. Additionally, our focus hasn’t changed.</p>
 
-            <h3>We still believe:</h3>
+            <h5>We still believe:</h5>
                 <ul>
                     <li>Everyone can learn from anyone</li>
                     <li>Quality only happens when the entire team is aligned</li>
@@ -74,9 +82,30 @@ const IndexPage = () => {
             <p>If that approach is remaining the same, then what has changed?</p>
             <p>The most noticeable change is that for this year, we’re going to be a single track conference of keynotes. We’ll still provide you with a variety of topics, high quality speakers, and a chance to network with others from around the region!</p>
             <p>Watch <a href="https://twitter.com/connectaha">Twitter</a> or <a href="https://www.linkedin.com/company/connectaha">LinkedIn</a> for more details like tickets, speakers and more!</p>
+
+            {/*<Head title="Speakers" />
+            <h1>Speakers</h1>
+            <ol className={speakersStyles.speakers}>
+                {data.allContentfulSpeakers.edges.map((edge) => {
+                    return (
+                        <li className={speakersStyles.speaker}>
+                            <Link to={`/speakers/${edge.node.slug}`}>
+                                <div>
+                                    {edge.node.image && (
+                                        <Img fluid={edge.node.image.fluid} /> 
+                                    )}
+                                </div>
+                                <h3>{edge.node.name}</h3>
+                                <h3>{edge.node.company}</h3>
+                                <h4>{edge.node.session}</h4>
+                            </Link>
+                        </li>
+                    )
+                })}
+            </ol>*/}
+
+            <h2>2022 Sponsors</h2>
             <p>If you’re interested in sponsoring email us at admin at connectaha.com</p>
-            
-            {/*<h2>2021 Sponsors</h2>
             <ol className={sponsorsStyles.sponsors}>
                 {data.allContentfulTier1.edges.map((edge) => {
                     return (
@@ -87,8 +116,9 @@ const IndexPage = () => {
                         </li>
                     )
                 })}
-            </ol>*/}
+            </ol>
         </Layout>
+        
     )
 }
 
