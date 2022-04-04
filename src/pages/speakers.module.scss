@@ -2,29 +2,11 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-content: space-evenly;
 }
 
-.spike {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  column-gap: 25px;
-
-  img {
-    grid-column: 1;
-    grid-row-start: 1;
-    grid-row-end: 4;
-  }
-
-  .info {
-    grid-column: 2;
-    grid-row: 1;
-  }
-}
 .speaker {
-  padding-top: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
@@ -75,4 +57,11 @@
 
 .hidden {
   display: none;
+}
+
+.abstract {
+  padding-top: 20px;
+}
+.card {
+  min-height: 350px;
 }

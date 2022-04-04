@@ -2,10 +2,11 @@ import React, { useState } from "react"
 import Img from "gatsby-image"
 
 import speakersStyles from "../pages/speakers.module.scss"
+import heroStyles from "./hero.module.scss"
 const Speaker = ({ edge }) => {
   const [visible, setVisible] = useState(false)
   return (
-    <div>
+    <div className={heroStyles.card}>
       <div
         className={speakersStyles.speaker}
         key={edge.node.slug}
@@ -18,7 +19,9 @@ const Speaker = ({ edge }) => {
           <h4>{edge.node.session}</h4>
         </div>
       </div>
-      <div className={visible ? "" : speakersStyles.hidden}>
+      <div
+        className={visible ? speakersStyles.abstract : speakersStyles.hidden}
+      >
         {edge.node.abstract.json.content.map(con => {
           return con.content.map(c => {
             return <p>{c.value}</p>
