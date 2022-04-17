@@ -35,22 +35,25 @@ const IndexPage = () => {
           }
         }
       }
-      allContentfulSpeakers(sort: { fields: name, order: ASC }) {
+      allContentfulSpeakers(sort: { fields: speakerOrder, order: ASC }) {
         edges {
           node {
-            name
-            slug
-            company
-            session
-            abstract {
-              json
-            }
-            image {
-              fluid(maxWidth: 300) {
-                src
-                srcSet
-                aspectRatio
-                sizes
+            ... on ContentfulSpeakers {
+              name
+              slug
+              company
+              session
+              title
+              abstract {
+                json
+              }
+              image {
+                fluid(maxWidth: 300) {
+                  src
+                  srcSet
+                  aspectRatio
+                  sizes
+                }
               }
             }
           }
@@ -73,7 +76,7 @@ const IndexPage = () => {
         </h3>
         <div align="center">
           <a
-            class="button"
+            className="button"
             href="https://www.eventbrite.com/e/connectaha-technical-conference-2022-tickets-310823249707"
             target="_blank"
           >
@@ -125,7 +128,7 @@ const IndexPage = () => {
       <h1>Speakers</h1>
       <div className={speakersStyles.speakers}>
         {data.allContentfulSpeakers.edges.map(edge => {
-          return <Speaker edge={edge}></Speaker>
+          return <Speaker key={edge.slug} edge={edge}></Speaker>
         })}
       </div>
 
