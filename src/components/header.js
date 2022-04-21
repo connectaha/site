@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Logo from '../images/connectaha300.svg';
-
 import headerStyles from './header.module.scss'
 
 const Header = () => {
@@ -30,6 +29,7 @@ const Header = () => {
                      </li>
                 </ul>
             </nav>*/}
+            <hr className={headerStyles.divider} />
         </header>
     )
 }
