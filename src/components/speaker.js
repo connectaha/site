@@ -5,11 +5,13 @@ import speakersStyles from "../pages/speakers.module.scss"
 import heroStyles from "./hero.module.scss"
 const Speaker = ({ edge }) => {
   const hasAbstract = () => {
-    var x = edge.node.abstract.json.content.map(con => {
-      return con.content.map(c => c.value)
-    }).length
-    console.log(x)
-    return x.length > 0
+    var abstract = edge.node.abstract.json.content.map(con => {
+      con.content.map(c => {
+        return c.value
+      })
+    })
+
+    return abstract.length > 0
   }
   const [visible, setVisible] = useState(false)
   return (
