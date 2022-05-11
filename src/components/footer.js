@@ -15,7 +15,11 @@ const Footer = () => {
 
     return (
         <footer className={footerStyles.footer}>
+            <p>Follow us on <a href="https://twitter.com/connectaha">Twitter</a> or{" "}
+            <a href="https://www.linkedin.com/company/connectaha">LinkedIn</a> for more details like tickets, speakers and more!
+            </p>
             <p>{data.site.siteMetadata.author} ©2022</p>
+            
         </footer>
     )
 }
