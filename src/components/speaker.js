@@ -27,8 +27,9 @@ const Speaker = ({ edge }) => {
         <div className="info">
           <h2>{edge.node.name}</h2>
           <h3>{edge.node.session}</h3>
-          <h4>{edge.node.company}</h4>
-          <h4>{edge.node.title}</h4>
+          <h4>
+            {edge.node.title} @ {edge.node.company}
+          </h4>
         </div>
         {hasAbstract() && (
           <span className={speakersStyles.moreInfo}>More info...</span>
