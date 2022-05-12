@@ -5,13 +5,15 @@ import speakersStyles from "../pages/speakers.module.scss"
 import heroStyles from "./hero.module.scss"
 const Speaker = ({ edge }) => {
   const hasAbstract = () => {
-    var abstract = edge.node.abstract.json.content.map(con => {
-      con.content.map(c => {
-        return c.value
+    var abstract =
+      edge.node.abstract &&
+      edge.node.abstract.json.content.map(con => {
+        con.content.map(c => {
+          return c.value
+        })
       })
-    })
 
-    return abstract.length > 0
+    return abstract && abstract.length > 0
   }
   const [visible, setVisible] = useState(false)
   return (
@@ -28,10 +30,12 @@ const Speaker = ({ edge }) => {
           <h4>{edge.node.company}</h4>
           <h4>{edge.node.title}</h4>
         </div>
+        {hasAbstract() && (
+          <span className={speakersStyles.moreInfo}>More info...</span>
+        )}
       </div>
       {hasAbstract() && (
         <>
-          <div>More info...</div>
           <div
             className={
               visible ? speakersStyles.abstract : speakersStyles.hidden
