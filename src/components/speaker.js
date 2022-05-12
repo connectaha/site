@@ -24,21 +24,26 @@ const Speaker = ({ edge }) => {
         {edge.node.image && <Img fluid={edge.node.image.fluid} />}
         <div className="info">
           <h2>{edge.node.name}</h2>
-          <h3>{edge.node.company}</h3>
+          <h3>{edge.node.session}</h3>
+          <h4>{edge.node.company}</h4>
           <h4>{edge.node.title}</h4>
-          <h5>{edge.node.session}</h5>
         </div>
       </div>
       {hasAbstract() && (
-        <div
-          className={visible ? speakersStyles.abstract : speakersStyles.hidden}
-        >
-          {edge.node.abstract.json.content.map(con => {
-            return con.content.map(c => {
-              return <p>{c.value}</p>
-            })
-          })}
-        </div>
+        <>
+          <div>More info...</div>
+          <div
+            className={
+              visible ? speakersStyles.abstract : speakersStyles.hidden
+            }
+          >
+            {edge.node.abstract.json.content.map(con => {
+              return con.content.map(c => {
+                return <p>{c.value}</p>
+              })
+            })}
+          </div>
+        </>
       )}
     </div>
   )
